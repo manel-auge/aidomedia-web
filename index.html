@@ -316,7 +316,7 @@ h2.sec-h em{font-family:var(--serif);font-style:italic;font-weight:400;color:var
 .collab-row img:hover{opacity:1;transform:translateY(-3px)}
 
 /* ============ CTA FINAL ============ */
-.cta-sec{position:relative;padding:170px 48px;text-align:center;background:linear-gradient(165deg,#f4f5f8,#e9ebf1 55%,#f7f8fb);overflow:hidden}
+.cta-sec{position:relative;padding:300px 48px 240px;text-align:center;background:linear-gradient(180deg,#081232 0,rgba(8,18,50,.65) 90px,rgba(10,22,60,.28) 190px,rgba(8,18,50,0) 330px),linear-gradient(0deg,#081232 0,rgba(8,18,50,.5) 70px,rgba(8,18,50,0) 240px),linear-gradient(165deg,#f4f5f8,#e9ebf1 55%,#f7f8fb);overflow:hidden}
 .cta-sec::before{content:'';position:absolute;inset:0;background:radial-gradient(ellipse 70% 50% at 50% 50%,rgba(130,140,255,.10) 0%,transparent 65%);animation:ctaG 6s ease-in-out infinite}
 @keyframes ctaG{0%,100%{opacity:.75}50%{opacity:1;transform:scale(1.06)}}
 .cta-sec::after{content:'';position:absolute;inset:0;opacity:.05;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='.85' numOctaves='4'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E")}
@@ -610,6 +610,7 @@ footer{padding:54px 48px;display:flex;align-items:center;justify-content:space-b
 .gar b{display:flex;align-items:center;gap:10px;font-size:17px;font-weight:800;letter-spacing:-.01em}
 .gar b::before{content:'✓';width:22px;height:22px;border-radius:50%;background:var(--red);color:#fff;font-size:11px;font-weight:800;display:flex;align-items:center;justify-content:center;flex-shrink:0}
 .gar p{margin-top:10px;font-size:14px;line-height:1.6;color:var(--gray)}
+.res-dots{position:absolute;top:0;left:0;right:0;height:360px;background-image:radial-gradient(circle,rgba(255,255,255,.055) 1px,transparent 1.4px);background-size:28px 28px;-webkit-mask-image:linear-gradient(180deg,#000 0,rgba(0,0,0,.55) 150px,transparent 100%);mask-image:linear-gradient(180deg,#000 0,rgba(0,0,0,.55) 150px,transparent 100%);pointer-events:none}
 .res-alt{padding:0 16px 16px;font-size:12px;color:rgba(10,19,46,.55);text-align:center}
 .res-alt a{color:#2f6fe0;font-weight:600}
 
@@ -644,7 +645,7 @@ footer{padding:54px 48px;display:flex;align-items:center;justify-content:space-b
   .tcard{padding:28px 22px}
   .tc-badge{margin-left:0}
   .manifesto{padding:100px 20px}
-  .cta-sec{padding:110px 20px}
+  .cta-sec{padding:200px 20px 160px}
   footer{padding:40px 20px;justify-content:center;text-align:center}
 }
 @media (prefers-reduced-motion:reduce){
@@ -1203,6 +1204,7 @@ footer{padding:54px 48px;display:flex;align-items:center;justify-content:space-b
 
 <!-- ============ CTA FINAL ============ -->
 <section class="cta-sec" id="reserva">
+  <div class="res-dots" aria-hidden="true"></div>
   <div class="cta-in">
     <span class="cta-tag rv">Solo 2 producciones nuevas al mes · Respuesta en menos de 24h</span>
     <h2 class="cta-h rv">Tu podcast ya debería estar <em>trabajando para ti.</em></h2>
