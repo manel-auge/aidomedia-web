@@ -1,0 +1,34 @@
+{
+ "zzen": {
+  "name": "ZZEN",
+  "handle": "zzenlabs"
+ },
+ "jose": {
+  "name": "José Elías",
+  "handle": "Jose_Elias_Navarro"
+ },
+ "mediapower": {
+  "name": "Media Power",
+  "handle": "mediapower.agency"
+ },
+ "blv": {
+  "name": "Búscate la Vida",
+  "handle": "blvpodcast"
+ },
+ "duralavita": {
+  "name": "DURALAVITA",
+  "handle": "Duralavita"
+ },
+ "epr": {
+  "name": "Eric Ponce",
+  "handle": "Eric_Ponce"
+ },
+ "marc": {
+  "name": "Marc Farriol",
+  "handle": "Marc_Farriol"
+ },
+ "rostick": {
+  "name": "Rostick",
+  "handle": "rostick_mobilhome"
+ }
+}

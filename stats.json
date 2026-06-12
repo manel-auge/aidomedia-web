@@ -1,0 +1,55 @@
+{
+ "updated": "2026-06-12T08:14:05Z",
+ "total_subs": 1535930,
+ "total_views": 367550014,
+ "channels": {
+  "zzen": {
+   "name": "ZZEN",
+   "subs": 486000,
+   "views": 78948017,
+   "videos": 1146
+  },
+  "jose": {
+   "name": "José Elías",
+   "subs": 459000,
+   "views": 175708272,
+   "videos": 1171
+  },
+  "mediapower": {
+   "name": "Media Power",
+   "subs": 183000,
+   "views": 10499568,
+   "videos": 1123
+  },
+  "blv": {
+   "name": "Búscate la Vida",
+   "subs": 168000,
+   "views": 53528257,
+   "videos": 1151
+  },
+  "duralavita": {
+   "name": "DURALAVITA",
+   "subs": 151000,
+   "views": 36898258,
+   "videos": 959
+  },
+  "epr": {
+   "name": "Eric Ponce",
+   "subs": 74400,
+   "views": 10042211,
+   "videos": 402
+  },
+  "marc": {
+   "name": "Marc Farriol",
+   "subs": 7640,
+   "views": 154341,
+   "videos": 29
+  },
+  "rostick": {
+   "name": "Rostick",
+   "subs": 6890,
+   "views": 1771090,
+   "videos": 133
+  }
+ }
+}
