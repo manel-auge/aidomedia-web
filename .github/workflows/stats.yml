@@ -1,0 +1,21 @@
+name: Sincronizar stats de clientes
+on:
+  schedule:
+    - cron: '0 6 * * *'   # cada día a las 06:00 UTC
+  workflow_dispatch: {}
+permissions:
+  contents: write
+jobs:
+  stats:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Actualizar stats.json
+        run: python3 update_stats.py
+      - name: Commit si hay cambios
+        run: |
+          git config user.name "aido-stats-bot"
+          git config user.email "bot@aidomedia.com"
+          git add stats.json
+          git diff --cached --quiet || git commit -m "stats: sync diario de canales"
+          git push
