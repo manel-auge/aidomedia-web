@@ -1,54 +1,54 @@
 {
- "updated": "2026-08-19T06:45:28Z",
+ "updated": "2026-08-20T06:47:51Z",
  "total_subs": 1560150,
- "total_views": 383297862,
+ "total_views": 383491240,
  "channels": {
   "zzen": {
    "name": "ZZEN",
    "subs": 500000,
-   "views": 82979486,
-   "videos": 1205
+   "views": 83030772,
+   "videos": 1206
   },
   "jose": {
    "name": "José Elías",
    "subs": 461000,
-   "views": 180198876,
-   "videos": 1246
+   "views": 180315006,
+   "videos": 1247
   },
   "mediapower": {
    "name": "Media Power",
    "subs": 183000,
-   "views": 10633962,
+   "views": 10635282,
    "videos": 1172
   },
   "blv": {
    "name": "Búscate la Vida",
    "subs": 171000,
-   "views": 57053627,
+   "views": 57060665,
    "videos": 1230
   },
   "duralavita": {
    "name": "DURALAVITA",
    "subs": 152000,
-   "views": 38932630,
+   "views": 38941701,
    "videos": 1050
   },
   "epr": {
    "name": "Eric Ponce",
    "subs": 77400,
-   "views": 11426748,
+   "views": 11433650,
    "videos": 438
   },
   "marc": {
    "name": "Marc Farriol",
    "subs": 8510,
-   "views": 224057,
+   "views": 224362,
    "videos": 39
   },
   "rostick": {
    "name": "Rostick",
    "subs": 7240,
-   "views": 1848476,
+   "views": 1849802,
    "videos": 137
   }
  },
