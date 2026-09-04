@@ -1,13 +1,13 @@
 {
- "updated": "2026-09-03T10:50:11Z",
- "total_subs": 1564730,
+ "updated": "2026-09-04T10:49:15Z",
+ "total_subs": 1564750,
  "total_views": 386729600,
  "channels": {
   "zzen": {
    "name": "ZZEN",
    "subs": 502000,
    "views": 83739606,
-   "videos": 1219
+   "videos": 1220
   },
   "jose": {
    "name": "José Elías",
@@ -31,7 +31,7 @@
    "name": "DURALAVITA",
    "subs": 152000,
    "views": 39026375,
-   "videos": 1063
+   "videos": 1066
   },
   "epr": {
    "name": "Eric Ponce",
@@ -41,15 +41,15 @@
   },
   "marc": {
    "name": "Marc Farriol",
-   "subs": 8600,
+   "subs": 8610,
    "views": 229206,
    "videos": 40
   },
   "rostick": {
    "name": "Rostick",
-   "subs": 7330,
+   "subs": 7340,
    "views": 1867422,
-   "videos": 137
+   "videos": 138
   }
  },
  "videos": {
@@ -75,6 +75,6 @@
   "t0HZyY8rkRg": 78000,
   "t6egclZxzk4": 53000,
   "wrr4LCFPErA": 516000,
-  "y-x3YF4y7yQ": 256000
+  "y-x3YF4y7yQ": 257000
  }
 }
