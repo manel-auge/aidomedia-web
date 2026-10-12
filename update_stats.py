@@ -102,10 +102,14 @@ def main():
         # overrides manuales (canales que ocultan subs) pisan lo público
         for k, v in cfg.get("manual", {}).items():
             data[k] = v
-        # conservar último valor conocido si hoy no hay dato
+        # conservar último valor conocido si hoy no hay dato o si se desploma
+        # (un handle que cambia de dueño devuelve otro canal: Media Power → 1 sub)
         for k in ("subs", "views", "videos"):
-            if not data[k] and prev.get(key, {}).get(k):
-                data[k] = prev[key][k]
+            last = prev.get(key, {}).get(k)
+            if last and (not data[k] or data[k] < last * 0.5):
+                if data[k]:
+                    print(f"  ! {key}.{k}: {data[k]} descartado (antes {last}); revisa el handle", file=sys.stderr)
+                data[k] = last
         out[key] = data
         print(f"  {key}: subs={data['subs']} views={data['views']} videos={data['videos']}")
     # vistas de los vídeos virales trackeados
