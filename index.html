@@ -3,437 +3,510 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
-<title>AIDO MEDIA — Productora de vídeo-podcast y reels que convierten en clientes</title>
-<meta name="description" content="Productora de vídeo-podcast y reels en España. Tú grabas; nosotros editamos el episodio, sacamos los reels y las miniaturas y lo publicamos. 29,1 M de visualizaciones con nuestros reels en 6 semanas: Búscate la Vida, Sin Jaulas, Eric Ponce, DURALAVITA.">
+<title>AIDO MEDIA. Productora de videopodcast y reels</title>
+<meta name="description" content="Productora de videopodcast y reels en España. Tú grabas; nosotros editamos el episodio y hacemos los títulos, las miniaturas y los reels. 29,1M de visualizaciones con nuestros reels en 6 semanas.">
 <link rel="canonical" href="https://aidomedia.com/">
-<meta name="theme-color" content="#081232">
+<meta name="theme-color" content="#ffffff">
 <meta property="og:type" content="website">
 <meta property="og:url" content="https://aidomedia.com/">
-<meta property="og:title" content="AIDO MEDIA — Tu podcast, convertido en clientes">
-<meta property="og:description" content="Tú conversas; nosotros editamos, sacamos los reels y publicamos cada episodio. 29,1 M de visualizaciones con nuestros reels en 6 semanas.">
+<meta property="og:title" content="AIDO MEDIA. El pack completo para tu podcast">
+<meta property="og:description" content="Tú grabas. Nosotros editamos el episodio y hacemos los títulos, las miniaturas y los reels para que sea lo más viral posible.">
 <meta property="og:image" content="https://aidomedia.com/og.png">
 <meta property="og:locale" content="es_ES">
-<meta property="og:image:alt" content="AIDO MEDIA — Productora de vídeo-podcast">
+<meta property="og:image:alt" content="AIDO MEDIA, productora de videopodcast">
 <meta name="twitter:card" content="summary_large_image">
 <meta name="twitter:image" content="https://aidomedia.com/og.png">
-<meta name="twitter:image:alt" content="AIDO MEDIA — Productora de vídeo-podcast">
+<meta name="twitter:image:alt" content="AIDO MEDIA, productora de videopodcast">
 <link rel="apple-touch-icon" href="/apple-touch-icon.png">
-<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23081232'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%23ff453a'/%3E%3C/svg%3E">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23111111'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%23ff453a'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://calendly.com">
 <link rel="preconnect" href="https://assets.calendly.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Schibsted+Grotesk:wght@400;500;600;700&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet">
-<link rel="preload" as="image" href="/img/yt-wrr4LCFPErA.webp" media="(min-width:900px)">
 <style>
-/* ============ TOKENS — marca AIDO MEDIA ============ */
+/* ============ AIDO MEDIA · estilo producto ============
+   Tipografía del sistema: San Francisco en iPhone y Mac, Segoe en Windows, Roboto en Android.
+   Tracking negativo solo en titulares grandes; nada de espaciado ancho. */
 :root{
-  --bg:#081232;
-  --bg-2:#0b1840;
-  --surface:#0e2049;
-  --surface-2:#132a5e;
-  --ink:#f4f7ff;
-  --gray:#adb9df;
-  --gray-2:#8f9cc8;
-  --line:rgba(170,200,255,.14);
-  --line-2:rgba(170,200,255,.08);
-  --blue:#4f8dff;
-  --blue-soft:#8ab4ff;
-  --ice:#bcd4ff;
-  --ice-light:#e9f1ff;
+  --font:-apple-system,BlinkMacSystemFont,"SF Pro Display","SF Pro Text","Helvetica Neue",Helvetica,Arial,sans-serif;
+  --ink:#1d1d1f;
+  --ink-2:#6e6e73;
+  --ink-3:#86868b;
+  --bg:#fff;
+  --bg-2:#f5f5f7;
+  --line:#d2d2d7;
+  --blue:#0071e3;
+  --blue-h:#0077ed;
+  --link:#0066cc;
   --rec:#ff453a;
-  --ok:#7ee2a0;
-  --sans:'Schibsted Grotesk',-apple-system,BlinkMacSystemFont,'Segoe UI',sans-serif;
-  --serif:'Fraunces',Georgia,serif;
-  --mono:'Spline Sans Mono',ui-monospace,monospace;
-  --ease:cubic-bezier(.16,1,.3,1);
-  --r:20px;
-  --pad:20px;
+  --dark:#000;
+  --dark-2:#161617;
+  --on-dark:#f5f5f7;
+  --on-dark-2:#a1a1a6;
+  --ease:cubic-bezier(.28,.11,.32,1);
+  --pad:22px;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
-body{font-family:var(--sans);background:var(--bg);color:var(--ink);-webkit-font-smoothing:antialiased;overflow-x:hidden;line-height:1.5}
-body::before{content:'';position:fixed;inset:0;z-index:-1;pointer-events:none;background:radial-gradient(ellipse 120% 70% at 50% -10%,rgba(48,94,213,.45),rgba(8,18,50,0) 70%)}
+body{font-family:var(--font);background:var(--bg);color:var(--ink);font-size:17px;line-height:1.47;letter-spacing:-.022em;-webkit-font-smoothing:antialiased;overflow-x:hidden}
 img{display:block;max-width:100%}
 a{color:inherit;text-decoration:none}
 button{font:inherit;color:inherit;background:none;border:0;cursor:pointer}
-:focus-visible{outline:2px solid var(--ice);outline-offset:3px;border-radius:6px}
+:focus-visible{outline:2px solid var(--blue);outline-offset:3px;border-radius:6px}
 .sr-only{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0);white-space:nowrap}
-.wrap{max-width:1120px;margin:0 auto;padding:0 var(--pad)}
-.sec{padding:64px 0}
-.eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:var(--mono);font-size:12px;font-weight:500;letter-spacing:.08em;text-transform:uppercase;color:var(--blue-soft)}
-.eyebrow::before{content:'';width:18px;height:1px;background:currentColor;opacity:.7}
-.h2{margin-top:14px;font-family:var(--serif);font-weight:600;font-size:clamp(30px,6.4vw,46px);line-height:1.08;letter-spacing:-.015em;font-variation-settings:'opsz' 96}
-.h2 em,.h1 em{font-style:italic;font-weight:400;color:var(--ice)}
-.lead{margin-top:14px;font-size:17px;line-height:1.6;color:var(--gray);max-width:640px}
+.wrap{max-width:1024px;margin:0 auto;padding:0 var(--pad)}
+.wide{max-width:1200px}
+.sec{padding:88px 0}
+.alt{background:var(--bg-2)}
+.dark{background:var(--dark);color:var(--on-dark)}
 .center{text-align:center}
-.center .lead{margin-left:auto;margin-right:auto}
 
-/* reveal sobrio */
-.rv{opacity:0;transform:translateY(14px);transition:opacity .7s var(--ease),transform .7s var(--ease)}
+/* titulares */
+.kicker{display:block;font-size:17px;font-weight:600;color:var(--ink-2);margin-bottom:10px}
+.dark .kicker{color:var(--on-dark-2)}
+.h2{font-size:40px;line-height:1.1;font-weight:600;letter-spacing:-.025em}
+.lead{margin-top:16px;font-size:19px;line-height:1.42;font-weight:400;color:var(--ink-2);max-width:680px}
+.center .lead{margin-left:auto;margin-right:auto}
+.dark .lead{color:var(--on-dark-2)}
+.lead b{color:var(--ink);font-weight:600}
+.dark .lead b{color:var(--on-dark)}
+
+/* aparición suave */
+.rv{opacity:0;transform:translateY(24px);transition:opacity .9s var(--ease),transform .9s var(--ease)}
 .rv.seen{opacity:1;transform:none}
 
 /* ============ BOTONES ============ */
-.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:56px;padding:0 28px;border-radius:14px;font-size:17px;font-weight:700;color:#0a132e;background:linear-gradient(180deg,#fff,var(--ice-light));box-shadow:0 10px 30px rgba(79,141,255,.28),inset 0 -2px 0 rgba(10,19,46,.08);transition:transform .25s var(--ease),box-shadow .25s}
-.btn:hover{transform:translateY(-2px);box-shadow:0 16px 40px rgba(79,141,255,.4)}
-.btn:active{transform:translateY(0)}
-.btn svg{flex-shrink:0}
-.btn-ghost{display:inline-flex;align-items:center;justify-content:center;gap:9px;min-height:56px;padding:0 22px;border-radius:14px;font-size:16px;font-weight:600;color:var(--ink);border:1px solid var(--line);background:rgba(255,255,255,.04);transition:background .25s,border-color .25s}
-.btn-ghost:hover{background:rgba(255,255,255,.09);border-color:rgba(255,255,255,.25)}
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:50px;padding:0 26px;border-radius:980px;background:var(--blue);color:#fff;font-size:17px;font-weight:500;letter-spacing:-.01em;transition:background .2s}
+.btn:hover{background:var(--blue-h)}
+.btn-out{display:inline-flex;align-items:center;justify-content:center;gap:8px;min-height:50px;padding:0 26px;border-radius:980px;border:1px solid var(--blue);color:var(--blue);font-size:17px;font-weight:500;transition:background .2s,color .2s}
+.btn-out:hover{background:var(--blue);color:#fff}
+.dark .btn-out{border-color:var(--on-dark);color:var(--on-dark)}
+.dark .btn-out:hover{background:var(--on-dark);color:var(--ink)}
+.more{display:inline-flex;align-items:center;gap:4px;font-size:17px;color:var(--link)}
+.more::after{content:'';width:7px;height:7px;border-top:1.6px solid currentColor;border-right:1.6px solid currentColor;transform:rotate(45deg);margin-left:3px}
+.more:hover{text-decoration:underline}
+.dark .more{color:#2997ff}
 .wa-ico{width:20px;height:20px;flex-shrink:0}
 .wa{display:none!important}
 body.has-wa .wa{display:inline-flex!important}
-.micro{margin-top:14px;font-size:14px;color:var(--gray-2)}
-.micro b{color:var(--gray);font-weight:600}
 
-/* ============ HEADER ============ */
-.hdr{position:fixed;top:0;left:0;right:0;z-index:50;height:64px;display:flex;align-items:center;justify-content:space-between;padding:0 var(--pad);padding-top:env(safe-area-inset-top);transition:background .3s,border-color .3s;border-bottom:1px solid transparent}
-.hdr.on{background:rgba(8,18,50,.86);backdrop-filter:blur(14px);-webkit-backdrop-filter:blur(14px);border-color:var(--line-2)}
-.logo{display:flex;align-items:center;gap:9px;font-weight:700;font-size:17px;letter-spacing:-.01em}
-.logo b{font-weight:700;color:var(--ice)}
-.rec{width:10px;height:10px;border-radius:50%;background:var(--rec);box-shadow:0 0 0 4px rgba(255,69,58,.16);flex-shrink:0}
-.hdr-r{display:flex;align-items:center;gap:10px}
-.hdr-btn{display:inline-flex;align-items:center;height:42px;padding:0 18px;border-radius:11px;background:var(--ink);color:#0a132e;font-size:15px;font-weight:700;transition:background .2s}
-.hdr-btn:hover{background:var(--ice-light)}
-.hdr-wa{width:42px;height:42px;border-radius:11px;border:1px solid var(--line);align-items:center;justify-content:center}
+/* ============ NAVEGACIÓN ============ */
+.hdr{position:sticky;top:0;z-index:50;height:52px;background:rgba(255,255,255,.8);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);border-bottom:1px solid transparent;transition:border-color .3s}
+.hdr.on{border-color:rgba(0,0,0,.08)}
+.hdr-in{max-width:1024px;height:100%;margin:0 auto;padding:0 var(--pad);display:flex;align-items:center;justify-content:space-between;gap:24px}
+.logo{display:flex;align-items:center;gap:8px;font-size:17px;font-weight:600;letter-spacing:-.01em}
+.logo .light{font-weight:400;color:var(--ink-2)}
+.rec{width:9px;height:9px;border-radius:50%;background:var(--rec);flex-shrink:0}
+.nav{display:none;gap:30px;font-size:13px;color:var(--ink)}
+.nav a{opacity:.8;transition:opacity .2s}
+.nav a:hover{opacity:1}
+.hdr-btn{display:inline-flex;align-items:center;height:30px;padding:0 15px;border-radius:980px;background:var(--blue);color:#fff;font-size:13px;font-weight:500;letter-spacing:0;transition:background .2s,opacity .25s}
+.hdr-btn:hover{background:var(--blue-h)}
 
-/* ============ HERO ============ */
-.hero{padding:104px 0 40px;position:relative}
-.hero-grid{display:grid;gap:40px;align-items:center}
-.pill{display:inline-flex;align-items:center;gap:9px;padding:7px 14px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.04);font-size:13.5px;font-weight:500;color:var(--gray)}
-.live{width:7px;height:7px;border-radius:50%;background:var(--rec);animation:pulse 2s infinite}
-@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(255,69,58,.5)}50%{box-shadow:0 0 0 6px rgba(255,69,58,0)}}
-.h1{margin-top:18px;font-family:var(--serif);font-weight:600;font-size:clamp(38px,10vw,64px);line-height:1.02;letter-spacing:-.02em;font-variation-settings:'opsz' 120}
-.hero-sub{margin-top:18px;font-size:18px;line-height:1.55;color:var(--gray);max-width:540px}
+/* ============ PORTADA ============ */
+.hero{padding:56px 0 0;text-align:center;overflow:hidden}
+.hero .kicker{color:var(--rec);font-size:17px}
+.h1{font-size:52px;line-height:1.05;font-weight:700;letter-spacing:-.035em}
+.hero-sub{margin:18px auto 0;max-width:720px;font-size:21px;line-height:1.38;font-weight:400;color:var(--ink-2);letter-spacing:-.02em}
 .hero-sub b{color:var(--ink);font-weight:600}
-.hero-cta{margin-top:28px;display:flex;flex-wrap:wrap;gap:12px}
-.hero-cta .btn{flex:1 1 260px;max-width:360px}
-.proof{margin-top:26px;display:flex;align-items:center;gap:14px}
-.avs{display:flex;flex-shrink:0}
-.avs img{width:36px;height:36px;border-radius:50%;border:2px solid var(--bg);margin-left:-9px;background:var(--surface)}
-.avs img:first-child{margin-left:0}
-.proof p{font-size:14.5px;line-height:1.4;color:var(--gray)}
-.proof p b{color:var(--ink);font-weight:700}
+.hero-cta{margin-top:30px;display:flex;flex-wrap:wrap;gap:14px;justify-content:center;align-items:center}
+.hero-note{margin-top:14px;font-size:14px;color:var(--ink-3);letter-spacing:-.01em}
+.hero-viz{margin:56px auto 0;max-width:900px}
+.fan{position:relative;display:flex;justify-content:center;align-items:flex-end;height:380px}
+.ph{position:absolute;bottom:0;width:186px;aspect-ratio:9/16;border-radius:28px;overflow:hidden;background:#111;border:6px solid #111;box-shadow:0 30px 60px rgba(0,0,0,.18)}
+.ph img{width:100%;height:100%;object-fit:cover;border-radius:22px}
+.ph figcaption{position:absolute;left:0;right:0;bottom:0;padding:40px 14px 14px;text-align:left;color:#fff;font-size:12px;line-height:1.3;background:linear-gradient(transparent,rgba(0,0,0,.72));border-radius:0 0 22px 22px}
+.ph figcaption b{display:block;font-size:22px;font-weight:600;letter-spacing:-.02em}
+.ph1{left:50%;transform:translateX(-50%);z-index:2;width:206px}
+.ph2{left:50%;transform:translateX(-118%) rotate(-6deg) scale(.9);transform-origin:bottom right}
+.ph3{left:50%;transform:translateX(18%) rotate(6deg) scale(.9);transform-origin:bottom left}
 
-/* tarjeta de prueba (escritorio) */
-.hero-viz{display:none;position:relative}
-.hv-main{border-radius:18px;overflow:hidden;border:1px solid var(--line);background:var(--surface);box-shadow:0 40px 90px rgba(0,0,0,.45)}
-.hv-main .th{position:relative;aspect-ratio:16/9;background:var(--surface-2)}
-.hv-main .th img{width:100%;height:100%;object-fit:cover}
-.hv-meta{display:flex;gap:12px;padding:16px 18px 18px;align-items:flex-start}
-.hv-meta img{width:38px;height:38px;border-radius:50%}
-.hv-meta b{display:block;font-size:15px;font-weight:600;line-height:1.35}
-.hv-meta span{display:block;margin-top:4px;font-size:13.5px;color:var(--gray-2)}
-.hv-meta i{font-style:normal;color:var(--ink);font-weight:700}
-.hv-stat{position:absolute;display:flex;align-items:center;gap:12px;padding:13px 16px;border-radius:14px;background:rgba(14,32,73,.92);backdrop-filter:blur(10px);border:1px solid var(--line);box-shadow:0 20px 50px rgba(0,0,0,.4)}
-.hv-stat strong{font-family:var(--serif);font-size:26px;font-weight:600;line-height:1}
-.hv-stat span{font-size:12.5px;line-height:1.3;color:var(--gray)}
-.hv-stat strong span{font-size:inherit;line-height:inherit;color:inherit}
-.hv-s1{left:-36px;top:46%}
-.hv-s2{right:-22px;top:-22px}
-
-/* ============ CLIENTES ============ */
-.clients{padding:28px 0 8px}
-.cl-label{font-size:14px;color:var(--gray-2);text-align:center}
-.cl-row{margin-top:16px;display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding:4px var(--pad) 12px;margin-left:calc(var(--pad) * -1);margin-right:calc(var(--pad) * -1);scrollbar-width:none}
+/* clientes */
+.clients{padding:64px 0 72px;text-align:center}
+.cl-label{font-size:14px;color:var(--ink-3)}
+.cl-row{margin-top:18px;display:flex;gap:10px;overflow-x:auto;scroll-snap-type:x mandatory;padding:2px var(--pad) 8px;margin-left:calc(var(--pad) * -1);margin-right:calc(var(--pad) * -1);scrollbar-width:none}
 .cl-row::-webkit-scrollbar{display:none}
-.chip{scroll-snap-align:start;flex-shrink:0;display:flex;align-items:center;gap:10px;padding:7px 16px 7px 7px;border-radius:999px;border:1px solid var(--line);background:rgba(255,255,255,.035);transition:border-color .2s,background .2s}
-.chip:hover{border-color:rgba(255,255,255,.28);background:rgba(255,255,255,.07)}
-.chip img{width:34px;height:34px;border-radius:50%}
-.chip b{font-size:14.5px;font-weight:600;white-space:nowrap}
-.chip span{font-family:var(--mono);font-size:12.5px;color:var(--gray-2)}
-.cl-total{margin-top:6px;text-align:center;font-size:14px;color:var(--gray-2)}
-.cl-total b{color:var(--ink);font-weight:600}
-.brands{margin-top:34px;padding-top:26px;border-top:1px solid var(--line-2)}
-.brand-row{margin-top:14px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px 22px;align-items:center;justify-items:center}
-.brand-row img{height:26px;width:auto;opacity:.6;filter:brightness(0) invert(1);transition:opacity .2s}
-.brand-row img:hover{opacity:.95}
+.chip{scroll-snap-align:start;flex-shrink:0;display:flex;align-items:center;gap:10px;padding:6px 16px 6px 6px;border-radius:980px;background:var(--bg-2);transition:background .2s}
+.chip:hover{background:#ebebef}
+.chip img{width:32px;height:32px;border-radius:50%}
+.chip b{font-size:15px;font-weight:500;white-space:nowrap}
+.chip span{font-size:13px;color:var(--ink-3)}
+.brands{margin-top:40px}
+.brand-row{margin-top:18px;display:grid;grid-template-columns:repeat(3,1fr);gap:22px 26px;align-items:center;justify-items:center}
+.brand-row img{height:24px;width:auto;opacity:.45;filter:brightness(0);transition:opacity .2s}
+.brand-row img:hover{opacity:.8}
 
-/* ============ DOLOR ============ */
-.pain{margin-top:32px;display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.pn{padding:18px 16px;border-radius:16px;background:var(--surface);border:1px solid var(--line-2)}
-.pn svg{width:26px;height:26px;color:var(--pc,var(--blue-soft))}
-.pn h3{margin-top:12px;font-size:16px;font-weight:700;line-height:1.25;letter-spacing:-.005em}
-.pn p{margin-top:6px;font-size:14px;line-height:1.45;color:var(--gray-2)}
-.pain-out{margin-top:26px;font-family:var(--serif);font-size:clamp(22px,5vw,30px);line-height:1.25;font-weight:500}
-.pain-out em{font-style:italic;font-weight:400;color:var(--ice)}
+/* ============ EL PACK ============ */
+.tiles{margin-top:48px;display:grid;gap:20px}
+.tile{position:relative;border-radius:28px;background:var(--bg);overflow:hidden;padding:40px 30px 0;display:flex;flex-direction:column;min-height:0}
+.alt .tile{background:var(--bg)}
+.tile h3{font-size:28px;line-height:1.14;font-weight:600;letter-spacing:-.025em}
+.tile p{margin-top:10px;font-size:17px;line-height:1.47;color:var(--ink-2)}
+.tile-viz{margin-top:auto;padding:32px 0 0;display:flex;justify-content:center;align-items:flex-end}
+.player{width:100%;border-radius:16px 16px 0 0;overflow:hidden;box-shadow:0 -1px 0 rgba(0,0,0,.04),0 20px 50px rgba(0,0,0,.12)}
+.player img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.player-bar{height:44px;background:#111;display:flex;align-items:center;gap:12px;padding:0 16px}
+.player-bar i{width:0;height:0;border-left:11px solid #fff;border-top:7px solid transparent;border-bottom:7px solid transparent}
+.player-bar span{flex:1;height:4px;border-radius:2px;background:rgba(255,255,255,.25);position:relative}
+.player-bar span::after{content:'';position:absolute;left:0;top:0;bottom:0;width:38%;border-radius:2px;background:#ff0033}
+.titles{width:100%;padding-bottom:36px;display:grid;gap:14px;text-align:left}
+.tt{padding:18px 20px;border-radius:16px;background:var(--bg-2)}
+.tt small{display:block;font-size:12px;font-weight:600;color:var(--ink-3)}
+.tt p{margin-top:6px;font-size:17px;line-height:1.35;color:var(--ink);font-weight:500}
+.tt.no p{color:var(--ink-3);text-decoration:line-through;text-decoration-thickness:1.5px;font-weight:400}
+.tt.yes{background:#e8f1fd}
+.tt.yes small{color:var(--blue)}
+.tt.yes em{display:block;margin-top:8px;font-style:normal;font-size:13px;color:var(--ink-2)}
+.tt.yes em b{color:var(--ink);font-weight:600}
+.thumbs{width:100%;padding-bottom:36px;display:grid;grid-template-columns:1fr 1fr;gap:10px}
+.thumbs img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:12px}
+.reels3{display:flex;gap:12px;justify-content:center;width:100%}
+.reels3 img{width:31%;height:auto;aspect-ratio:9/16;object-fit:cover;border-radius:18px 18px 0 0}
+.tile.dark{background:var(--dark-2)}
+.tile.dark p{color:var(--on-dark-2)}
+.nets{width:100%;padding-bottom:40px;display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
+.nets span{display:inline-flex;align-items:center;gap:9px;height:46px;padding:0 18px;border-radius:980px;background:rgba(255,255,255,.08);font-size:15px;font-weight:500}
+.nets svg{width:20px;height:20px}
+
+/* ============ CIFRAS Y REELS (oscuro) ============ */
+.nums{padding:96px 0 40px}
+.nums-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px 24px}
+.num b{display:block;font-size:56px;line-height:1;font-weight:600;letter-spacing:-.04em;background:linear-gradient(180deg,#fff 30%,#a1a1a6);-webkit-background-clip:text;background-clip:text;color:transparent}
+.num b span{display:inline;margin:0;font-size:inherit;color:inherit}
+.num>span{display:block;margin-top:10px;font-size:15px;line-height:1.4;color:var(--on-dark-2)}
+.nums-src{margin-top:40px;font-size:12px;line-height:1.5;color:#6e6e73}
+.reels-sec{padding:40px 0 96px}
+.strip{margin-top:40px;overflow:hidden;-webkit-mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent);mask-image:linear-gradient(90deg,transparent,#000 6%,#000 94%,transparent)}
+.strip-in{display:flex;gap:16px;width:max-content;animation:slide 70s linear infinite}
+.strip:hover .strip-in{animation-play-state:paused}
+@keyframes slide{to{transform:translateX(-50%)}}
+.reel{position:relative;flex-shrink:0;width:200px;aspect-ratio:9/16;border-radius:20px;overflow:hidden;background:#1d1d1f}
+.reel img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
+.reel:hover img{transform:scale(1.04)}
+.reel-net{position:absolute;top:12px;left:12px;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;background:rgba(0,0,0,.45);-webkit-backdrop-filter:blur(8px);backdrop-filter:blur(8px)}
+.reel-net svg{width:16px;height:16px;color:#fff}
+.reel-b{position:absolute;left:0;right:0;bottom:0;padding:48px 14px 14px;background:linear-gradient(transparent,rgba(0,0,0,.78));font-size:13px;line-height:1.3;color:#fff}
+.reel-b b{display:block;font-size:24px;font-weight:600;letter-spacing:-.02em}
+.reel-b small{display:block;font-size:12px;color:rgba(255,255,255,.7)}
+
+/* ============ CASOS ============ */
+.cases{margin-top:48px;display:grid;gap:20px}
+.case{border-radius:28px;background:var(--bg-2);padding:36px 30px;display:flex;flex-direction:column}
+.case-who{font-size:15px;font-weight:600;color:var(--ink-2)}
+.case-big{margin-top:10px;font-size:64px;line-height:1;font-weight:600;letter-spacing:-.045em}
+.case-txt{margin-top:14px;font-size:17px;line-height:1.47;color:var(--ink-2)}
+.case-txt b{color:var(--ink);font-weight:600}
+.case-bars{margin-top:auto;padding-top:30px;height:170px;display:flex;align-items:flex-end;gap:8px}
+.case-bars i{flex:1;height:var(--h);min-height:3px;border-radius:6px 6px 2px 2px;background:#c7c7cc;position:relative}
+.case-bars i:nth-last-child(-n+2){background:var(--blue)}
+.case-bars.two i{background:var(--blue)}
+.case-bars span{position:absolute;bottom:-22px;left:0;right:0;text-align:center;font-size:11px;color:var(--ink-3)}
+.case-bars{margin-bottom:22px}
+.case-reel{margin-top:auto;padding-top:26px;color:var(--link);font-size:17px}
+.case-reel::after{content:' ›'}
+.case-reel:hover{text-decoration:underline}
+.cases-src{margin-top:20px;font-size:12px;color:var(--ink-3)}
 
 /* ============ CÓMO FUNCIONA ============ */
-.week{margin-top:36px;display:grid;gap:0;position:relative}
-.wk{display:grid;grid-template-columns:52px 1fr;gap:16px;position:relative;padding-bottom:22px}
-.wk:last-child{padding-bottom:0}
-.wk::before{content:'';position:absolute;left:25px;top:52px;bottom:0;width:2px;background:linear-gradient(var(--line),var(--line-2))}
-.wk:last-child::before{display:none}
-.wk-d{width:52px;height:52px;border-radius:14px;display:grid;place-items:center;font-family:var(--mono);font-size:13px;font-weight:500;background:var(--surface);border:1px solid var(--line);color:var(--ice)}
-.wk.you .wk-d{background:rgba(255,69,58,.12);border-color:rgba(255,69,58,.45);color:#ff8a82}
-.wk.pub .wk-d{background:rgba(126,226,160,.1);border-color:rgba(126,226,160,.4);color:var(--ok)}
-.wk-t{padding-top:4px}
-.wk-t b{display:block;font-size:17px;font-weight:700}
-.wk-t span{display:block;margin-top:3px;font-size:15px;line-height:1.45;color:var(--gray-2)}
-.week-cap{margin-top:28px;font-size:17px;color:var(--gray)}
-.week-cap em{font-family:var(--serif);font-style:italic;color:var(--ink);font-size:20px}
+.week{margin-top:52px;display:grid;gap:12px}
+.wk{display:flex;gap:18px;align-items:center;padding:20px 22px;border-radius:20px;background:var(--bg)}
+.wk-d{width:56px;height:56px;border-radius:16px;flex-shrink:0;display:grid;place-items:center;font-size:15px;font-weight:600;background:var(--bg-2);color:var(--ink)}
+.wk.you .wk-d{background:#ffeceb;color:#d70015}
+.wk.pub .wk-d{background:#e3f6e8;color:#1d7d35}
+.wk div b{display:block;font-size:19px;font-weight:600;letter-spacing:-.02em}
+.wk div span{display:block;margin-top:2px;font-size:15px;line-height:1.4;color:var(--ink-2)}
 
-.incl{margin-top:44px;display:grid;gap:12px}
-.in{display:flex;gap:14px;padding:18px;border-radius:16px;background:var(--surface);border:1px solid var(--line-2)}
-.in-i{width:40px;height:40px;border-radius:11px;flex-shrink:0;display:grid;place-items:center;background:rgba(79,141,255,.12);color:var(--blue-soft)}
-.in-i svg{width:20px;height:20px}
-.in b{display:block;font-size:16px;font-weight:700}
-.in p{margin-top:3px;font-size:14.5px;line-height:1.45;color:var(--gray-2)}
-
-/* ============ CTA INTERMEDIO ============ */
-.cta-band{margin:8px auto 0;max-width:1120px;padding:0 var(--pad)}
-.cb-in{padding:30px 22px;border-radius:var(--r);text-align:center;background:linear-gradient(140deg,rgba(79,141,255,.16),rgba(14,32,73,.6) 60%);border:1px solid rgba(79,141,255,.3)}
-.cb-in h3{font-family:var(--serif);font-size:clamp(23px,5vw,30px);font-weight:600;line-height:1.15}
-.cb-in p{margin:10px auto 0;max-width:520px;font-size:15.5px;color:var(--gray)}
-.cb-btns{margin-top:22px;display:flex;flex-wrap:wrap;gap:10px;justify-content:center}
-.cb-btns .btn{flex:1 1 260px;max-width:340px}
-
-/* ============ RESULTADOS ============ */
-.vids{margin-top:30px;display:grid;grid-template-columns:1fr;gap:22px}
+/* ============ YOUTUBE ============ */
+.vids{margin-top:48px;display:grid;grid-template-columns:1fr;gap:28px}
 .v{display:block}
-.v-m>span{display:block;min-width:0}
-.v-c{display:block}
-.v.more{display:none}
-.vids.open .v.more{display:block}
-.v-th{display:block;position:relative;aspect-ratio:16/9;border-radius:14px;overflow:hidden;background:var(--surface-2)}
-.v-th img{width:100%;height:100%;object-fit:cover;transition:transform .5s var(--ease)}
-.v:hover .v-th img{transform:scale(1.04)}
-.v-th small{position:absolute;right:8px;bottom:8px;padding:2px 6px;border-radius:5px;background:rgba(0,0,0,.82);font-size:12px;font-weight:600}
-.v-m{display:flex;gap:11px;margin-top:11px}
+.v.hide-m{display:none}
+.vids.open .v.hide-m,.vids.open .v.hide-d{display:block}
+.v-th{display:block;position:relative;aspect-ratio:16/9;border-radius:16px;overflow:hidden;background:var(--bg-2)}
+.v-th img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
+.v:hover .v-th img{transform:scale(1.03)}
+.v-th small{position:absolute;right:8px;bottom:8px;padding:2px 6px;border-radius:5px;background:rgba(0,0,0,.8);color:#fff;font-size:12px;font-weight:500;letter-spacing:0}
+.v-m{display:flex;gap:12px;margin-top:12px}
 .v-m img{width:34px;height:34px;border-radius:50%;flex-shrink:0}
-.v-t{font-size:15px;font-weight:600;line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
-.v-c{margin-top:3px;font-size:13.5px;color:var(--gray-2)}
-.v-c i{font-style:normal;font-weight:700;color:var(--ink)}
-.more-btn{margin:30px auto 0;display:flex}
+.v-m>span{display:block;min-width:0}
+.v-t{font-size:15px;font-weight:600;line-height:1.35;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden;letter-spacing:-.015em}
+.v-c{display:block;margin-top:3px;font-size:13px;line-height:1.4;color:var(--ink-3)}
+.v-c i{font-style:normal;font-weight:600;color:var(--ink)}
+.more-btn{margin:40px auto 0;display:flex}
 .vids.open + .more-btn{display:none}
 
-/* ============ ENCAJE ============ */
-.fit{margin-top:30px;display:grid;gap:14px}
-.fit-col{padding:24px 22px;border-radius:var(--r);border:1px solid var(--line-2);background:var(--surface)}
-.fit-col h3{font-size:17px;font-weight:700}
-.fit-col ul{margin-top:14px;list-style:none;display:grid;gap:11px}
-.fit-col li{display:flex;gap:11px;font-size:15.5px;line-height:1.45;color:var(--gray)}
-.fit-col li::before{content:'✓';flex-shrink:0;width:22px;height:22px;border-radius:50%;display:grid;place-items:center;font-size:12px;font-weight:700;color:var(--ok);background:rgba(126,226,160,.12)}
-.fit-col.no{background:transparent}
-.fit-col.no li::before{content:'✕';color:#ff8a82;background:rgba(255,69,58,.1)}
+/* ============ PRECIO ============ */
+.offer{margin-top:48px;border-radius:28px;background:var(--dark-2);color:var(--on-dark);padding:44px 30px;display:grid;gap:32px}
+.offer-k{font-size:15px;font-weight:600;color:#2997ff}
+.offer h3{margin-top:8px;font-size:32px;line-height:1.12;font-weight:600;letter-spacing:-.03em}
+.offer p{margin-top:12px;font-size:17px;line-height:1.47;color:var(--on-dark-2)}
+.checks{margin-top:22px;list-style:none;display:grid;gap:12px}
+.checks li{display:flex;gap:12px;font-size:17px;line-height:1.4}
+.checks li::before{content:'';flex-shrink:0;width:20px;height:20px;margin-top:1px;border-radius:50%;background:#2997ff url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5.5 10.5l3 3 6-6.5' fill='none' stroke='%23fff' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/20px no-repeat}
+.price{font-size:88px;line-height:1;font-weight:600;letter-spacing:-.05em}
+.price-note{margin-top:10px;font-size:15px;color:var(--on-dark-2)}
+.offer .btn{margin-top:26px}
+.plans{margin-top:20px;display:grid;gap:20px}
+.plan{border-radius:28px;background:var(--bg);padding:36px 30px;display:flex;flex-direction:column}
+.alt .plan{background:var(--bg)}
+.plan-k{font-size:13px;font-weight:600;color:var(--ink-3)}
+.plan.feat .plan-k{color:var(--blue)}
+.plan h3{margin-top:6px;font-size:24px;font-weight:600;letter-spacing:-.025em}
+.plan > p{margin-top:8px;font-size:15px;line-height:1.47;color:var(--ink-2)}
+.plan ul{margin-top:20px;list-style:none;display:grid;gap:10px;flex:1;align-content:start}
+.plan li{display:flex;gap:10px;font-size:15px;line-height:1.4}
+.plan li::before{content:'';flex-shrink:0;width:6px;height:6px;margin-top:8px;border-radius:50%;background:var(--ink-3)}
+.plan-p{margin-top:24px;padding-top:18px;border-top:1px solid var(--line);font-size:15px;font-weight:600}
+.plan-p small{display:block;margin-top:2px;font-size:13px;font-weight:400;color:var(--ink-3)}
+.plan .more{margin-top:14px}
+.promise{margin-top:40px;display:flex;flex-wrap:wrap;gap:12px 32px;justify-content:center;font-size:15px;color:var(--ink-2)}
+.promise span{display:inline-flex;align-items:center;gap:8px}
+.promise span::before{content:'';width:16px;height:16px;border-radius:50%;background:#34c759 url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 20 20'%3E%3Cpath d='M5.5 10.5l3 3 6-6.5' fill='none' stroke='%23fff' stroke-width='2.4' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E") center/16px no-repeat}
 
-/* ============ COMPARATIVA ============ */
-.cmp{margin-top:30px;border-radius:var(--r);border:1px solid var(--line);overflow:hidden}
-.cmp table{width:100%;border-collapse:collapse;font-size:14px}
-.cmp th,.cmp td{padding:13px 8px;text-align:center;border-bottom:1px solid var(--line-2);vertical-align:middle}
-.cmp tr:last-child td{border-bottom:0}
-.cmp th{font-size:13px;font-weight:600;color:var(--gray);background:rgba(255,255,255,.03)}
-.cmp th:first-child,.cmp td:first-child{text-align:left;padding-left:16px;color:var(--gray);font-weight:500}
-.cmp .us{background:rgba(79,141,255,.1);color:var(--ink)}
-.cmp th.us{color:var(--ice);font-weight:700}
-.y{color:var(--ok);font-weight:700}
-.n{color:#ff8a82;opacity:.8}
-.cmp small{display:block;font-size:12px;color:var(--gray-2);line-height:1.3}
-.cmp .us small{color:var(--ice)}
-
-/* ============ PLANES ============ */
-.plans-entry{margin-top:32px;display:grid;gap:22px;padding:28px 22px;border-radius:24px;position:relative;overflow:hidden;border:1px solid rgba(79,141,255,.4);background:linear-gradient(140deg,rgba(79,141,255,.14),rgba(14,32,73,.4) 65%)}
-.pe-tag{font-family:var(--mono);font-size:12px;font-weight:500;letter-spacing:.06em;text-transform:uppercase;color:var(--blue-soft)}
-.pe-h{margin-top:10px;font-family:var(--serif);font-size:clamp(24px,5.4vw,32px);font-weight:600;line-height:1.12}
-.pe-p{margin-top:10px;font-size:15.5px;line-height:1.55;color:var(--gray)}
-.pe-list{margin-top:16px;list-style:none;display:grid;gap:9px}
-.pe-list li,.plan-list li{display:flex;gap:10px;font-size:15px;line-height:1.45;color:var(--gray)}
-.pe-list li::before,.plan-list li::before{content:'✓';color:var(--blue-soft);font-weight:700;flex-shrink:0}
-.pe-r{display:flex;flex-direction:column;gap:14px}
-.pe-price{font-family:var(--serif);font-size:52px;font-weight:600;line-height:1}
-.pe-price small{display:block;margin-top:8px;font-family:var(--sans);font-size:14px;font-weight:400;color:var(--gray-2);line-height:1.4}
-.plans{margin-top:16px;display:grid;gap:16px}
-.plan{position:relative;padding:28px 22px;border-radius:var(--r);background:var(--surface);border:1px solid var(--line-2);display:flex;flex-direction:column}
-.plan.feat{border-color:rgba(79,141,255,.5);background:linear-gradient(180deg,rgba(79,141,255,.1),var(--surface) 45%)}
-.plan-badge{position:absolute;top:-11px;left:22px;padding:4px 12px;border-radius:999px;background:var(--ice);color:#0a132e;font-size:12px;font-weight:700}
-.plan-tag{font-family:var(--mono);font-size:12px;letter-spacing:.06em;text-transform:uppercase;color:var(--gray-2)}
-.plan-h{margin-top:8px;font-size:22px;font-weight:700;letter-spacing:-.01em}
-.plan-for{margin-top:8px;font-size:15px;line-height:1.5;color:var(--gray-2)}
-.plan-list{margin-top:16px;list-style:none;display:grid;gap:9px;flex:1;align-content:start}
-.plan-price{margin-top:20px;padding-top:16px;border-top:1px solid var(--line-2);font-size:15px;font-weight:700}
-.plan-price small{display:block;margin-top:4px;font-size:13.5px;font-weight:400;color:var(--gray-2)}
-.btn-plan{margin-top:16px;min-height:50px;display:flex;align-items:center;justify-content:center;border-radius:12px;font-size:15.5px;font-weight:700;border:1px solid var(--line);background:rgba(255,255,255,.05);transition:background .2s}
-.btn-plan:hover{background:rgba(255,255,255,.11)}
-.plan.feat .btn-plan{background:var(--ink);color:#0a132e;border-color:transparent}
-.gar{margin-top:22px;display:grid;gap:10px}
-.gar div{display:flex;gap:12px;align-items:flex-start;font-size:15px;line-height:1.45;color:var(--gray)}
-.gar b{color:var(--ink);font-weight:600}
-.gar svg{width:22px;height:22px;flex-shrink:0;color:var(--ok);margin-top:1px}
-
-/* ============ FAQ ============ */
-.faqs{margin-top:28px;border-top:1px solid var(--line)}
+/* ============ PREGUNTAS ============ */
+.faqs{margin-top:40px;border-top:1px solid var(--line)}
 .faq{border-bottom:1px solid var(--line)}
-.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:16px;padding:20px 2px;font-size:17px;font-weight:600;line-height:1.35}
+.faq summary{list-style:none;cursor:pointer;display:flex;justify-content:space-between;align-items:center;gap:20px;padding:22px 0;font-size:19px;font-weight:600;line-height:1.3;letter-spacing:-.02em}
 .faq summary::-webkit-details-marker{display:none}
-.faq summary i{font-style:normal;flex-shrink:0;width:30px;height:30px;border-radius:50%;display:grid;place-items:center;border:1px solid var(--line);color:var(--gray);font-size:18px;transition:transform .3s var(--ease)}
+.faq summary i{flex-shrink:0;width:14px;height:14px;position:relative;transition:transform .3s var(--ease)}
+.faq summary i::before,.faq summary i::after{content:'';position:absolute;background:var(--ink-2);border-radius:1px}
+.faq summary i::before{left:0;right:0;top:6px;height:2px}
+.faq summary i::after{top:0;bottom:0;left:6px;width:2px}
 .faq[open] summary i{transform:rotate(45deg)}
-.faq p{padding:0 2px 22px;font-size:15.5px;line-height:1.65;color:var(--gray)}
+.faq p{padding:0 0 24px;font-size:17px;line-height:1.55;color:var(--ink-2);max-width:760px}
 .faq p b{color:var(--ink);font-weight:600}
 
 /* ============ RESERVA ============ */
-.book{padding:72px 0 80px;position:relative;scroll-margin-top:40px}
-.book-tag{display:inline-flex;align-items:center;gap:9px;font-size:14px;color:var(--gray)}
-.book-grid{margin-top:30px;display:grid;gap:24px;align-items:start}
-.steps{display:grid;gap:16px}
-.st{display:flex;gap:14px}
-.st span{width:30px;height:30px;border-radius:50%;flex-shrink:0;display:grid;place-items:center;font-family:var(--mono);font-size:13px;background:rgba(79,141,255,.15);color:var(--ice)}
-.st b{display:block;font-size:16px;font-weight:700}
-.st p{margin-top:2px;font-size:14.5px;line-height:1.45;color:var(--gray-2)}
-.who{margin-top:22px;padding:14px 16px;border-left:2px solid var(--blue);font-size:15px;line-height:1.5;color:var(--gray);background:rgba(79,141,255,.06);border-radius:0 12px 12px 0}
+.book{padding:88px 0 96px;scroll-margin-top:52px}
+.book-grid{margin-top:48px;display:grid;gap:24px;align-items:start}
+.steps{display:grid;gap:22px}
+.st{display:flex;gap:16px}
+.st span{width:32px;height:32px;border-radius:50%;flex-shrink:0;display:grid;place-items:center;font-size:15px;font-weight:600;background:var(--ink);color:#fff}
+.st b{display:block;font-size:19px;font-weight:600;letter-spacing:-.02em}
+.st p{margin-top:2px;font-size:15px;line-height:1.45;color:var(--ink-2)}
+.who{margin-top:28px;font-size:15px;line-height:1.5;color:var(--ink-2)}
 .who b{color:var(--ink);font-weight:600}
-.cal{border-radius:var(--r);overflow:hidden;background:#fff;color:#0a132e;box-shadow:0 30px 80px rgba(0,0,0,.4)}
+.scarce{margin-top:16px;display:inline-flex;align-items:center;gap:8px;font-size:14px;color:var(--ink-2)}
+.live{width:8px;height:8px;border-radius:50%;background:var(--rec);animation:pulse 2s infinite}
+@keyframes pulse{0%,100%{box-shadow:0 0 0 0 rgba(255,69,58,.45)}50%{box-shadow:0 0 0 6px rgba(255,69,58,0)}}
+.alt-row{margin-top:24px;display:flex;flex-wrap:wrap;gap:12px 22px;align-items:center}
+.alt-row a{font-size:17px;color:var(--link)}
+.alt-row a:hover{text-decoration:underline}
+.cal{border-radius:28px;overflow:hidden;background:#fff;box-shadow:0 20px 60px rgba(0,0,0,.08)}
 .cal-inline{min-width:280px;height:700px}
-.cal-ph{height:100%;display:grid;place-items:center;align-content:center;gap:16px;padding:30px;text-align:center;color:#4a5578;font-size:15px}
-.cal-alt{padding:16px 18px 18px;text-align:center;font-size:14.5px;line-height:1.7;color:#4a5578;border-top:1px solid #e7ebf5}
-.cal-alt a{color:#2f6fe0;font-weight:700}
-.alt-row{margin-top:18px;display:flex;flex-wrap:wrap;gap:10px}
-.alt-row a{flex:1 1 200px}
+.cal-inline iframe{width:100%;height:100%;border:0}
+.cal-ph{height:100%;display:grid;place-items:center;align-content:center;gap:16px;padding:30px;text-align:center;color:var(--ink-2);font-size:15px}
+.cal-alt{padding:16px 18px 18px;text-align:center;font-size:14px;line-height:1.6;color:var(--ink-2);border-top:1px solid #e8e8ed}
+.cal-alt a{color:var(--link)}
 
-footer{padding:34px var(--pad) calc(110px + env(safe-area-inset-bottom));border-top:1px solid var(--line-2);text-align:center;font-size:14px;color:var(--gray-2)}
-footer .logo{justify-content:center;margin-bottom:12px}
-footer nav{margin-top:8px;display:flex;flex-wrap:wrap;gap:6px 16px;justify-content:center}
-footer a:hover{color:var(--ink)}
-
-/* ============ BARRA FIJA MÓVIL ============ */
-.mbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;gap:10px;padding:12px var(--pad) calc(12px + env(safe-area-inset-bottom));background:linear-gradient(180deg,rgba(8,18,50,0),rgba(8,18,50,.94) 30%);transform:translateY(110%);transition:transform .35s var(--ease)}
-.mbar.show{transform:none}
+/* ============ CALENDARIO EMERGENTE ============ */
 html.calpop-on{overflow:hidden}
 html.calpop-on .hdr,html.calpop-on .mbar{visibility:hidden}
-/* cerrado: transparente y detrás de todo, pero «visible» para el navegador, que así termina de pintar el calendario antes del clic */
-.calpop{position:fixed;inset:0;z-index:-1;display:grid;place-items:center;padding:24px;background:rgba(5,11,32,.78);opacity:0;pointer-events:none;transition:opacity .16s ease,z-index 0s linear .16s}
-.calpop.open{z-index:200;opacity:1;pointer-events:auto;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);transition:opacity .16s ease}
-.calpop-box{position:relative;width:min(1000px,100%);height:min(760px,calc(100dvh - 96px));border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 40px 100px rgba(0,0,0,.5)}
+.calpop{position:fixed;inset:0;z-index:-1;display:grid;place-items:center;padding:24px;background:rgba(0,0,0,.6);opacity:0;pointer-events:none;transition:opacity .16s ease,z-index 0s linear .16s}
+.calpop.open{z-index:200;opacity:1;pointer-events:auto;-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);transition:opacity .16s ease}
+.calpop-box{position:relative;width:min(1000px,100%);height:min(760px,calc(100dvh - 96px));border-radius:20px;overflow:hidden;background:#fff;box-shadow:0 40px 100px rgba(0,0,0,.35)}
 .calpop-box iframe{position:absolute;inset:0;width:100%;height:100%;border:0;background:transparent;z-index:1}
-.calpop-load{position:absolute;inset:0;display:grid;place-items:center;align-content:center;gap:14px;color:#4a5578;font-size:15px;background:#fff;z-index:0;transition:opacity .2s}
+.calpop-load{position:absolute;inset:0;display:grid;place-items:center;align-content:center;gap:14px;color:var(--ink-2);font-size:15px;background:#fff;z-index:0;transition:opacity .2s}
 .calpop.ready .calpop-load{opacity:0;pointer-events:none}
-.calpop-spin{width:30px;height:30px;border-radius:50%;border:3px solid #e1e7f5;border-top-color:#2f6fe0;animation:calspin .8s linear infinite}
+.calpop-spin{width:28px;height:28px;border-radius:50%;border:3px solid #e8e8ed;border-top-color:var(--blue);animation:calspin .8s linear infinite}
 @keyframes calspin{to{transform:rotate(360deg)}}
-.calpop-x{position:absolute;top:14px;right:14px;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.14);color:#fff;z-index:2}
-.calpop-x:hover{background:rgba(255,255,255,.26)}
-.calpop-alt{position:absolute;bottom:14px;left:0;right:0;text-align:center;font-size:13px;color:var(--gray)}
-.calpop-alt:hover{color:var(--ink)}
-.cal-inline iframe{width:100%;height:100%;border:0}
-@media(max-width:699px){
-  .calpop{padding:0;place-items:stretch}
-  .calpop-box{width:100%;height:100%;border-radius:0}
-  .calpop-x{top:calc(8px + env(safe-area-inset-top));right:8px;background:rgba(10,19,46,.75)}
-  .calpop-alt{display:none}
-}
-.mbar .btn{flex:1;min-height:54px;font-size:16px}
-.mbar .wa-sq{width:54px;min-height:54px;padding:0;border-radius:14px;background:#25d366;color:#fff;align-items:center;justify-content:center;flex-shrink:0}
+.calpop-x{position:absolute;top:14px;right:14px;width:40px;height:40px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.18);color:#fff;z-index:2}
+.calpop-x:hover{background:rgba(255,255,255,.3)}
+.calpop-alt{position:absolute;bottom:14px;left:0;right:0;text-align:center;font-size:13px;color:rgba(255,255,255,.75)}
+.calpop-alt:hover{color:#fff}
+
+footer{background:var(--bg-2);padding:28px var(--pad) calc(100px + env(safe-area-inset-bottom));font-size:12px;line-height:1.6;color:var(--ink-2)}
+.ftr{max-width:1024px;margin:0 auto}
+.ftr p+div{margin-top:10px;padding-top:10px;border-top:1px solid var(--line)}
+.ftr a{color:var(--ink)}
+.ftr a:hover{text-decoration:underline}
+.ftr nav{display:inline-flex;flex-wrap:wrap;gap:4px 18px}
 
 
-/* ============ v2: abanico de reels, cifras, tira de reels y casos ============ */
-.fan{position:relative;height:540px}
-.ph{position:absolute;width:230px;aspect-ratio:9/16;border-radius:26px;overflow:hidden;border:6px solid #0b1430;background:var(--surface-2);box-shadow:0 40px 90px rgba(0,0,0,.5);animation:float 7s ease-in-out infinite}
-.ph img{width:100%;height:100%;object-fit:cover}
-.ph1{left:50%;top:10px;transform:translateX(-50%);z-index:3}
-.ph2{left:0;top:70px;transform:rotate(-8deg);z-index:2;animation-delay:-2.3s;opacity:.92}
-.ph3{right:0;top:70px;transform:rotate(8deg);z-index:2;animation-delay:-4.6s;opacity:.92}
-@keyframes float{0%,100%{translate:0 0}50%{translate:0 -10px}}
-.ph-v{position:absolute;left:10px;right:10px;bottom:10px;display:flex;align-items:baseline;gap:8px;padding:9px 11px;border-radius:12px;background:rgba(8,18,50,.78);backdrop-filter:blur(8px);font-size:12px;color:var(--gray)}
-.ph-v b{font-family:var(--serif);font-size:22px;font-weight:600;color:var(--ink)}
-.fan .hv-s1{left:-30px;top:auto;bottom:40px;z-index:4}
-.fan .hv-s2{right:-16px;top:-6px;z-index:4}
-.nums{padding:34px 0 6px}
-.nums-grid{display:grid;grid-template-columns:1fr 1fr;gap:12px}
-.num{padding:18px 16px;border-radius:16px;background:var(--surface);border:1px solid var(--line-2)}
-.num b{display:block;font-family:var(--serif);font-size:clamp(30px,7vw,44px);font-weight:600;line-height:1;font-variant-numeric:tabular-nums;color:var(--ink)}
-.num span{display:block;margin-top:8px;font-size:14px;line-height:1.4;color:var(--gray-2)}
-.num b span{display:inline;margin:0;font-size:inherit;color:inherit}
-.nums-src{margin-top:12px;font-size:12.5px;color:var(--gray-2);text-align:center}
-.strip{margin-top:30px;overflow-x:auto;scroll-snap-type:x mandatory;scroll-padding-left:var(--pad);scrollbar-width:none;-webkit-mask:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent);mask:linear-gradient(90deg,transparent,#000 4%,#000 96%,transparent)}
-.strip::-webkit-scrollbar{display:none}
-.strip-in{display:flex;gap:14px;width:max-content;padding:6px var(--pad) 14px}
-.strip-in .reel[aria-hidden]{display:none}
-.reel{position:relative;flex-shrink:0;width:172px;aspect-ratio:9/16;border-radius:18px;overflow:hidden;scroll-snap-align:start;background:var(--surface-2);border:1px solid var(--line);transition:transform .35s var(--ease),box-shadow .35s}
-.reel img{width:100%;height:100%;object-fit:cover}
-.reel::after{content:'';position:absolute;inset:0;background:linear-gradient(180deg,rgba(8,18,50,0) 55%,rgba(8,18,50,.92))}
-.reel:hover{transform:translateY(-4px);box-shadow:0 24px 50px rgba(0,0,0,.45)}
-.reel-net{position:absolute;top:10px;left:10px;z-index:1;width:30px;height:30px;border-radius:9px;display:grid;place-items:center;background:rgba(8,18,50,.72);backdrop-filter:blur(6px)}
-.reel-net svg{width:17px;height:17px}
-.reel-b{position:absolute;left:12px;right:12px;bottom:12px;z-index:1;display:grid;gap:2px}
-.reel-b b{font-family:var(--serif);font-size:26px;font-weight:600;line-height:1}
-.reel-b span{font-size:12px;line-height:1.3;color:var(--gray)}
-.cases{margin-top:30px;display:grid;gap:14px}
-.case{padding:22px 20px;border-radius:var(--r);background:var(--surface);border:1px solid var(--line-2);display:grid;gap:8px}
-.case-who{font-size:14px;font-weight:600;color:var(--gray)}
-.case-big{font-family:var(--serif);font-size:54px;font-weight:600;line-height:1;color:var(--ice)}
-.case-txt{font-size:15px;line-height:1.5;color:var(--gray-2)}
-.case-txt b{color:var(--ink);font-weight:600}
-.case-bars{margin-top:10px;height:120px;display:grid;grid-template-columns:repeat(7,1fr);gap:6px;align-items:end}
-.case-bars i{position:relative;display:block;height:var(--h);min-height:3px;border-radius:6px 6px 2px 2px;background:linear-gradient(180deg,var(--blue-soft),var(--blue));transform-origin:bottom;transform:scaleY(0);transition:transform .9s var(--ease)}
-.case.seen .case-bars i{transform:none}
-.case-bars i:nth-child(2){transition-delay:.05s}.case-bars i:nth-child(3){transition-delay:.1s}.case-bars i:nth-child(4){transition-delay:.15s}.case-bars i:nth-child(5){transition-delay:.2s}.case-bars i:nth-child(6){transition-delay:.25s}.case-bars i:nth-child(7){transition-delay:.3s}
-.case-bars i span{position:absolute;left:50%;bottom:-20px;transform:translateX(-50%);font-family:var(--mono);font-size:10.5px;color:var(--gray-2);font-style:normal}
-.case-bars{margin-bottom:18px}
-.case-bars.two{grid-template-columns:repeat(2,minmax(0,64px));justify-content:start;gap:14px}
-.case-reel{margin-top:6px;display:inline-flex;align-items:center;gap:8px;width:max-content;padding:10px 14px;border-radius:12px;border:1px solid var(--line);font-size:14.5px;font-weight:600;color:var(--ink)}
-.case-reel:hover{background:rgba(255,255,255,.06)}
-.case-reel::after{content:"→"}
-@media(min-width:600px){.nums-grid{grid-template-columns:repeat(4,1fr)}.reel{width:200px}}
-@media(min-width:900px){
-  .cases{grid-template-columns:repeat(3,1fr)}
-  .strip{overflow:hidden}
-  .strip-in{padding-left:0;animation:marquee 70s linear infinite}
-  .strip-in .reel[aria-hidden]{display:block}
-  .strip:hover .strip-in,.strip:focus-within .strip-in{animation-play-state:paused}
-  .reel{width:210px}
+/* ============ MESA DEL PACK (portada) ============ */
+.studio-wrap{max-width:1180px;margin:56px auto 0;padding:0 16px}
+.studio{display:grid;gap:12px;padding:12px;border-radius:30px;background:#0b0b0d;color:#f5f5f7;text-align:left;box-shadow:0 40px 120px rgba(0,0,0,.22);grid-template-columns:1fr 1fr;grid-template-areas:"main main" "reel side" "res res"}
+.st-main{grid-area:main;display:grid;gap:12px}
+.st-side{grid-area:side;display:grid;gap:12px;align-content:start}
+.st-reel{grid-area:reel}
+.st-res{grid-area:res}
+.st-card{position:relative;border-radius:20px;background:#1c1c1e;overflow:hidden}
+.st-tag{position:absolute;top:10px;left:10px;z-index:3;display:inline-flex;align-items:center;gap:6px;padding:5px 10px;border-radius:980px;background:rgba(0,0,0,.55);-webkit-backdrop-filter:blur(10px);backdrop-filter:blur(10px);font-size:12px;font-weight:600;color:#fff;letter-spacing:-.01em}
+.st-tag-g{background:rgba(48,209,88,.18);color:#30d158}
+.rec-dot{width:7px;height:7px;border-radius:50%;background:var(--rec);animation:pulse 2s infinite}
+.st-mon video{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#000}
+.st-cam{position:absolute;top:10px;right:10px;z-index:3;padding:5px 10px;border-radius:980px;background:#fff;color:#000;font-size:12px;font-weight:600;transition:transform .15s}
+.st-cam.flash{transform:scale(1.12)}
+.st-tc{position:absolute;bottom:10px;right:12px;z-index:3;font-size:12px;font-variant-numeric:tabular-nums;color:rgba(255,255,255,.85);text-shadow:0 1px 4px rgba(0,0,0,.6)}
+.st-tl{padding:14px 14px 14px 0;display:grid;gap:6px}
+.tl-row{display:grid;grid-template-columns:58px 1fr;align-items:center}
+.tl-row>span{font-size:11px;color:#8e8e93;padding-left:14px}
+.tl-track{position:relative;height:22px;border-radius:6px;background:rgba(255,255,255,.04)}
+.tl-track i{position:absolute;top:0;bottom:0;border-radius:5px;border:1px solid rgba(255,255,255,.18);transition:background .15s,box-shadow .15s}
+.tl-track[data-cam="1"] i{background:#3a3a8c}
+.tl-track[data-cam="2"] i{background:#2d5f8a}
+.tl-track[data-cam="3"] i{background:#5b3a8c}
+.tl-track i.on{background:#0a84ff;border-color:#64b5ff;box-shadow:0 0 0 1px #64b5ff,0 0 18px rgba(10,132,255,.55)}
+.tl-wave{background:repeating-linear-gradient(90deg,#30d158 0 2px,transparent 2px 4px);-webkit-mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 22' preserveAspectRatio='none'%3E%3Cpath d='M0 11 Q5 2 10 11 T20 11 T30 5 T40 11 T50 15 T60 4 T70 11 T80 8 T90 16 T100 11 T110 3 T120 11 T130 7 T140 14 T150 11 T160 5 T170 12 T180 9 T190 15 T200 11 V22 H0Z' /%3E%3C/svg%3E");mask-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 200 22' preserveAspectRatio='none'%3E%3Cpath d='M0 11 Q5 2 10 11 T20 11 T30 5 T40 11 T50 15 T60 4 T70 11 T80 8 T90 16 T100 11 T110 3 T120 11 T130 7 T140 14 T150 11 T160 5 T170 12 T180 9 T190 15 T200 11 V22 H0Z' /%3E%3C/svg%3E");-webkit-mask-size:100% 100%;mask-size:100% 100%;opacity:.7}
+.tl-head{position:absolute;top:8px;bottom:8px;left:calc(58px + (100% - 72px) * var(--p,0));width:2px;background:#ff453a;pointer-events:none}
+.tl-head b{position:absolute;top:-4px;left:-5px;width:12px;height:10px;background:#ff453a;clip-path:polygon(0 0,100% 0,50% 100%)}
+.st-thumb img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover}
+.st-yt{padding:10px 12px 12px}
+.st-yt b{display:block;font-size:13px;line-height:1.3;font-weight:600;display:-webkit-box;-webkit-line-clamp:2;-webkit-box-orient:vertical;overflow:hidden}
+.st-yt span{display:block;margin-top:4px;font-size:12px;line-height:1.35;color:#8e8e93}
+.st-yt i{font-style:normal;color:#f5f5f7;font-weight:600}
+.st-seo{padding:42px 14px 14px}
+.st-seo ul{list-style:none;display:grid;gap:7px}
+.st-seo li{display:flex;gap:10px;font-size:12.5px;line-height:1.3;color:#d1d1d6;opacity:0;transform:translateX(-6px);animation:seoIn 8s infinite}
+.st-seo li:nth-child(2){animation-delay:.4s}.st-seo li:nth-child(3){animation-delay:.8s}.st-seo li:nth-child(4){animation-delay:1.2s}
+.st-seo li b{color:#0a84ff;font-weight:600;font-variant-numeric:tabular-nums}
+@keyframes seoIn{0%{opacity:0;transform:translateX(-6px)}8%,90%{opacity:1;transform:none}100%{opacity:0}}
+.st-reel video{display:block;width:100%;height:100%;aspect-ratio:9/16;object-fit:cover;background:#000}
+.st-views{position:absolute;left:0;right:0;bottom:0;padding:40px 12px 12px;background:linear-gradient(transparent,rgba(0,0,0,.8));font-size:12px;color:rgba(255,255,255,.8)}
+.st-views b{display:block;font-size:24px;line-height:1;color:#fff;font-weight:600;letter-spacing:-.02em}
+.st-res{padding:44px 18px 18px;display:grid;grid-template-columns:auto 1fr;gap:4px 18px;align-items:end}
+.st-big{font-size:48px;line-height:1;font-weight:600;letter-spacing:-.045em;background:linear-gradient(180deg,#fff 30%,#30d158);-webkit-background-clip:text;background-clip:text;color:transparent}
+.st-res p{grid-column:1;font-size:13px;line-height:1.35;color:#8e8e93;max-width:220px}
+.st-bars{grid-column:2;grid-row:1/3;height:76px;display:flex;align-items:flex-end;gap:5px}
+.st-bars i{flex:1;height:var(--h);border-radius:4px 4px 1px 1px;background:linear-gradient(180deg,#30d158,#1a7f37);transform-origin:bottom;animation:grow 4s var(--ease) infinite}
+.st-bars i:nth-child(2){animation-delay:.1s}.st-bars i:nth-child(3){animation-delay:.2s}.st-bars i:nth-child(4){animation-delay:.3s}.st-bars i:nth-child(5){animation-delay:.4s}.st-bars i:nth-child(6){animation-delay:.5s}.st-bars i:nth-child(7){animation-delay:.6s}.st-bars i:nth-child(8){animation-delay:.7s}
+@keyframes grow{0%{transform:scaleY(.05)}35%,90%{transform:scaleY(1)}100%{transform:scaleY(.05)}}
+
+/* ============ PACKS REALES ============ */
+.pack{margin-top:40px;border-radius:30px;background:var(--bg);padding:28px 22px 30px;box-shadow:0 1px 0 rgba(0,0,0,.03)}
+.pack-h{display:flex;align-items:center;gap:14px}
+.pack-h img{width:48px;height:48px;border-radius:50%}
+.pack-h b{display:block;font-size:21px;font-weight:600;letter-spacing:-.02em;line-height:1.2}
+.pack-h span{display:block;font-size:14px;color:var(--ink-3)}
+.pack-eq{margin-top:24px;display:grid;gap:14px;align-items:stretch}
+.pk{border-radius:22px;background:var(--bg-2);padding:18px}
+.pk-l{display:block;font-size:12px;font-weight:600;color:var(--ink-3);margin-bottom:12px}
+.pk-th{position:relative;display:block;border-radius:14px;overflow:hidden}
+.pk-th img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;transition:transform .6s var(--ease)}
+.pk-th:hover img{transform:scale(1.03)}
+.pk-th small{position:absolute;right:8px;bottom:8px;padding:2px 6px;border-radius:5px;background:rgba(0,0,0,.8);color:#fff;font-size:12px;font-weight:500}
+.pk-t{margin-top:12px;font-size:15px;line-height:1.35;font-weight:600}
+.pk-m{margin-top:6px;font-size:14px;color:var(--ink-2)}
+.pk-m b{color:var(--ink);font-weight:600}
+.pk-seo{margin-top:12px;display:flex;flex-wrap:wrap;gap:6px}
+.pk-seo span{padding:5px 10px;border-radius:980px;background:var(--bg);font-size:12px;color:var(--ink-2)}
+.pk-rr{display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.pk-rr a{position:relative;border-radius:14px;overflow:hidden;aspect-ratio:9/16}
+.pk-rr img{width:100%;height:100%;object-fit:cover;transition:transform .6s var(--ease)}
+.pk-rr a:hover img{transform:scale(1.04)}
+.pk-rr b{position:absolute;left:0;right:0;bottom:0;padding:30px 8px 8px;background:linear-gradient(transparent,rgba(0,0,0,.75));color:#fff;font-size:17px;font-weight:600;letter-spacing:-.02em}
+.pk-op{display:grid;place-items:center;font-size:34px;font-weight:300;color:var(--ink-3);line-height:1}
+.pk-res{background:#0b0b0d;color:#f5f5f7}
+.pk-res .pk-l{color:#30d158}
+.pk-big{display:block;font-size:72px;line-height:1;font-weight:600;letter-spacing:-.05em;background:linear-gradient(180deg,#fff 30%,#30d158);-webkit-background-clip:text;background-clip:text;color:transparent}
+.pk-res>p{margin-top:8px;font-size:15px;line-height:1.4;color:#a1a1a6}
+.pk-res ul{margin-top:18px;list-style:none;display:grid;gap:8px;padding-top:16px;border-top:1px solid rgba(255,255,255,.12)}
+.pk-res li{font-size:14px;color:#a1a1a6}
+.pk-res li b{color:#fff;font-weight:600}
+
+/* tarjetas nuevas de El pack */
+.cams{width:100%;padding-bottom:30px;display:grid;grid-template-columns:repeat(3,1fr);gap:8px}
+.cams figure{position:relative;border-radius:10px;overflow:hidden}
+.cams img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;filter:saturate(.75)}
+.cams figcaption{position:absolute;top:5px;left:5px;padding:2px 6px;border-radius:5px;background:rgba(0,0,0,.6);color:#fff;font-size:10px;font-weight:600}
+.cams-out{grid-column:1/-1;position:relative;border-radius:14px;overflow:hidden;box-shadow:0 0 0 2px var(--blue)}
+.cams-out video{display:block;width:100%;aspect-ratio:16/9;object-fit:cover;background:#000}
+.cams-out span{position:absolute;top:8px;left:8px;padding:3px 9px;border-radius:980px;background:var(--blue);color:#fff;font-size:12px;font-weight:600}
+.thumbs{grid-template-columns:1fr 1fr}
+.seo{width:100%;padding-bottom:34px;text-align:left}
+.seo-q{display:flex;align-items:center;gap:10px;height:44px;padding:0 16px;border-radius:980px;background:var(--bg-2);font-size:15px;color:var(--ink)}
+.seo-q svg{width:18px;height:18px;color:var(--ink-3)}
+.seo-r{margin-top:14px;display:grid;grid-template-columns:42% 1fr;gap:12px;padding:12px;border-radius:16px;border:1px solid #e8e8ed}
+.seo-r img{width:100%;height:auto;aspect-ratio:16/9;object-fit:cover;border-radius:10px}
+.seo-r b{display:block;font-size:13px;line-height:1.3;font-weight:600}
+.seo-r span{display:block;margin-top:2px;font-size:12px;color:var(--ink-3)}
+.seo-r ol{margin-top:8px;list-style:none;display:grid;gap:3px}
+.seo-r li{font-size:12px;color:var(--ink-2)}
+.seo-r li i{font-style:normal;color:var(--link);margin-right:6px;font-variant-numeric:tabular-nums}
+.chart{width:100%;padding-bottom:34px;text-align:left}
+.chart-h span{display:block;font-size:13px;color:var(--ink-3)}
+.chart-h b{display:block;margin-top:4px;font-size:44px;line-height:1;font-weight:600;letter-spacing:-.04em}
+.chart-h em{display:block;margin-top:4px;font-style:normal;font-size:13px;color:#1d7d35}
+.chart-b{margin-top:22px;height:150px;display:flex;align-items:flex-end;gap:8px;padding-bottom:20px;border-bottom:1px solid #e8e8ed}
+.chart-b i{flex:1;height:var(--h);min-height:3px;border-radius:6px 6px 2px 2px;background:#d2d2d7;position:relative}
+.chart-b i.on{background:var(--blue)}
+.chart-b span{position:absolute;bottom:-20px;left:0;right:0;text-align:center;font-size:11px;color:var(--ink-3)}
+@media(min-width:734px){
+  .studio{padding:16px;gap:16px;grid-template-columns:1fr 1fr 200px;grid-template-areas:"main main reel" "main main side" "res res side"}
+  .studio{grid-template-columns:minmax(0,2.1fr) 210px minmax(0,1fr);grid-template-areas:"main reel side" "res res res"}
+  .st-reel{align-self:start}
+  .st-res{grid-template-columns:auto 1fr}
+  .st-big{font-size:56px}
+  .pack{padding:36px 36px 38px}
+  .pack-eq{grid-template-columns:1.25fr auto 1fr auto .8fr}
+  .pk-op{font-size:40px}
+  .pk-big{font-size:80px}
+  .tile.full{min-height:0}
 }
-@keyframes marquee{to{transform:translateX(calc(-50% - 7px))}}
-@media(prefers-reduced-motion:reduce){
-  .ph{animation:none}
-  .strip{overflow-x:auto}
-  .strip-in{animation:none!important}
-  .strip-in .reel[aria-hidden]{display:none!important}
-  .case-bars i{transform:none}
+@media(max-width:733px){
+  .st-side .st-seo{display:none}
 }
 
-/* ============ ≥ 600 ============ */
-@media(min-width:600px){
-  :root{--pad:32px}
-  .pain{grid-template-columns:repeat(3,1fr)}
-  .vids{grid-template-columns:1fr 1fr;gap:26px 18px}
-  .incl{grid-template-columns:1fr 1fr}
-  .fit{grid-template-columns:1fr 1fr}
-  .cmp table{font-size:15px}
-  .cmp th,.cmp td{padding:15px 14px}
+/* ============ BARRA FIJA MÓVIL ============ */
+.mbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;gap:10px;padding:12px var(--pad) calc(12px + env(safe-area-inset-bottom));background:rgba(255,255,255,.82);-webkit-backdrop-filter:saturate(180%) blur(20px);backdrop-filter:saturate(180%) blur(20px);border-top:1px solid rgba(0,0,0,.08);transform:translateY(110%);transition:transform .35s var(--ease)}
+.mbar.show{transform:none}
+.mbar .btn{flex:1;min-height:50px}
+.mbar .wa-sq{width:50px;min-height:50px;border-radius:50%;background:#25d366;color:#fff;align-items:center;justify-content:center;flex-shrink:0}
+
+/* ============ TABLETA ============ */
+@media(min-width:734px){
+  :root{--pad:40px}
+  .sec{padding:120px 0}
+  .h1{font-size:80px}
+  .h2{font-size:56px;line-height:1.07}
+  .lead{font-size:21px;line-height:1.38}
+  .hero{padding-top:84px}
+  .hero-sub{font-size:24px;line-height:1.33}
+  .fan{height:520px}
+  .ph{width:250px;border-radius:36px;border-width:7px}
+  .ph img{border-radius:29px}
+  .ph figcaption{border-radius:0 0 29px 29px;padding:60px 18px 18px;font-size:13px}
+  .ph figcaption b{font-size:28px}
+  .ph1{width:280px}
+  .cl-row{justify-content:center;flex-wrap:wrap;overflow:visible;margin:18px 0 0;padding:0}
   .brand-row{grid-template-columns:repeat(6,1fr)}
-  .cl-row{justify-content:center;flex-wrap:wrap;overflow:visible;margin:0;padding:4px 0 12px}
-}
-/* ============ ≥ 900 (escritorio) ============ */
-@media(min-width:900px){
-  .sec{padding:96px 0}
-  .hdr{height:72px;padding-left:40px;padding-right:40px}
-  .hero{padding:138px 0 56px}
-  .hero-grid{grid-template-columns:1.08fr .92fr;gap:64px}
-  .hero-viz{display:block}
-  .h1{font-size:clamp(48px,5.2vw,68px)}
-  .vids{grid-template-columns:repeat(4,1fr)}
-  .v.more-d{display:none}
-  .vids.open .v.more-d{display:block}
-  .v.more:not(.more-d){display:block}
-  .incl{grid-template-columns:repeat(3,1fr)}
+  .tiles{grid-template-columns:1fr 1fr}
+  .tile{padding:48px 40px 0;min-height:560px}
+  .tile h3{font-size:32px}
+  .tile.full{grid-column:1/-1;min-height:0}
+  .nums{padding:140px 0 48px}
+  .nums-grid{grid-template-columns:repeat(4,1fr)}
+  .num b{font-size:64px}
+  .reels-sec{padding:48px 0 140px}
+  .reel{width:240px}
+  .cases{grid-template-columns:repeat(3,1fr)}
+  .case-big{font-size:56px}
+  .vids{grid-template-columns:1fr 1fr;gap:32px 20px}
+  .v.hide-m:not(.hide-d){display:block}
+  .v.hide-d{display:none}
   .week{grid-template-columns:repeat(5,1fr);gap:14px}
-  .wk{grid-template-columns:1fr;gap:14px;padding:0}
-  .wk::before{left:52px;right:-14px;top:25px;bottom:auto;width:auto;height:2px;background:var(--line)}
-  .pe-r{align-items:flex-start}
-  .plans-entry{grid-template-columns:1fr auto;align-items:center;padding:38px 40px;gap:40px}
-  .pe-r{align-items:center;text-align:center}
+  .wk{flex-direction:column;align-items:flex-start;padding:26px 22px 28px;min-height:200px}
+  .offer{grid-template-columns:1.2fr .8fr;align-items:center;padding:56px}
+  .offer h3{font-size:40px}
+  .price{font-size:120px}
   .plans{grid-template-columns:repeat(3,1fr)}
-  .gar{grid-template-columns:repeat(3,1fr);gap:20px}
-  .book-grid{grid-template-columns:.8fr 1.2fr;gap:48px}
+  .book-grid{grid-template-columns:.8fr 1.2fr;gap:56px}
   .mbar{display:none}
-  .cb-in{padding:40px}
+  .calpop-alt{display:block}
 }
-@media(max-width:899px){
-  .hdr-btn .long{display:none}
+@media(min-width:1024px){
+  .nav{display:flex}
+  .h1{font-size:96px}
+  .vids{grid-template-columns:repeat(4,1fr)}
+}
+@media(max-width:733px){
   .hdr-btn,.hdr-wa{transition:opacity .25s}
   body.mbar-on .hdr-btn,body.mbar-on .hdr-wa{opacity:0;pointer-events:none}
+  .calpop{padding:0;place-items:stretch}
+  .calpop-box{width:100%;height:100%;border-radius:0}
+  .calpop-x{top:calc(8px + env(safe-area-inset-top));right:8px;background:rgba(0,0,0,.55)}
+  .calpop-alt{display:none}
 }
-@media(max-width:380px){
-  .h1{font-size:35px}
-  .pain{grid-template-columns:1fr}
+@media(max-width:374px){
+  .h1{font-size:44px}
+  .ph{width:150px}.ph1{width:170px}
 }
 @media(prefers-reduced-motion:reduce){
   html{scroll-behavior:auto}
@@ -441,8 +514,8 @@ html.calpop-on .hdr,html.calpop-on .mbar{visibility:hidden}
   .rv{opacity:1;transform:none}
 }
 </style>
-<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://aidomedia.com/#org","name":"Aido Media","url":"https://aidomedia.com/","logo":"https://aidomedia.com/og.png","email":"manel@aidomedia.com","areaServed":"ES","description":"Productora de vídeo-podcast y reels en España: edición del episodio, reels para Instagram, TikTok y YouTube Shorts, miniaturas, títulos y publicación. Produce Búscate la Vida, Sin Jaulas (Joan Zorrilla), DURALAVITA y los canales de Eric Ponce, Marc Farriol y Rostick.","knowsAbout":["producción de podcast","vídeo-podcast","reels","clips verticales","miniaturas de YouTube","marca personal en YouTube"],"slogan":"Tú conversas. Nosotros hacemos el resto."},{"@type":"Service","name":"Producción de vídeo-podcast","serviceType":"Producción, edición y distribución de vídeo-podcast","provider":{"@id":"https://aidomedia.com/#org"},"areaServed":"ES","description":"Edición del episodio completo, clips verticales, miniaturas, títulos, copys y publicación en YouTube, Spotify, Instagram y TikTok para empresarios, marcas y creadores.","offers":{"@type":"Offer","name":"Auditoría + 3 reels con tu material","price":"490","priceCurrency":"EUR"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué es AIDO Media?","acceptedAnswer":{"@type":"Answer","text":"Una productora de vídeo-podcast y reels de España. Producimos pódcast y canales de marca personal como Búscate la Vida, Sin Jaulas y DURALAVITA: edición del episodio, reels para Instagram y TikTok, miniaturas, títulos y publicación. Desde septiembre, los reels que hemos hecho suman más de 29 millones de visualizaciones."}},{"@type":"Question","name":"¿Hacéis solo pódcast?","acceptedAnswer":{"@type":"Answer","text":"No. También producimos canales de YouTube de marca personal (vlogs, entrevistas, formación) y sus reels, con el mismo sistema: tú grabas y nosotros hacemos el resto."}},{"@type":"Question","name":"¿Cuántos reels sacáis de cada episodio?","acceptedAnswer":{"@type":"Answer","text":"Entre 3 y 15 por episodio según el plan, cortados a la emoción, con subtítulos de tu marca y publicados en el mejor horario de cada red."}},{"@type":"Question","name":"¿Cuánto cuesta?","acceptedAnswer":{"@type":"Answer","text":"Puedes empezar por una auditoría con 3 reels hechos con tu propio material por 490 € (pago único, que descontamos de tu primer mes si entras en un plan). Los planes mensuales se ajustan a tu volumen (episodios, clips y canales) y salen por bastante menos que la nómina de un solo editor senior. En la llamada sales con un presupuesto cerrado."}},{"@type":"Question","name":"¿Qué necesito aportar yo cada semana?","acceptedAnswer":{"@type":"Answer","text":"Solo la conversación: los brutos de cámara y los audios. Del sync, la edición, los clips, las miniaturas, los copys y la publicación nos ocupamos nosotros."}},{"@type":"Question","name":"Ya tengo editor, ¿qué cambia?","acceptedAnswer":{"@type":"Answer","text":"Un editor monta el episodio. Nosotros añadimos lo que hace que funcione: títulos y miniaturas pensados para el clic, clips para cada red, calendario de publicación y lectura de datos episodio a episodio."}},{"@type":"Question","name":"¿Cuánto tardáis por episodio?","acceptedAnswer":{"@type":"Answer","text":"El episodio se entrega dentro de la misma semana de grabación: grabas el lunes y el viernes está publicado en todas las plataformas, con sus clips."}},{"@type":"Question","name":"¿Puedo revisar antes de publicar?","acceptedAnswer":{"@type":"Answer","text":"Siempre. Cada episodio pasa por tu OK antes de publicarse. Ajustamos lo que haga falta hasta que esté a tu nivel."}},{"@type":"Question","name":"¿De quién es el material?","acceptedAnswer":{"@type":"Answer","text":"Tuyo, siempre. Brutos, másters y clips te pertenecen al 100%, trabajes con nosotros un mes o tres años."}},{"@type":"Question","name":"¿Dónde y cómo se graba?","acceptedAnswer":{"@type":"Answer","text":"Donde ya grabas: nos adaptamos a tu set actual. Si todavía no tienes set o podcast, te ayudamos a definir el concepto, la identidad y el equipo para lanzarlo."}},{"@type":"Question","name":"¿Qué pasa después de la llamada si encajamos?","acceptedAnswer":{"@type":"Answer","text":"Definimos identidad y calendario la primera semana, grabas la segunda y tu primer episodio sale esa misma semana. De cero a publicado: unos 15 días."}}]}]}</script>
-<!-- ============ META PIXEL — pega tu Pixel ID y se activa solo ============ -->
+<script type="application/ld+json">{"@context":"https://schema.org","@graph":[{"@type":"Organization","@id":"https://aidomedia.com/#org","name":"Aido Media","url":"https://aidomedia.com/","logo":"https://aidomedia.com/og.png","email":"manel@aidomedia.com","areaServed":"ES","description":"Productora de videopodcast y reels en España: edición del episodio, reels para Instagram, TikTok y YouTube Shorts, miniaturas, títulos y publicación. Produce Búscate la Vida, Sin Jaulas (Joan Zorrilla), DURALAVITA y los canales de Eric Ponce, Marc Farriol y Rostick.","knowsAbout":["producción de podcast","videopodcast","reels","clips verticales","miniaturas de YouTube","marca personal en YouTube"],"slogan":"El pack completo para tu podcast."},{"@type":"Service","name":"Producción de videopodcast","serviceType":"Producción, edición y distribución de videopodcast","provider":{"@id":"https://aidomedia.com/#org"},"areaServed":"ES","description":"Edición del episodio completo, clips verticales, miniaturas, títulos, copys y publicación en YouTube, Spotify, Instagram y TikTok para empresarios, marcas y creadores.","offers":{"@type":"Offer","name":"Auditoría + 3 reels con tu material","price":"490","priceCurrency":"EUR"}},{"@type":"FAQPage","mainEntity":[{"@type":"Question","name":"¿Qué es AIDO Media?","acceptedAnswer":{"@type":"Answer","text":"Una productora de videopodcast y reels de España. Producimos pódcast y canales de marca personal como Búscate la Vida, Sin Jaulas y DURALAVITA: edición del episodio, reels para Instagram y TikTok, miniaturas, títulos y publicación. Desde septiembre, los reels que hemos hecho suman más de 29 millones de visualizaciones."}},{"@type":"Question","name":"¿Hacéis solo pódcast?","acceptedAnswer":{"@type":"Answer","text":"No. También producimos canales de YouTube de marca personal (vlogs, entrevistas, formación) y sus reels, con el mismo sistema: tú grabas y nosotros hacemos el resto."}},{"@type":"Question","name":"¿Cuántos reels sacáis de cada episodio?","acceptedAnswer":{"@type":"Answer","text":"Entre 3 y 15 por episodio según el plan, cortados a la emoción, con subtítulos de tu marca y publicados en el mejor horario de cada red."}},{"@type":"Question","name":"¿Cuánto cuesta?","acceptedAnswer":{"@type":"Answer","text":"Puedes empezar por una auditoría con 3 reels hechos con tu propio material por 490€ (pago único, que descontamos de tu primer mes si entras en un plan). Los planes mensuales se ajustan a tu volumen (episodios, clips y canales) y salen por bastante menos que la nómina de un solo editor senior. En la llamada sales con un presupuesto cerrado."}},{"@type":"Question","name":"¿Qué necesito aportar yo cada semana?","acceptedAnswer":{"@type":"Answer","text":"Solo la conversación: los brutos de cámara y los audios. De la sincronización, la edición, los clips, las miniaturas, los copys y la publicación nos ocupamos nosotros."}},{"@type":"Question","name":"Ya tengo editor, ¿qué cambia?","acceptedAnswer":{"@type":"Answer","text":"Un editor monta el episodio. Nosotros añadimos lo que hace que funcione: títulos y miniaturas pensados para el clic, clips para cada red, calendario de publicación y lectura de datos episodio a episodio."}},{"@type":"Question","name":"¿Cuánto tardáis por episodio?","acceptedAnswer":{"@type":"Answer","text":"El episodio se entrega dentro de la misma semana de grabación: grabas el lunes y el viernes está publicado en todas las plataformas, con sus clips."}},{"@type":"Question","name":"¿Puedo revisar antes de publicar?","acceptedAnswer":{"@type":"Answer","text":"Siempre. Cada episodio pasa por tu OK antes de publicarse. Ajustamos lo que haga falta hasta que esté a tu nivel."}},{"@type":"Question","name":"¿De quién es el material?","acceptedAnswer":{"@type":"Answer","text":"Tuyo, siempre. Brutos, másters y clips te pertenecen al 100%, trabajes con nosotros un mes o tres años."}},{"@type":"Question","name":"¿Dónde y cómo se graba?","acceptedAnswer":{"@type":"Answer","text":"Donde ya grabas: nos adaptamos a tu set actual. Si todavía no tienes set o podcast, te ayudamos a definir el concepto, la identidad y el equipo para lanzarlo."}},{"@type":"Question","name":"¿Qué pasa después de la llamada si encajamos?","acceptedAnswer":{"@type":"Answer","text":"Definimos identidad y calendario la primera semana, grabas la segunda y tu primer episodio sale esa misma semana. De cero a publicado: unos 15 días."}}]}]}</script>
+<!-- ============ META PIXEL: pega tu Pixel ID y se activa solo ============ -->
 <script>
 window.AIDO_META_PIXEL='';  /* ← pega aquí tu Pixel ID de Meta (solo el número, p.ej. '1234567890123456') */
 (function(){
@@ -456,7 +529,7 @@ window.AIDO_META_PIXEL='';  /* ← pega aquí tu Pixel ID de Meta (solo el núme
 <!-- <meta name="facebook-domain-verification" content="REEMPLAZAR_CODIGO_META"> -->
 <!-- ============ FIN META PIXEL ============ -->
 <script>
-/* ============ CONTACTO — WhatsApp: pon el número con prefijo, sin + ni espacios (p.ej. '34600111222') y aparecen los botones ============ */
+/* ============ CONTACTO: WhatsApp con prefijo, sin + ni espacios (p.ej. '34600111222') y aparecen los botones ============ */
 window.AIDO_WHATSAPP='';
 window.AIDO_CALENDLY='https://calendly.com/aidomedia/consulta-gratuita';
 </script>
@@ -464,35 +537,78 @@ window.AIDO_CALENDLY='https://calendly.com/aidomedia/consulta-gratuita';
 <body>
 
 <header class="hdr" id="hdr">
-  <a href="#" class="logo" aria-label="AIDO MEDIA, inicio"><span class="rec"></span><span>AIDO <b>MEDIA</b></span></a>
-  <div class="hdr-r">
-    <a class="hdr-wa wa" data-wa href="#" aria-label="Escríbenos por WhatsApp"><svg class="wa-ico" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2Zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg></a>
-    <a href="#reserva" data-book class="hdr-btn">Reservar<span class="long">&nbsp;llamada gratis</span></a>
+  <div class="hdr-in">
+    <a href="#" class="logo" aria-label="AIDO MEDIA, inicio"><span class="rec"></span><span>AIDO <span class="light">MEDIA</span></span></a>
+    <nav class="nav" aria-label="Secciones">
+      <a href="#packs">Packs reales</a>
+      <a href="#pack">El pack</a>
+      <a href="#resultados">Resultados</a>
+      <a href="#como">Cómo funciona</a>
+      <a href="#precio">Precio</a>
+      <a href="#faq">Preguntas</a>
+    </nav>
+    <a href="#reserva" data-book class="hdr-btn">Reservar llamada</a>
   </div>
 </header>
 
 <main id="main">
-<!-- ============ HERO ============ -->
+<!-- ============ PORTADA ============ -->
 <section class="hero">
-  <div class="wrap hero-grid">
-    <div>
-      <span class="pill"><span class="live"></span>Productora de vídeo-podcast y reels · España</span>
-      <h1 class="h1">Tu podcast, convertido en reels que ven <em>millones</em>. Y en clientes.</h1>
-      <p class="hero-sub">Tú grabas la conversación. Nosotros editamos el episodio, sacamos los reels y las miniaturas y lo publicamos en <b>YouTube, Spotify, Instagram y TikTok</b>. Desde septiembre, nuestros reels suman <b>29 millones de visualizaciones</b>.</p>
-      <div class="hero-cta">
-        <a href="#reserva" data-book class="btn">Reserva tu llamada gratis
-          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" d="M13 6l6 6-6 6M19 12H5"/></svg>
-        </a>
-        <a href="#" data-wa class="btn-ghost wa"><svg class="wa-ico" viewBox="0 0 24 24" fill="#25d366" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm4.5 12.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>WhatsApp</a>
+  <div class="wrap">
+    <span class="kicker">Productora de videopodcast</span>
+    <h1 class="h1">El pack completo.</h1>
+    <p class="hero-sub">Tú grabas. Nosotros editamos el episodio y hacemos los <b>títulos</b>, las <b>miniaturas</b> y los <b>reels</b> para que sea lo más viral posible.</p>
+    <div class="hero-cta">
+      <a href="#reserva" data-book class="btn">Reservar llamada gratis</a>
+      <a href="#resultados" class="more">Ver resultados</a>
+    </div>
+    <p class="hero-note">30 minutos, gratis y sin compromiso.</p>
+  </div>
+  <div class="studio-wrap"><div class="studio rv" aria-label="Así se ve un pack: edición, miniatura, título, reels y resultados de Sin Jaulas con José Mosquera">
+    <div class="st-main">
+      <div class="st-card st-mon">
+        <span class="st-tag"><i class="rec-dot"></i>Edición multicámara</span>
+        <span class="st-cam" id="stCam">Cámara 2</span>
+        <video id="stVid" src="/img/edit-jm.mp4" poster="/img/edit-jm-poster.webp" muted autoplay loop playsinline preload="auto" aria-hidden="true"></video>
+        <span class="st-tc" id="stTc">00:00:00</span>
       </div>
-      <p class="micro"><b>30 minutos</b> · gratis · sales con un plan para tu podcast, trabajemos juntos o no</p>
-      <div class="proof">
-        <span class="avs"><img src="/img/logo-blv.webp" alt="" width="36" height="36"><img src="/img/logo-duralavita.webp" alt="" width="36" height="36"><img src="/img/logo-jose.webp" alt="" width="36" height="36"><img src="/img/logo-zzen.webp" alt="" width="36" height="36"></span>
-        <p><b>+<span data-stat="total_subs">1,5M</span> suscriptores</b> en los canales que producimos</p>
+      <div class="st-card st-tl" aria-hidden="true">
+        <div class="tl-row"><span>Cám 3</span><div class="tl-track" data-cam="3"><i style="left:30%;width:11.67%" data-i="2"></i><i style="left:66.67%;width:13.33%" data-i="5"></i></div></div>
+        <div class="tl-row"><span>Cám 2</span><div class="tl-track" data-cam="2"><i style="left:0;width:13.33%" data-i="0"></i><i style="left:56.67%;width:10%" data-i="4"></i></div></div>
+        <div class="tl-row"><span>Cám 1</span><div class="tl-track" data-cam="1"><i style="left:13.33%;width:16.67%" data-i="1"></i><i style="left:41.67%;width:15%" data-i="3"></i><i style="left:80%;width:20%" data-i="6"></i></div></div>
+        <div class="tl-row"><span>Audio</span><div class="tl-track tl-wave"></div></div>
+        <div class="tl-head" id="stHead"><b></b></div>
       </div>
     </div>
-    <div class="hero-viz" aria-hidden="true"><div class="fan"><div class="ph ph1"><img src="/img/reel-n01.webp" alt="" width="360" height="640"><span class="ph-v"><b>1,7 M</b>Joan Zorrilla</span></div><div class="ph ph2"><img src="/img/reel-n02.webp" alt="" width="360" height="640"><span class="ph-v"><b>1,3 M</b>Elena Robeni</span></div><div class="ph ph3"><img src="/img/reel-n03.webp" alt="" width="360" height="640"><span class="ph-v"><b>1,3 M</b>Elena Robeni</span></div><div class="hv-stat hv-s1"><strong>+<span data-count="29" data-suf=" M">29 M</span></strong><span>visualizaciones de nuestros<br>reels en 6 semanas</span></div><div class="hv-stat hv-s2"><span class="rec"></span><span>Lunes grabas.<br><b style="color:var(--ink)">Viernes, publicado.</b></span></div></div></div>
-  </div>
+    <div class="st-side">
+      <div class="st-card st-thumb">
+        <span class="st-tag">Miniatura</span>
+        <img src="/img/yt-rczYXd2yD_I.webp" alt="Miniatura de Sin Jaulas con José Mosquera" width="960" height="540">
+        <div class="st-yt"><b>El mundo del y0nky explicado desde dentro | SIN JAULAS #1</b><span>Joan Zorrilla<br><i data-count="100" data-suf="K">100K</i> visualizaciones</span></div>
+      </div>
+      <div class="st-card st-seo">
+        <span class="st-tag">Título y SEO</span>
+        <ul>
+          <li><b>01:54</b>Quién es José Mosquera</li>
+          <li><b>17:42</b>La coraza: por qué no confía en nadie</li>
+          <li><b>27:42</b>Su nieto: la razón para seguir adelante</li>
+          <li><b>34:20</b>La ley de la palabra</li>
+        </ul>
+      </div>
+    </div>
+    <div class="st-card st-reel">
+      <span class="st-tag">Reel</span>
+      <video src="/img/reel-jm.mp4" poster="/img/reel-jm-poster.webp" muted autoplay loop playsinline preload="metadata" aria-hidden="true"></video>
+      <span class="st-views"><b>1,7M</b>visualizaciones</span>
+    </div>
+    <div class="st-card st-res">
+      <span class="st-tag st-tag-g">Resultado</span>
+      <b class="st-big">7,4M</b>
+      <p>visualizaciones con 16 reels de un solo episodio</p>
+      <div class="st-bars" aria-hidden="true"><i style="--h:100%"></i><i style="--h:63%"></i><i style="--h:42%"></i><i style="--h:39%"></i><i style="--h:37%"></i><i style="--h:27%"></i><i style="--h:24%"></i><i style="--h:15%"></i></div>
+    </div>
+  </div></div>
+
 </section>
 
 <!-- ============ CLIENTES ============ -->
@@ -501,7 +617,7 @@ window.AIDO_CALENDLY='https://calendly.com/aidomedia/consulta-gratuita';
     <h2 class="cl-label" id="cl-h">Producimos para</h2>
     <div class="cl-row">
       <a class="chip" href="https://www.youtube.com/@blvpodcast" target="_blank" rel="noopener"><img src="/img/logo-blv.webp" alt="" width="34" height="34" loading="lazy"><b>Búscate la Vida</b><span data-stat="blv.subs">173K</span></a>
-      <a class="chip" href="https://www.youtube.com/@Duralavita" target="_blank" rel="noopener"><img src="/img/logo-duralavita.webp" alt="" width="34" height="34" loading="lazy"><b>DURALAVITA · Jorge Lorenzo</b><span data-stat="duralavita.subs">153K</span></a>
+      <a class="chip" href="https://www.youtube.com/@Duralavita" target="_blank" rel="noopener"><img src="/img/logo-duralavita.webp" alt="" width="34" height="34" loading="lazy"><b>DURALAVITA</b><span data-stat="duralavita.subs">153K</span></a>
       <a class="chip" href="https://www.youtube.com/@zzenlabs" target="_blank" rel="noopener"><img src="/img/logo-zzen.webp" alt="" width="34" height="34" loading="lazy"><b>ZZEN</b><span data-stat="zzen.subs">508K</span></a>
       <a class="chip" href="https://www.youtube.com/@Jose_Elias_Navarro" target="_blank" rel="noopener"><img src="/img/logo-jose.webp" alt="" width="34" height="34" loading="lazy"><b>José Elías</b><span data-stat="jose.subs">469K</span></a>
       <a class="chip" href="https://www.youtube.com/@JaimeCabezasPodcast" target="_blank" rel="noopener"><img src="/img/logo-mediapower.webp" alt="" width="34" height="34" loading="lazy"><b>Media Power</b><span data-stat="mediapower.subs">183K</span></a>
@@ -509,7 +625,6 @@ window.AIDO_CALENDLY='https://calendly.com/aidomedia/consulta-gratuita';
       <a class="chip" href="https://www.youtube.com/@Marc_Farriol" target="_blank" rel="noopener"><img src="/img/logo-marc.webp" alt="" width="34" height="34" loading="lazy"><b>Marc Farriol</b><span data-stat="marc.subs">8,8K</span></a>
       <a class="chip" href="https://www.youtube.com/@rostick_mobilhome" target="_blank" rel="noopener"><img src="/img/logo-rostick.webp" alt="" width="34" height="34" loading="lazy"><b>Rostick</b><span data-stat="rostick.subs">8K</span></a>
     </div>
-    <p class="cl-total"><b>+<span data-stat="total_views">398M</span></b> visualizaciones acumuladas · datos sincronizados a diario con YouTube</p>
     <div class="brands">
       <p class="cl-label">Marcas que han colaborado con nuestros podcasts</p>
       <div class="brand-row">
@@ -524,235 +639,339 @@ window.AIDO_CALENDLY='https://calendly.com/aidomedia/consulta-gratuita';
   </div>
 </section>
 
-<!-- ============ CIFRAS, REELS Y CASOS ============ -->
-<section class="nums" aria-label="Resultados en cifras"><div class="wrap nums-grid"><div class="num rv"><b><span data-count="29" data-suf=" M">29 M</span></b><span>visualizaciones de nuestros reels en 6 semanas</span></div><div class="num rv"><b><span data-count="4">4</span></b><span>reels por encima del millón</span></div><div class="num rv"><b>+<span data-count="50">50</span></b><span>publicaciones de más de 100.000</span></div><div class="num rv"><b>+<span data-stat="total_views">398M</span></b><span>visualizaciones en los canales de YouTube que producimos</span></div></div><p class="nums-src">Solo los reels que hemos hecho y publicado nosotros, en Instagram y TikTok (Metricool), del 2 de septiembre de 2026 al 15 de octubre de 2026.</p></section>
-<section class="sec" id="reels"><div class="wrap"><span class="eyebrow rv">Reels</span><h2 class="h2 rv">Nuestros reels <em>más vistos</em></h2><p class="lead rv">Cortados a la emoción, con los subtítulos de cada marca y publicados a su hora. Toca cualquiera para verlo en Instagram o TikTok.</p></div><div class="strip rv" data-keep><div class="strip-in"><a class="reel" href="https://www.instagram.com/reel/DeeIQI9gPcK/" target="_blank" rel="noopener"><img src="/img/reel-n01.webp" alt="Reel de Joan Zorrilla · Sin Jaulas en Instagram" width="360" height="640" loading="lazy" decoding="async"><span class="reel-net"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span><span class="reel-b"><b>1,7 M</b><span>Joan Zorrilla · Sin Jaulas</span></span></a><a class="reel" href="https://www.instagram.com/reel/Ddk_ReujndQ/" target="_blank" rel="noopener"><img src="/img/reel-n02.webp" alt="Reel de Elena Robeni · Me Sabe a Gloria en Instagram" width="360" height="640" loading="lazy" decoding="async"><span class="reel-net"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span><span class="reel-b"><b>1,3 M</b><span>Elena Robeni · Me Sabe a Gloria</span></span></a><a class="reel" href="https://www.instagram.com/reel/DdozWC_IwiX/" target="_blank" rel="noopener"><img src="/img/reel-n03.webp" alt="Reel de Elena Robeni · Me Sabe a Gloria en Instagram" width="360" height="640" loading="lazy" decoding="async"><span class="reel-net"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span><span class="reel-b"><b>1,3 M</b><span>Elena Robeni · Me Sabe a Gloria</span></span></a><a class="reel" href="https://www.instagram.com/reel/Dc3_iw_AZ1u/" target="_blank" rel="noopener"><img src="/img/reel-n04.webp" alt="Reel de Joan Zorrilla · Sin Jaulas en Instagram" width="360" height="640" loading="lazy" decoding="async"><span class="reel-net"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span><span class="reel-b"><b>1,1 M</b><span>Joan Zorrilla · Sin Jaulas</span></span></a><a class="reel" href="https://www.instagram.com/reel/DdlsPqAgW5N/" target="_blank" rel="noopener"><img src="/img/reel-n05.webp" alt="Reel de Elena Robeni · Me Sabe a Gloria en Instagram" width="360" height="640" loading="lazy" decoding="async"><span class="reel-net"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span><span class="reel-b"><b>947 K</b><span>Elena Robeni · Me Sabe a Gloria</span></span></a><a class="reel" href="https://www.instagram.com/reel/Debw4UigsXB/" target="_blank" rel="noopener"><img src="/img/reel-n06.webp" alt="Reel de Eric Ponce en Instagram" width="360" height="640" loading="lazy" decoding="async"><span class="reel-net"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span><span class="reel-b"><b>896 K</b><span>Eric Ponce</span></span></a><a class="reel" href="https://www.instagram.com/reel/DdLuznhAX07/" target="_blank" rel="noopener"><img src="/img/reel-n07.webp" alt="Reel de Joan Zorrilla · Sin Jaulas en Instagram" width="360" height="640" loading="lazy" decoding="async"><span class="reel-net"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span><span class="reel-b"><b>716 K</b><span>Joan Zorrilla · Sin Jaulas</span></span></a><a class="reel" href="https://www.instagram.com/reel/Dc0jxT-jxrE/" target="_blank" rel="noopener"><img src="/img/reel-n08.webp" alt="Reel de Joan Zorrilla · Sin Jaulas en Instagram" width="360" height="640" loading="lazy" decoding="async"><span class="reel-net"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span><span class="reel-b"><b>664 K</b><span>Joan Zorrilla · Sin Jaulas</span></span></a><a class="reel" href="https://www.instagram.com/reel/Dc5tOr5iJa6/" target="_blank" rel="noopener"><img src="/img/reel-n09.webp" alt="Reel de Joan Zorrilla · Sin Jaulas en Instagram" width="360" height="640" loading="lazy" decoding="async"><span class="reel-net"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span><span class="reel-b"><b>627 K</b><span>Joan Zorrilla · Sin Jaulas</span></span></a><a class="reel" href="https://www.instagram.com/reel/DdZgrCODIkz/" target="_blank" rel="noopener"><img src="/img/reel-n10.webp" alt="Reel de Búscate la Vida en Instagram" width="360" height="640" loading="lazy" decoding="async"><span class="reel-net"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span><span class="reel-b"><b>439 K</b><span>Búscate la Vida</span></span></a><a class="reel" href="https://www.instagram.com/reel/DeeIQI9gPcK/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="/img/reel-n01.webp" alt="Reel de Joan Zorrilla · Sin Jaulas en Instagram" width="360" height="640" loading="lazy" decoding="async"><span class="reel-net"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span><span class="reel-b"><b>1,7 M</b><span>Joan Zorrilla · Sin Jaulas</span></span></a><a class="reel" href="https://www.instagram.com/reel/Ddk_ReujndQ/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="/img/reel-n02.webp" alt="Reel de Elena Robeni · Me Sabe a Gloria en Instagram" width="360" height="640" loading="lazy" decoding="async"><span class="reel-net"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span><span class="reel-b"><b>1,3 M</b><span>Elena Robeni · Me Sabe a Gloria</span></span></a><a class="reel" href="https://www.instagram.com/reel/DdozWC_IwiX/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="/img/reel-n03.webp" alt="Reel de Elena Robeni · Me Sabe a Gloria en Instagram" width="360" height="640" loading="lazy" decoding="async"><span class="reel-net"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span><span class="reel-b"><b>1,3 M</b><span>Elena Robeni · Me Sabe a Gloria</span></span></a><a class="reel" href="https://www.instagram.com/reel/Dc3_iw_AZ1u/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="/img/reel-n04.webp" alt="Reel de Joan Zorrilla · Sin Jaulas en Instagram" width="360" height="640" loading="lazy" decoding="async"><span class="reel-net"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span><span class="reel-b"><b>1,1 M</b><span>Joan Zorrilla · Sin Jaulas</span></span></a><a class="reel" href="https://www.instagram.com/reel/DdlsPqAgW5N/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="/img/reel-n05.webp" alt="Reel de Elena Robeni · Me Sabe a Gloria en Instagram" width="360" height="640" loading="lazy" decoding="async"><span class="reel-net"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span><span class="reel-b"><b>947 K</b><span>Elena Robeni · Me Sabe a Gloria</span></span></a><a class="reel" href="https://www.instagram.com/reel/Debw4UigsXB/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="/img/reel-n06.webp" alt="Reel de Eric Ponce en Instagram" width="360" height="640" loading="lazy" decoding="async"><span class="reel-net"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span><span class="reel-b"><b>896 K</b><span>Eric Ponce</span></span></a><a class="reel" href="https://www.instagram.com/reel/DdLuznhAX07/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="/img/reel-n07.webp" alt="Reel de Joan Zorrilla · Sin Jaulas en Instagram" width="360" height="640" loading="lazy" decoding="async"><span class="reel-net"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span><span class="reel-b"><b>716 K</b><span>Joan Zorrilla · Sin Jaulas</span></span></a><a class="reel" href="https://www.instagram.com/reel/Dc0jxT-jxrE/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="/img/reel-n08.webp" alt="Reel de Joan Zorrilla · Sin Jaulas en Instagram" width="360" height="640" loading="lazy" decoding="async"><span class="reel-net"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span><span class="reel-b"><b>664 K</b><span>Joan Zorrilla · Sin Jaulas</span></span></a><a class="reel" href="https://www.instagram.com/reel/Dc5tOr5iJa6/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="/img/reel-n09.webp" alt="Reel de Joan Zorrilla · Sin Jaulas en Instagram" width="360" height="640" loading="lazy" decoding="async"><span class="reel-net"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span><span class="reel-b"><b>627 K</b><span>Joan Zorrilla · Sin Jaulas</span></span></a><a class="reel" href="https://www.instagram.com/reel/DdZgrCODIkz/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="/img/reel-n10.webp" alt="Reel de Búscate la Vida en Instagram" width="360" height="640" loading="lazy" decoding="async"><span class="reel-net"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span><span class="reel-b"><b>439 K</b><span>Búscate la Vida</span></span></a></div></div></section>
-<section class="sec" id="casos" style="padding-top:0"><div class="wrap"><span class="eyebrow rv">Casos</span><h2 class="h2 rv">Lo que pasa cuando hay <em>un sistema detrás</em></h2><p class="lead rv">Visualizaciones de los reels en Instagram y TikTok.</p><div class="cases"><article class="case rv"><p class="case-who">Joan Zorrilla · pódcast Sin Jaulas</p><p class="case-big">×26</p><p class="case-txt">De <b>434 K</b> al mes en agosto, antes de nosotros, a <b>11,3 M</b> en septiembre, el primer mes con nuestros reels: <b>10 M</b> salieron de los que hicimos nosotros.</p><div class="case-bars" role="img" aria-label="Visualizaciones de los reels de la cuenta por mes"><i style="--h:2%" title="abr: 50 K"><span>abr</span></i><i style="--h:2%" title="may: 43 K"><span>may</span></i><i style="--h:7%" title="jun: 762 K"><span>jun</span></i><i style="--h:2%" title="jul: 66 K"><span>jul</span></i><i style="--h:4%" title="ago: 434 K"><span>ago</span></i><i style="--h:100%" title="sep: 11,3 M"><span>sep</span></i><i style="--h:28%" title="oct: 3,2 M"><span>oct*</span></i></div></article><article class="case rv"><p class="case-who">Búscate la Vida</p><p class="case-big">8,8 M</p><p class="case-txt">en 6 semanas con nuestros reels: <b>128 publicaciones</b> en Instagram y TikTok desde septiembre, a más de 4 M cada mes.</p><div class="case-bars two" role="img" aria-label="Visualizaciones de nuestros reels por mes"><i style="--h:94%" title="sep: 4,2 M"><span>sep</span></i><i style="--h:100%" title="oct: 4,5 M"><span>oct*</span></i></div></article><article class="case rv"><p class="case-who">Eric Ponce</p><p class="case-big">896 K</p><p class="case-txt">con <b>un solo reel</b> del vlog «24 horas en una clínica estética»: el gancho y el corte, nuestros.</p><a class="case-reel" href="https://www.instagram.com/reel/Debw4UigsXB/" target="_blank" rel="noopener">Verlo en Instagram</a></article></div><p class="nums-src" style="text-align:left">* Octubre, hasta el día 15. Datos de Metricool.</p></div></section>
-
-<!-- ============ CÓMO FUNCIONA ============ -->
-<section class="sec" id="como" style="padding-top:0">
-  <div class="wrap">
-    <span class="eyebrow rv">Cómo funciona</span>
-    <h2 class="h2 rv">Tú conversas. <em>Nosotros hacemos el resto.</em></h2>
-    <p class="lead rv">Nos mandas los brutos de cada cámara y los audios. En cinco días tienes el episodio y sus clips publicados donde está tu cliente.</p>
-    <div class="week rv">
-      <div class="wk you"><span class="wk-d">LUN</span><div class="wk-t"><b>Grabas tú</b><span>Donde ya grabas. Solo tienes que conversar.</span></div></div>
-      <div class="wk"><span class="wk-d">MAR</span><div class="wk-t"><b>Sync y audio</b><span>Cámaras sincronizadas y sonido de estudio.</span></div></div>
-      <div class="wk"><span class="wk-d">MIÉ</span><div class="wk-t"><b>Edición y clips</b><span>Episodio completo y clips verticales.</span></div></div>
-      <div class="wk"><span class="wk-d">JUE</span><div class="wk-t"><b>Tu OK</b><span>Lo revisas en un clic. Nada sale sin tu visto bueno.</span></div></div>
-      <div class="wk pub"><span class="wk-d">VIE</span><div class="wk-t"><b>Publicado</b><span>YouTube, Spotify, Instagram y TikTok.</span></div></div>
+<!-- ============ PACKS REALES ============ -->
+<section class="sec alt" id="packs">
+  <div class="wrap wide">
+    <div class="center">
+      <span class="kicker rv">Packs reales</span>
+      <h2 class="h2 rv">Un episodio. UnUn episodio. Un pack.<br>Millones de visualizaciones.nbsp;pack.<br>Millones de visualizaciones.</h2>
+      <p class="lead rv">Así queda cada episodio cuando sale de nuestras manos. Todo lo que ves lo hemos hecho nosotros.</p>
     </div>
 
-    <div class="incl">
-      <div class="in rv"><span class="in-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="2" y="5" width="15" height="14" rx="2"/><path d="m17 10 5-3v10l-5-3"/></svg></span><div><b>Edición premium</b><p>Episodio completo multicámara, color y sonido. Un solo estándar en cada formato.</p></div></div>
-      <div class="in rv"><span class="in-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="7" y="2" width="10" height="20" rx="2"/><path d="M11 18h2"/></svg></span><div><b>Clips verticales</b><p>Reels, Shorts y TikToks de cada episodio, cortados a la emoción.</p></div></div>
-      <div class="in rv"><span class="in-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="14" rx="2"/><path d="m3 15 5-5 4 4 3-3 6 6"/></svg></span><div><b>Miniaturas y títulos</b><p>Pensados para el clic, con caras reales. Nunca IA.</p></div></div>
-      <div class="in rv"><span class="in-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="3" y="4" width="18" height="17" rx="2"/><path d="M3 9h18M8 2v4M16 2v4"/></svg></span><div><b>Publicación y calendario</b><p>Copys, descripciones y programación en todas las redes.</p></div></div>
-      <div class="in rv"><span class="in-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M4 20V10M10 20V4M16 20v-7M22 20H2"/></svg></span><div><b>Estrategia y datos</b><p>Qué invitados, temas y formatos funcionan en tu nicho, episodio a episodio.</p></div></div>
-      <div class="in rv"><span class="in-i"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="13.5" cy="6.5" r="2.5"/><circle cx="6.5" cy="12.5" r="2.5"/><circle cx="17.5" cy="15.5" r="2.5"/><path d="M8.6 11.1 11.4 8M8.9 13.6l6.3 1.3"/></svg></span><div><b>Identidad propia</b><p>Paleta, ritmo y tipografía: tus clips se reconocen sin leer el nombre.</p></div></div>
-    </div>
+    <article class="pack rv">
+      <header class="pack-h"><img src="/img/logo-jz.webp" alt="" width="48" height="48"><div><b>Sin Jaulas con José Mosquera</b><span>Pódcast de Joan Zorrilla, episodio 1</span></div></header>
+      <div class="pack-eq">
+        <div class="pk pk-yt">
+          <span class="pk-l">Episodio, miniatura y título</span>
+          <a class="pk-th" href="https://www.youtube.com/watch?v=rczYXd2yD_I" target="_blank" rel="noopener"><img src="/img/yt-rczYXd2yD_I.webp" alt="Miniatura del episodio de Sin Jaulas con José Mosquera" width="960" height="540" loading="lazy"><small>1:37:53</small></a>
+          <p class="pk-t">El mundo del y0nky explicado desde dentro | SIN JAULAS #1</p>
+          <p class="pk-m"><b>100K</b> visualizaciones en YouTube</p>
+          <div class="pk-seo"><span>21 capítulos</span><span>Descripción con gancho</span><span>Spotify</span></div>
+        </div>
+        <span class="pk-op" aria-hidden="true">+</span>
+        <div class="pk pk-reels">
+          <span class="pk-l">Reels</span>
+          <div class="pk-rr">
+            <a href="https://www.instagram.com/reel/DeeIQI9gPcK/" target="_blank" rel="noopener"><img src="/img/reel-jm1.webp" alt="Reel de José Mosquera" width="360" height="640" loading="lazy"><b>1,7M</b></a>
+            <a href="https://www.instagram.com/reel/Dc3_iw_AZ1u/" target="_blank" rel="noopener"><img src="/img/reel-jm2.webp" alt="Reel de José Mosquera" width="360" height="640" loading="lazy"><b>1,1M</b></a>
+            <a href="https://www.instagram.com/reel/Dc5tOr5iJa6/" target="_blank" rel="noopener"><img src="/img/reel-jm3.webp" alt="Reel de José Mosquera" width="360" height="640" loading="lazy"><b>627K</b></a>
+          </div>
+          <p class="pk-m">16 reels en Instagram y TikTok</p>
+        </div>
+        <span class="pk-op" aria-hidden="true">=</span>
+        <div class="pk pk-res">
+          <span class="pk-l">Resultado</span>
+          <b class="pk-big">7,4M</b>
+          <p>visualizaciones con los reels de un solo episodio</p>
+          <ul><li><b>1,7M</b> el reel más visto</li><li><b>+100K</b> en el episodio de YouTube</li><li>Cuenta de Joan: de <b>434K</b> al mes a <b>11,3M</b></li></ul>
+        </div>
+      </div>
+    </article>
+
+    <article class="pack rv">
+      <header class="pack-h"><img src="/img/logo-msag.webp" alt="" width="48" height="48"><div><b>Me Sabe a Gloria con Pedro Buerbaum</b><span>Pódcast de Elena Robeni, episodio 1</span></div></header>
+      <div class="pack-eq">
+        <div class="pk pk-yt">
+          <span class="pk-l">Episodio, miniatura y título</span>
+          <a class="pk-th" href="https://www.youtube.com/watch?v=rRpyTX04Cd8" target="_blank" rel="noopener"><img src="/img/yt-rRpyTX04Cd8.webp" alt="Miniatura del episodio de Me Sabe a Gloria con Pedro Buerbaum" width="960" height="540" loading="lazy"><small>55:08</small></a>
+          <p class="pk-t">"Prefiero un ama de casa a una empresaria" (Pedro Buerbaum) | Me sabe a gloria #1</p>
+          <p class="pk-m"><b>210K</b> visualizaciones en YouTube</p>
+          <div class="pk-seo"><span>Título con frase gancho</span><span>Patrocinadores</span><span>Spotify y Apple</span></div>
+        </div>
+        <span class="pk-op" aria-hidden="true">+</span>
+        <div class="pk pk-reels">
+          <span class="pk-l">Reels</span>
+          <div class="pk-rr">
+            <a href="https://www.instagram.com/reel/Ddk_ReujndQ/" target="_blank" rel="noopener"><img src="/img/reel-pb1.webp" alt="Reel de Pedro Buerbaum" width="360" height="640" loading="lazy"><b>1,3M</b></a>
+            <a href="https://www.instagram.com/reel/DdozWC_IwiX/" target="_blank" rel="noopener"><img src="/img/reel-pb2.webp" alt="Reel de Me Sabe a Gloria" width="360" height="640" loading="lazy"><b>1,3M</b></a>
+            <a href="https://www.instagram.com/reel/DdlsPqAgW5N/" target="_blank" rel="noopener"><img src="/img/reel-pb3.webp" alt="Reel de Me Sabe a Gloria" width="360" height="640" loading="lazy"><b>947K</b></a>
+          </div>
+          <p class="pk-m">29 publicaciones en Instagram y TikTok</p>
+        </div>
+        <span class="pk-op" aria-hidden="true">=</span>
+        <div class="pk pk-res">
+          <span class="pk-l">Resultado</span>
+          <b class="pk-big">5,5M</b>
+          <p>visualizaciones con los reels de un solo episodio</p>
+          <ul><li><b>2</b> reels por encima del millón</li><li><b>+210K</b> en el episodio de YouTube</li><li>Primer episodio del pódcast</li></ul>
+        </div>
+      </div>
+    </article>
+    <p class="nums-src" style="color:var(--ink-3)">Visualizaciones de Instagram y TikTok (Metricool) y de YouTube, a 15 de octubre de 2026.</p>
   </div>
 </section>
 
-<div class="cta-band rv">
-  <div class="cb-in">
-    <h3>¿Quieres este sistema detrás de tu podcast?</h3>
-    <p>En 30 minutos te decimos exactamente cómo lo montaríamos para tu caso.</p>
-    <div class="cb-btns"><a href="#reserva" data-book class="btn">Reserva tu llamada gratis</a><a href="#" data-wa class="btn-ghost wa">Escríbenos por WhatsApp</a></div>
+<!-- ============ EL PACK ============ -->
+<section class="sec alt" id="pack">
+  <div class="wrap center">
+    <span class="kicker rv">El pack</span>
+    <h2 class="h2 rv">Todo lo que necesita tu episodio.<br>En un solo equipo.</h2>
+    <p class="lead rv">Sin freelancers sueltos ni calidad que cambia cada semana. Un sistema que se encarga de todo, de la grabación a la publicación.</p>
   </div>
-</div>
+  <div class="wrap">
+    <div class="tiles">
+      <article class="tile rv">
+        <h3>Edición del episodio.</h3>
+        <p>Tres cámaras, sonido de estudio y color. Cortamos todo lo que sobra para que nadie se vaya.</p>
+        <div class="tile-viz"><div class="cams">
+          <figure><img src="/img/cam2.webp" alt="Plano general del pódcast" width="640" height="360" loading="lazy"><figcaption>Cám 2</figcaption></figure>
+          <figure><img src="/img/cam1.webp" alt="Plano del invitado" width="640" height="360" loading="lazy"><figcaption>Cám 1</figcaption></figure>
+          <figure><img src="/img/cam3.webp" alt="Plano del presentador" width="640" height="360" loading="lazy"><figcaption>Cám 3</figcaption></figure>
+          <div class="cams-out"><video src="/img/edit-jm.mp4" poster="/img/edit-jm-poster.webp" muted autoplay loop playsinline preload="none" aria-hidden="true"></video><span>Montaje final</span></div>
+        </div></div>
+      </article>
+      <article class="tile rv">
+        <h3>Títulos.</h3>
+        <p>Escritos para el clic, no para el archivo.</p>
+        <div class="tile-viz"><div class="titles">
+          <div class="tt no"><small>Título de archivo</small><p>Episodio 29 con Eric Ayala</p></div>
+          <div class="tt yes"><small>Título para el clic</small><p>Creó una Estrategia ÚNICA de Marketing para Vender Cualquier Producto</p><em><b data-vviews="wrr4LCFPErA">524K</b> visualizaciones en Búscate la Vida</em></div>
+        </div></div>
+      </article>
+      <article class="tile rv">
+        <h3>Miniaturas.</h3>
+        <p>Caras reales, nunca IA. Pensadas para destacar entre todas las demás.</p>
+        <div class="tile-viz"><div class="thumbs">
+          <img src="/img/yt-rczYXd2yD_I.webp" alt="Miniatura de Sin Jaulas con José Mosquera" width="960" height="540" loading="lazy">
+          <img src="/img/yt-rRpyTX04Cd8.webp" alt="Miniatura de Me Sabe a Gloria con Pedro Buerbaum" width="960" height="540" loading="lazy">
+          <img src="/img/yt-YBngwZOim7E.webp" alt="Miniatura de Eric Ponce" width="560" height="315" loading="lazy">
+          <img src="/img/yt-ayYcLm1Pncs.webp" alt="Miniatura de DURALAVITA" width="560" height="315" loading="lazy">
+          <img src="/img/yt-mUf741niUW4.webp" alt="Miniatura de Eric Ponce" width="560" height="315" loading="lazy">
+          <img src="/img/yt-o-3fq02pJlg.webp" alt="Miniatura de Búscate la Vida" width="560" height="315" loading="lazy">
+        </div></div>
+      </article>
+      <article class="tile rv">
+        <h3>Reels.</h3>
+        <p>Cortados a la emoción, con tus subtítulos y publicados a su hora.</p>
+        <div class="tile-viz"><div class="reels3"><img src="/img/reel-n04.webp" alt="Reel producido por AIDO MEDIA" width="360" height="640" loading="lazy"><img src="/img/reel-n05.webp" alt="Reel producido por AIDO MEDIA" width="360" height="640" loading="lazy"><img src="/img/reel-n06.webp" alt="Reel producido por AIDO MEDIA" width="360" height="640" loading="lazy"></div></div>
+      </article>
+      <article class="tile rv">
+        <h3>Posicionamiento SEO.</h3>
+        <p>Capítulos, descripción y palabras clave para que YouTube y Google sepan de qué va tu episodio.</p>
+        <div class="tile-viz"><div class="seo">
+          <div class="seo-q"><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="2"/><path d="m20 20-4-4" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>josé mosquera pódcast</div>
+          <div class="seo-r"><img src="/img/yt-rczYXd2yD_I.webp" alt="" width="960" height="540" loading="lazy"><div><b>El mundo del y0nky explicado desde dentro | SIN JAULAS #1</b><span>Joan Zorrilla</span><ol><li><i>01:54</i>Quién es José Mosquera</li><li><i>17:42</i>La coraza</li><li><i>27:42</i>Su nieto</li></ol></div></div>
+        </div></div>
+      </article>
+      <article class="tile rv">
+        <h3>Gráficos y datos.</h3>
+        <p>Medimos cada episodio y cada reel. Repetimos lo que funciona y cortamos lo que no.</p>
+        <div class="tile-viz"><div class="chart">
+          <div class="chart-h"><span>Visualizaciones de los reels de Joan Zorrilla</span><b>11,3M</b><em>en septiembre, el primer mes con nosotros</em></div>
+          <div class="chart-b" role="img" aria-label="Visualizaciones por mes: abril 50K, mayo 43K, junio 762K, julio 66K, agosto 434K, septiembre 11,3M"><i style="--h:2%"><span>abr</span></i><i style="--h:2%"><span>may</span></i><i style="--h:7%"><span>jun</span></i><i style="--h:2%"><span>jul</span></i><i style="--h:4%"><span>ago</span></i><i class="on" style="--h:100%"><span>sep</span></i></div>
+        </div></div>
+      </article>
+      <article class="tile dark full rv">
+        <h3>Publicado en todas partes.</h3>
+        <p>Copys, descripciones y calendario. Tú no tocas nada.</p>
+        <div class="tile-viz"><div class="nets">
+          <span><svg viewBox="0 0 24 24" aria-hidden="true"><rect x="1" y="4.5" width="22" height="15" rx="4" fill="#ff0033"/><path d="M10 9v6l5.2-3z" fill="#fff"/></svg>YouTube</span>
+          <span><svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="12" cy="12" r="10.5" fill="#1ed760"/><path d="M6.8 9.8c3.5-1 7.4-.6 10.3 1M7.3 12.7c3-.8 6.2-.5 8.6.9M7.9 15.5c2.3-.6 4.8-.4 6.7.7" stroke="#000" stroke-width="1.6" fill="none" stroke-linecap="round"/></svg>Spotify</span>
+          <span><svg viewBox="0 0 24 24" aria-hidden="true"><defs><linearGradient id="ig" x1="0" y1="1" x2="1" y2="0"><stop offset="0" stop-color="#ffc83a"/><stop offset=".5" stop-color="#e1306c"/><stop offset="1" stop-color="#8134af"/></linearGradient></defs><rect x="2.5" y="2.5" width="19" height="19" rx="5.5" fill="none" stroke="url(#ig)" stroke-width="2"/><circle cx="12" cy="12" r="4.2" fill="none" stroke="url(#ig)" stroke-width="2"/><circle cx="17.2" cy="6.8" r="1.3" fill="url(#ig)"/></svg>Instagram</span>
+          <span><svg viewBox="0 0 24 24" aria-hidden="true"><path d="M16.6 3c.4 2 1.7 3.4 3.9 3.6v3.1c-1.4.1-2.7-.3-3.9-1v6.1a5.6 5.6 0 1 1-5.6-5.6c.3 0 .6 0 .9.1v3.2a2.5 2.5 0 1 0 1.7 2.3V3h3Z" fill="#fff"/></svg>TikTok</span>
+        </div></div>
+      </article>
+    </div>
+  </div>
+</section>
 
 <!-- ============ RESULTADOS ============ -->
-<section class="sec" id="resultados">
+<div class="dark" id="resultados">
+<section class="nums" aria-label="Resultados en cifras"><div class="wrap"><div class="nums-grid"><div class="num rv"><b><span data-count="29" data-suf="M">29M</span></b><span>visualizaciones de nuestros reels en 6 semanas</span></div><div class="num rv"><b><span data-count="4">4</span></b><span>reels por encima del millón</span></div><div class="num rv"><b>+<span data-count="50">50</span></b><span>publicaciones de más de 100.000</span></div><div class="num rv"><b>+<span data-stat="total_views">398M</span></b><span>visualizaciones en los canales de YouTube que producimos</span></div></div><p class="nums-src">Solo reels hechos y publicados por nosotros en Instagram y TikTok, del 2 de septiembre al 15 de octubre de 2026. Datos de Metricool.</p></div></section>
+<section class="reels-sec" aria-labelledby="reels-h">
+  <div class="wrap center">
+    <h2 class="h2 rv" id="reels-h">Nuestros reels más vistos.</h2>
+    <p class="lead rv">Toca cualquiera para verlo en Instagram o TikTok.</p>
+  </div>
+  <div class="strip rv" data-keep><div class="strip-in"><a class="reel" href="https://www.instagram.com/reel/DeeIQI9gPcK/" target="_blank" rel="noopener"><img src="/img/reel-n01.webp" alt="Reel de Joan Zorrilla en Instagram" width="360" height="640" loading="lazy" decoding="async"><span class="reel-net"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span><span class="reel-b"><b>1,7M</b><span>Joan Zorrilla<small>Sin Jaulas</small></span></span></a><a class="reel" href="https://www.instagram.com/reel/Ddk_ReujndQ/" target="_blank" rel="noopener"><img src="/img/reel-n02.webp" alt="Reel de Elena Robeni en Instagram" width="360" height="640" loading="lazy" decoding="async"><span class="reel-net"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span><span class="reel-b"><b>1,3M</b><span>Elena Robeni<small>Me Sabe a Gloria</small></span></span></a><a class="reel" href="https://www.instagram.com/reel/DdozWC_IwiX/" target="_blank" rel="noopener"><img src="/img/reel-n03.webp" alt="Reel de Elena Robeni en Instagram" width="360" height="640" loading="lazy" decoding="async"><span class="reel-net"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span><span class="reel-b"><b>1,3M</b><span>Elena Robeni<small>Me Sabe a Gloria</small></span></span></a><a class="reel" href="https://www.instagram.com/reel/Dc3_iw_AZ1u/" target="_blank" rel="noopener"><img src="/img/reel-n04.webp" alt="Reel de Joan Zorrilla en Instagram" width="360" height="640" loading="lazy" decoding="async"><span class="reel-net"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span><span class="reel-b"><b>1,1M</b><span>Joan Zorrilla<small>Sin Jaulas</small></span></span></a><a class="reel" href="https://www.instagram.com/reel/DdlsPqAgW5N/" target="_blank" rel="noopener"><img src="/img/reel-n05.webp" alt="Reel de Elena Robeni en Instagram" width="360" height="640" loading="lazy" decoding="async"><span class="reel-net"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span><span class="reel-b"><b>947K</b><span>Elena Robeni<small>Me Sabe a Gloria</small></span></span></a><a class="reel" href="https://www.instagram.com/reel/Debw4UigsXB/" target="_blank" rel="noopener"><img src="/img/reel-n06.webp" alt="Reel de Eric Ponce en Instagram" width="360" height="640" loading="lazy" decoding="async"><span class="reel-net"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span><span class="reel-b"><b>896K</b><span>Eric Ponce</span></span></a><a class="reel" href="https://www.instagram.com/reel/DdLuznhAX07/" target="_blank" rel="noopener"><img src="/img/reel-n07.webp" alt="Reel de Joan Zorrilla en Instagram" width="360" height="640" loading="lazy" decoding="async"><span class="reel-net"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span><span class="reel-b"><b>716K</b><span>Joan Zorrilla<small>Sin Jaulas</small></span></span></a><a class="reel" href="https://www.instagram.com/reel/Dc0jxT-jxrE/" target="_blank" rel="noopener"><img src="/img/reel-n08.webp" alt="Reel de Joan Zorrilla en Instagram" width="360" height="640" loading="lazy" decoding="async"><span class="reel-net"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span><span class="reel-b"><b>664K</b><span>Joan Zorrilla<small>Sin Jaulas</small></span></span></a><a class="reel" href="https://www.instagram.com/reel/Dc5tOr5iJa6/" target="_blank" rel="noopener"><img src="/img/reel-n09.webp" alt="Reel de Joan Zorrilla en Instagram" width="360" height="640" loading="lazy" decoding="async"><span class="reel-net"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span><span class="reel-b"><b>627K</b><span>Joan Zorrilla<small>Sin Jaulas</small></span></span></a><a class="reel" href="https://www.instagram.com/reel/DdZgrCODIkz/" target="_blank" rel="noopener"><img src="/img/reel-n10.webp" alt="Reel de Búscate la Vida en Instagram" width="360" height="640" loading="lazy" decoding="async"><span class="reel-net"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span><span class="reel-b"><b>439K</b><span>Búscate la Vida</span></span></a><a class="reel" href="https://www.instagram.com/reel/DeeIQI9gPcK/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="/img/reel-n01.webp" alt="Reel de Joan Zorrilla en Instagram" width="360" height="640" loading="lazy" decoding="async"><span class="reel-net"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span><span class="reel-b"><b>1,7M</b><span>Joan Zorrilla<small>Sin Jaulas</small></span></span></a><a class="reel" href="https://www.instagram.com/reel/Ddk_ReujndQ/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="/img/reel-n02.webp" alt="Reel de Elena Robeni en Instagram" width="360" height="640" loading="lazy" decoding="async"><span class="reel-net"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span><span class="reel-b"><b>1,3M</b><span>Elena Robeni<small>Me Sabe a Gloria</small></span></span></a><a class="reel" href="https://www.instagram.com/reel/DdozWC_IwiX/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="/img/reel-n03.webp" alt="Reel de Elena Robeni en Instagram" width="360" height="640" loading="lazy" decoding="async"><span class="reel-net"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span><span class="reel-b"><b>1,3M</b><span>Elena Robeni<small>Me Sabe a Gloria</small></span></span></a><a class="reel" href="https://www.instagram.com/reel/Dc3_iw_AZ1u/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="/img/reel-n04.webp" alt="Reel de Joan Zorrilla en Instagram" width="360" height="640" loading="lazy" decoding="async"><span class="reel-net"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span><span class="reel-b"><b>1,1M</b><span>Joan Zorrilla<small>Sin Jaulas</small></span></span></a><a class="reel" href="https://www.instagram.com/reel/DdlsPqAgW5N/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="/img/reel-n05.webp" alt="Reel de Elena Robeni en Instagram" width="360" height="640" loading="lazy" decoding="async"><span class="reel-net"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span><span class="reel-b"><b>947K</b><span>Elena Robeni<small>Me Sabe a Gloria</small></span></span></a><a class="reel" href="https://www.instagram.com/reel/Debw4UigsXB/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="/img/reel-n06.webp" alt="Reel de Eric Ponce en Instagram" width="360" height="640" loading="lazy" decoding="async"><span class="reel-net"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span><span class="reel-b"><b>896K</b><span>Eric Ponce</span></span></a><a class="reel" href="https://www.instagram.com/reel/DdLuznhAX07/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="/img/reel-n07.webp" alt="Reel de Joan Zorrilla en Instagram" width="360" height="640" loading="lazy" decoding="async"><span class="reel-net"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span><span class="reel-b"><b>716K</b><span>Joan Zorrilla<small>Sin Jaulas</small></span></span></a><a class="reel" href="https://www.instagram.com/reel/Dc0jxT-jxrE/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="/img/reel-n08.webp" alt="Reel de Joan Zorrilla en Instagram" width="360" height="640" loading="lazy" decoding="async"><span class="reel-net"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span><span class="reel-b"><b>664K</b><span>Joan Zorrilla<small>Sin Jaulas</small></span></span></a><a class="reel" href="https://www.instagram.com/reel/Dc5tOr5iJa6/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="/img/reel-n09.webp" alt="Reel de Joan Zorrilla en Instagram" width="360" height="640" loading="lazy" decoding="async"><span class="reel-net"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span><span class="reel-b"><b>627K</b><span>Joan Zorrilla<small>Sin Jaulas</small></span></span></a><a class="reel" href="https://www.instagram.com/reel/DdZgrCODIkz/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true"><img src="/img/reel-n10.webp" alt="Reel de Búscate la Vida en Instagram" width="360" height="640" loading="lazy" decoding="async"><span class="reel-net"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor" stroke="none"/></svg></span><span class="reel-b"><b>439K</b><span>Búscate la Vida</span></span></a></div></div></section>
+</div>
+
+<!-- ============ CASOS ============ -->
+<section class="sec" id="casos">
   <div class="wrap">
-    <span class="eyebrow rv">En YouTube</span>
-    <h2 class="h2 rv">Episodios largos de <em>cientos de miles de vistas</em></h2>
-    <p class="lead rv">Los más vistos de los canales que producimos. Visualizaciones actualizadas a diario: toca cualquiera para comprobarlo en YouTube.</p>
+    <div class="center">
+      <span class="kicker rv">Casos</span>
+      <h2 class="h2 rv">Lo que pasa cuando<br>hay un sistema detrás.</h2>
+    </div>
+    <div class="cases"><article class="case rv"><p class="case-who">Joan Zorrilla, pódcast Sin Jaulas</p><p class="case-big">×26</p><p class="case-txt">De <b>434K</b> al mes en agosto, antes de nosotros, a <b>11,3M</b> en septiembre, el primer mes con nuestros reels: <b>10M</b> salieron de los que hicimos nosotros.</p><div class="case-bars" role="img" aria-label="Visualizaciones de los reels de la cuenta por mes"><i style="--h:2%" title="abr: 50K"><span>abr</span></i><i style="--h:2%" title="may: 43K"><span>may</span></i><i style="--h:7%" title="jun: 762K"><span>jun</span></i><i style="--h:2%" title="jul: 66K"><span>jul</span></i><i style="--h:4%" title="ago: 434K"><span>ago</span></i><i style="--h:100%" title="sep: 11,3M"><span>sep</span></i><i style="--h:28%" title="oct: 3,2M"><span>oct*</span></i></div></article><article class="case rv"><p class="case-who">Búscate la Vida</p><p class="case-big">8,8M</p><p class="case-txt">en 6 semanas con nuestros reels: <b>128 publicaciones</b> en Instagram y TikTok desde septiembre, a más de 4M cada mes.</p><div class="case-bars two" role="img" aria-label="Visualizaciones de nuestros reels por mes"><i style="--h:94%" title="sep: 4,2M"><span>sep</span></i><i style="--h:100%" title="oct: 4,5M"><span>oct*</span></i></div></article><article class="case rv"><p class="case-who">Eric Ponce</p><p class="case-big">896K</p><p class="case-txt">con <b>un solo reel</b> del vlog «24 horas en una clínica estética»: el gancho y el corte, nuestros.</p><a class="case-reel" href="https://www.instagram.com/reel/Debw4UigsXB/" target="_blank" rel="noopener">Verlo en Instagram</a></article></div><p class="nums-src" style="text-align:left">* Octubre, hasta el día 15. Datos de Metricool.</p>
+  </div>
+</section>
+
+<!-- ============ CÓMO FUNCIONA ============ -->
+<section class="sec alt" id="como">
+  <div class="wrap">
+    <div class="center">
+      <span class="kicker rv">Cómo funciona</span>
+      <h2 class="h2 rv">Lunes grabas.<br>Viernes, publicado.</h2>
+      <p class="lead rv">Nos mandas los brutos de cada cámara y los audios. Tu única tarea de la semana es sentarte a conversar.</p>
+    </div>
+    <div class="week">
+      <div class="wk you rv"><span class="wk-d">Lun</span><div><b>Grabas tú</b><span>Donde ya grabas. Solo tienes que conversar.</span></div></div>
+      <div class="wk rv"><span class="wk-d">Mar</span><div><b>Sonido y cámaras</b><span>Todo sincronizado y con sonido de estudio.</span></div></div>
+      <div class="wk rv"><span class="wk-d">Mié</span><div><b>Edición y reels</b><span>El episodio completo y sus reels verticales.</span></div></div>
+      <div class="wk rv"><span class="wk-d">Jue</span><div><b>Tu visto bueno</b><span>Lo revisas en un clic. Nada sale sin tu OK.</span></div></div>
+      <div class="wk pub rv"><span class="wk-d">Vie</span><div><b>Publicado</b><span>YouTube, Spotify, Instagram y TikTok.</span></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ YOUTUBE ============ -->
+<section class="sec" id="youtube">
+  <div class="wrap wide">
+    <div class="center">
+      <span class="kicker rv">En YouTube</span>
+      <h2 class="h2 rv">Y los episodios largos, también.</h2>
+      <p class="lead rv">Los más vistos de los canales que producimos. Las visualizaciones se actualizan cada día.</p>
+    </div>
     <div class="vids" id="vids">
-      <a class="v rv" href="https://www.youtube.com/watch?v=wrr4LCFPErA" target="_blank" rel="noopener"><span class="v-th"><img src="/img/yt-wrr4LCFPErA.webp" alt="Creó una Estrategia ÚNICA de Marketing para Vender Cualquier Producto (Eric Ayala Pizzaiolo) | Ep 29" width="560" height="315" loading="lazy"><small>3:06:15</small></span><span class="v-m"><img src="/img/logo-blv.webp" alt="" width="34" height="34" loading="lazy"><span><span class="v-t">Creó una Estrategia ÚNICA de Marketing para Vender Cualquier Producto (Eric Ayala Pizzaiolo) | Ep 29</span><span class="v-c">Búscate la Vida · <i data-vviews="wrr4LCFPErA">524K</i> visualizaciones</span></span></span></a>
-      <a class="v rv" href="https://www.youtube.com/watch?v=YBngwZOim7E" target="_blank" rel="noopener"><span class="v-th"><img src="/img/yt-YBngwZOim7E.webp" alt="La CRUDA Realidad de Montar un BAR en España" width="560" height="315" loading="lazy"><small>17:12</small></span><span class="v-m"><img src="/img/logo-epr.webp" alt="" width="34" height="34" loading="lazy"><span><span class="v-t">La CRUDA Realidad de Montar un BAR en España</span><span class="v-c">Eric Ponce · <i data-vviews="YBngwZOim7E">491K</i> visualizaciones</span></span></span></a>
-      <a class="v rv" href="https://www.youtube.com/watch?v=mUf741niUW4" target="_blank" rel="noopener"><span class="v-th"><img src="/img/yt-mUf741niUW4.webp" alt="La Mujer detrás del ÉXITO de José Elías (Rosa González)" width="560" height="315" loading="lazy"><small>2:16:05</small></span><span class="v-m"><img src="/img/logo-epr.webp" alt="" width="34" height="34" loading="lazy"><span><span class="v-t">La Mujer detrás del ÉXITO de José Elías (Rosa González)</span><span class="v-c">Eric Ponce · <i data-vviews="mUf741niUW4">451K</i> visualizaciones</span></span></span></a>
-      <a class="v rv" href="https://www.youtube.com/watch?v=ayYcLm1Pncs" target="_blank" rel="noopener"><span class="v-th"><img src="/img/yt-ayYcLm1Pncs.webp" alt="Dani Pedrosa: Masterclass De Pilotaje de MotoGP" width="560" height="315" loading="lazy"><small>18:29</small></span><span class="v-m"><img src="/img/logo-duralavita.webp" alt="" width="34" height="34" loading="lazy"><span><span class="v-t">Dani Pedrosa: Masterclass De Pilotaje de MotoGP</span><span class="v-c">DURALAVITA · <i data-vviews="ayYcLm1Pncs">380K</i> visualizaciones</span></span></span></a>
-      <a class="v rv more" href="https://www.youtube.com/watch?v=KMxAodF5-qs" target="_blank" rel="noopener"><span class="v-th"><img src="/img/yt-KMxAodF5-qs.webp" alt="De Político a Empresario: Cómo Liderar Cualquier Situación (Albert Rivera) | Ep 62" width="560" height="315" loading="lazy"><small>1:35:29</small></span><span class="v-m"><img src="/img/logo-blv.webp" alt="" width="34" height="34" loading="lazy"><span><span class="v-t">De Político a Empresario: Cómo Liderar Cualquier Situación (Albert Rivera) | Ep 62</span><span class="v-c">Búscate la Vida · <i data-vviews="KMxAodF5-qs">376K</i> visualizaciones</span></span></span></a>
-      <a class="v rv more" href="https://www.youtube.com/watch?v=2OVNSIU1jQo" target="_blank" rel="noopener"><span class="v-th"><img src="/img/yt-2OVNSIU1jQo.webp" alt="Rosa González VS José Elías: Toda La Verdad | Ep 77" width="560" height="315" loading="lazy"><small>2:31:18</small></span><span class="v-m"><img src="/img/logo-blv.webp" alt="" width="34" height="34" loading="lazy"><span><span class="v-t">Rosa González VS José Elías: Toda La Verdad | Ep 77</span><span class="v-c">Búscate la Vida · <i data-vviews="2OVNSIU1jQo">357K</i> visualizaciones</span></span></span></a>
-      <a class="v rv more" href="https://www.youtube.com/watch?v=XUQ1RXBarOs" target="_blank" rel="noopener"><span class="v-th"><img src="/img/yt-XUQ1RXBarOs.webp" alt="La CRUDA Realidad de Tener un TALLER MECÁNICO en España" width="560" height="315" loading="lazy"><small>23:48</small></span><span class="v-m"><img src="/img/logo-epr.webp" alt="" width="34" height="34" loading="lazy"><span><span class="v-t">La CRUDA Realidad de Tener un TALLER MECÁNICO en España</span><span class="v-c">Eric Ponce · <i data-vviews="XUQ1RXBarOs">355K</i> visualizaciones</span></span></span></a>
-      <a class="v rv more" href="https://www.youtube.com/watch?v=GenC4Y7qegA" target="_blank" rel="noopener"><span class="v-th"><img src="/img/yt-GenC4Y7qegA.webp" alt="José Elías vs Javi Linares: Debate sobre inversiones" width="560" height="315" loading="lazy"><small>18:46</small></span><span class="v-m"><img src="/img/logo-blv.webp" alt="" width="34" height="34" loading="lazy"><span><span class="v-t">José Elías vs Javi Linares: Debate sobre inversiones</span><span class="v-c">Búscate la Vida · <i data-vviews="GenC4Y7qegA">350K</i> visualizaciones</span></span></span></a>
-      <a class="v rv more more-d" href="https://www.youtube.com/watch?v=o-3fq02pJlg" target="_blank" rel="noopener"><span class="v-th"><img src="/img/yt-o-3fq02pJlg.webp" alt="Debate acalorado entre Romuald Fons y José Elías (SEO, Marketing, Inversión) | Ep 45" width="560" height="315" loading="lazy"><small>2:09:10</small></span><span class="v-m"><img src="/img/logo-blv.webp" alt="" width="34" height="34" loading="lazy"><span><span class="v-t">Debate acalorado entre Romuald Fons y José Elías (SEO, Marketing, Inversión) | Ep 45</span><span class="v-c">Búscate la Vida · <i data-vviews="o-3fq02pJlg">332K</i> visualizaciones</span></span></span></a>
-      <a class="v rv more more-d" href="https://www.youtube.com/watch?v=okhwRCJbwfE" target="_blank" rel="noopener"><span class="v-th"><img src="/img/yt-okhwRCJbwfE.webp" alt="Toda La Verdad Sobre La Empresa De Nil Ojeda | Ep 98" width="560" height="315" loading="lazy"><small>2:03:00</small></span><span class="v-m"><img src="/img/logo-blv.webp" alt="" width="34" height="34" loading="lazy"><span><span class="v-t">Toda La Verdad Sobre La Empresa De Nil Ojeda | Ep 98</span><span class="v-c">Búscate la Vida · <i data-vviews="okhwRCJbwfE">329K</i> visualizaciones</span></span></span></a>
-      <a class="v rv more more-d" href="https://www.youtube.com/watch?v=coFeBFktw2k" target="_blank" rel="noopener"><span class="v-th"><img src="/img/yt-coFeBFktw2k.webp" alt="La estrategia oculta de Márquez para ganar el Mundial" width="560" height="315" loading="lazy"><small>17:09</small></span><span class="v-m"><img src="/img/logo-duralavita.webp" alt="" width="34" height="34" loading="lazy"><span><span class="v-t">La estrategia oculta de Márquez para ganar el Mundial</span><span class="v-c">DURALAVITA · <i data-vviews="coFeBFktw2k">312K</i> visualizaciones</span></span></span></a>
-      <a class="v rv more more-d" href="https://www.youtube.com/watch?v=hRjm04Jghno" target="_blank" rel="noopener"><span class="v-th"><img src="/img/yt-hRjm04Jghno.webp" alt="Así Serán las MotoGP en 2027" width="560" height="315" loading="lazy"><small>12:17</small></span><span class="v-m"><img src="/img/logo-duralavita.webp" alt="" width="34" height="34" loading="lazy"><span><span class="v-t">Así Serán las MotoGP en 2027</span><span class="v-c">DURALAVITA · <i data-vviews="hRjm04Jghno">311K</i> visualizaciones</span></span></span></a>
-      <a class="v rv more more-d" href="https://www.youtube.com/watch?v=Lfp3iiASVHI" target="_blank" rel="noopener"><span class="v-th"><img src="/img/yt-Lfp3iiASVHI.webp" alt="Restaura Cabañas ABANDONADAS Para Airbnb (solo 18 años)" width="560" height="315" loading="lazy"><small>36:45</small></span><span class="v-m"><img src="/img/logo-epr.webp" alt="" width="34" height="34" loading="lazy"><span><span class="v-t">Restaura Cabañas ABANDONADAS Para Airbnb (solo 18 años)</span><span class="v-c">Eric Ponce · <i data-vviews="Lfp3iiASVHI">288K</i> visualizaciones</span></span></span></a>
-      <a class="v rv more more-d" href="https://www.youtube.com/watch?v=AqzTzuvzetk" target="_blank" rel="noopener"><span class="v-th"><img src="/img/yt-AqzTzuvzetk.webp" alt="Toda la verdad sobre Anas Andaloussi | Ep 91" width="560" height="315" loading="lazy"><small>2:05:09</small></span><span class="v-m"><img src="/img/logo-blv.webp" alt="" width="34" height="34" loading="lazy"><span><span class="v-t">Toda la verdad sobre Anas Andaloussi | Ep 91</span><span class="v-c">Búscate la Vida · <i data-vviews="AqzTzuvzetk">260K</i> visualizaciones</span></span></span></a>
-      <a class="v rv more more-d" href="https://www.youtube.com/watch?v=y-x3YF4y7yQ" target="_blank" rel="noopener"><span class="v-th"><img src="/img/yt-y-x3YF4y7yQ.webp" alt="Compró Un Equipo De Futbol De 1.000.000€ (así hace negocio)" width="560" height="315" loading="lazy"><small>31:54</small></span><span class="v-m"><img src="/img/logo-epr.webp" alt="" width="34" height="34" loading="lazy"><span><span class="v-t">Compró Un Equipo De Futbol De 1.000.000€ (así hace negocio)</span><span class="v-c">Eric Ponce · <i data-vviews="y-x3YF4y7yQ">260K</i> visualizaciones</span></span></span></a>
-      <a class="v rv more more-d" href="https://www.youtube.com/watch?v=qTfa4vuGrBM" target="_blank" rel="noopener"><span class="v-th"><img src="/img/yt-qTfa4vuGrBM.webp" alt="MOBIL HOME de 85m² en forma de &quot;L&quot; (La más INCREIBLE y NUEVA)" width="560" height="315" loading="lazy"><small>12:04</small></span><span class="v-m"><img src="/img/logo-rostick.webp" alt="" width="34" height="34" loading="lazy"><span><span class="v-t">MOBIL HOME de 85m² en forma de &quot;L&quot; (La más INCREIBLE y NUEVA)</span><span class="v-c">Rostick · <i data-vviews="qTfa4vuGrBM">123K</i> visualizaciones</span></span></span></a>
+      <a class="v rv" href="https://www.youtube.com/watch?v=wrr4LCFPErA" target="_blank" rel="noopener"><span class="v-th"><img src="/img/yt-wrr4LCFPErA.webp" alt="Creó una Estrategia ÚNICA de Marketing para Vender Cualquier Producto (Eric Ayala Pizzaiolo) | Ep 29" width="560" height="315" loading="lazy"><small>3:06:15</small></span><span class="v-m"><img src="/img/logo-blv.webp" alt="" width="34" height="34" loading="lazy"><span><span class="v-t">Creó una Estrategia ÚNICA de Marketing para Vender Cualquier Producto (Eric Ayala Pizzaiolo) | Ep 29</span><span class="v-c">Búscate la Vida<br><i data-vviews="wrr4LCFPErA">524K</i> visualizaciones</span></span></span></a>
+      <a class="v rv" href="https://www.youtube.com/watch?v=YBngwZOim7E" target="_blank" rel="noopener"><span class="v-th"><img src="/img/yt-YBngwZOim7E.webp" alt="La CRUDA Realidad de Montar un BAR en España" width="560" height="315" loading="lazy"><small>17:12</small></span><span class="v-m"><img src="/img/logo-epr.webp" alt="" width="34" height="34" loading="lazy"><span><span class="v-t">La CRUDA Realidad de Montar un BAR en España</span><span class="v-c">Eric Ponce<br><i data-vviews="YBngwZOim7E">491K</i> visualizaciones</span></span></span></a>
+      <a class="v rv" href="https://www.youtube.com/watch?v=mUf741niUW4" target="_blank" rel="noopener"><span class="v-th"><img src="/img/yt-mUf741niUW4.webp" alt="La Mujer detrás del ÉXITO de José Elías (Rosa González)" width="560" height="315" loading="lazy"><small>2:16:05</small></span><span class="v-m"><img src="/img/logo-epr.webp" alt="" width="34" height="34" loading="lazy"><span><span class="v-t">La Mujer detrás del ÉXITO de José Elías (Rosa González)</span><span class="v-c">Eric Ponce<br><i data-vviews="mUf741niUW4">451K</i> visualizaciones</span></span></span></a>
+      <a class="v rv" href="https://www.youtube.com/watch?v=ayYcLm1Pncs" target="_blank" rel="noopener"><span class="v-th"><img src="/img/yt-ayYcLm1Pncs.webp" alt="Dani Pedrosa: Masterclass De Pilotaje de MotoGP" width="560" height="315" loading="lazy"><small>18:29</small></span><span class="v-m"><img src="/img/logo-duralavita.webp" alt="" width="34" height="34" loading="lazy"><span><span class="v-t">Dani Pedrosa: Masterclass De Pilotaje de MotoGP</span><span class="v-c">DURALAVITA<br><i data-vviews="ayYcLm1Pncs">380K</i> visualizaciones</span></span></span></a>
+      <a class="v rv hide-m" href="https://www.youtube.com/watch?v=KMxAodF5-qs" target="_blank" rel="noopener"><span class="v-th"><img src="/img/yt-KMxAodF5-qs.webp" alt="De Político a Empresario: Cómo Liderar Cualquier Situación (Albert Rivera) | Ep 62" width="560" height="315" loading="lazy"><small>1:35:29</small></span><span class="v-m"><img src="/img/logo-blv.webp" alt="" width="34" height="34" loading="lazy"><span><span class="v-t">De Político a Empresario: Cómo Liderar Cualquier Situación (Albert Rivera) | Ep 62</span><span class="v-c">Búscate la Vida<br><i data-vviews="KMxAodF5-qs">376K</i> visualizaciones</span></span></span></a>
+      <a class="v rv hide-m" href="https://www.youtube.com/watch?v=2OVNSIU1jQo" target="_blank" rel="noopener"><span class="v-th"><img src="/img/yt-2OVNSIU1jQo.webp" alt="Rosa González VS José Elías: Toda La Verdad | Ep 77" width="560" height="315" loading="lazy"><small>2:31:18</small></span><span class="v-m"><img src="/img/logo-blv.webp" alt="" width="34" height="34" loading="lazy"><span><span class="v-t">Rosa González VS José Elías: Toda La Verdad | Ep 77</span><span class="v-c">Búscate la Vida<br><i data-vviews="2OVNSIU1jQo">357K</i> visualizaciones</span></span></span></a>
+      <a class="v rv hide-m" href="https://www.youtube.com/watch?v=XUQ1RXBarOs" target="_blank" rel="noopener"><span class="v-th"><img src="/img/yt-XUQ1RXBarOs.webp" alt="La CRUDA Realidad de Tener un TALLER MECÁNICO en España" width="560" height="315" loading="lazy"><small>23:48</small></span><span class="v-m"><img src="/img/logo-epr.webp" alt="" width="34" height="34" loading="lazy"><span><span class="v-t">La CRUDA Realidad de Tener un TALLER MECÁNICO en España</span><span class="v-c">Eric Ponce<br><i data-vviews="XUQ1RXBarOs">355K</i> visualizaciones</span></span></span></a>
+      <a class="v rv hide-m" href="https://www.youtube.com/watch?v=GenC4Y7qegA" target="_blank" rel="noopener"><span class="v-th"><img src="/img/yt-GenC4Y7qegA.webp" alt="José Elías vs Javi Linares: Debate sobre inversiones" width="560" height="315" loading="lazy"><small>18:46</small></span><span class="v-m"><img src="/img/logo-blv.webp" alt="" width="34" height="34" loading="lazy"><span><span class="v-t">José Elías vs Javi Linares: Debate sobre inversiones</span><span class="v-c">Búscate la Vida<br><i data-vviews="GenC4Y7qegA">350K</i> visualizaciones</span></span></span></a>
+      <a class="v rv hide-m hide-d" href="https://www.youtube.com/watch?v=o-3fq02pJlg" target="_blank" rel="noopener"><span class="v-th"><img src="/img/yt-o-3fq02pJlg.webp" alt="Debate acalorado entre Romuald Fons y José Elías (SEO, Marketing, Inversión) | Ep 45" width="560" height="315" loading="lazy"><small>2:09:10</small></span><span class="v-m"><img src="/img/logo-blv.webp" alt="" width="34" height="34" loading="lazy"><span><span class="v-t">Debate acalorado entre Romuald Fons y José Elías (SEO, Marketing, Inversión) | Ep 45</span><span class="v-c">Búscate la Vida<br><i data-vviews="o-3fq02pJlg">332K</i> visualizaciones</span></span></span></a>
+      <a class="v rv hide-m hide-d" href="https://www.youtube.com/watch?v=okhwRCJbwfE" target="_blank" rel="noopener"><span class="v-th"><img src="/img/yt-okhwRCJbwfE.webp" alt="Toda La Verdad Sobre La Empresa De Nil Ojeda | Ep 98" width="560" height="315" loading="lazy"><small>2:03:00</small></span><span class="v-m"><img src="/img/logo-blv.webp" alt="" width="34" height="34" loading="lazy"><span><span class="v-t">Toda La Verdad Sobre La Empresa De Nil Ojeda | Ep 98</span><span class="v-c">Búscate la Vida<br><i data-vviews="okhwRCJbwfE">329K</i> visualizaciones</span></span></span></a>
+      <a class="v rv hide-m hide-d" href="https://www.youtube.com/watch?v=coFeBFktw2k" target="_blank" rel="noopener"><span class="v-th"><img src="/img/yt-coFeBFktw2k.webp" alt="La estrategia oculta de Márquez para ganar el Mundial" width="560" height="315" loading="lazy"><small>17:09</small></span><span class="v-m"><img src="/img/logo-duralavita.webp" alt="" width="34" height="34" loading="lazy"><span><span class="v-t">La estrategia oculta de Márquez para ganar el Mundial</span><span class="v-c">DURALAVITA<br><i data-vviews="coFeBFktw2k">312K</i> visualizaciones</span></span></span></a>
+      <a class="v rv hide-m hide-d" href="https://www.youtube.com/watch?v=hRjm04Jghno" target="_blank" rel="noopener"><span class="v-th"><img src="/img/yt-hRjm04Jghno.webp" alt="Así Serán las MotoGP en 2027" width="560" height="315" loading="lazy"><small>12:17</small></span><span class="v-m"><img src="/img/logo-duralavita.webp" alt="" width="34" height="34" loading="lazy"><span><span class="v-t">Así Serán las MotoGP en 2027</span><span class="v-c">DURALAVITA<br><i data-vviews="hRjm04Jghno">311K</i> visualizaciones</span></span></span></a>
+      <a class="v rv hide-m hide-d" href="https://www.youtube.com/watch?v=Lfp3iiASVHI" target="_blank" rel="noopener"><span class="v-th"><img src="/img/yt-Lfp3iiASVHI.webp" alt="Restaura Cabañas ABANDONADAS Para Airbnb (solo 18 años)" width="560" height="315" loading="lazy"><small>36:45</small></span><span class="v-m"><img src="/img/logo-epr.webp" alt="" width="34" height="34" loading="lazy"><span><span class="v-t">Restaura Cabañas ABANDONADAS Para Airbnb (solo 18 años)</span><span class="v-c">Eric Ponce<br><i data-vviews="Lfp3iiASVHI">288K</i> visualizaciones</span></span></span></a>
+      <a class="v rv hide-m hide-d" href="https://www.youtube.com/watch?v=AqzTzuvzetk" target="_blank" rel="noopener"><span class="v-th"><img src="/img/yt-AqzTzuvzetk.webp" alt="Toda la verdad sobre Anas Andaloussi | Ep 91" width="560" height="315" loading="lazy"><small>2:05:09</small></span><span class="v-m"><img src="/img/logo-blv.webp" alt="" width="34" height="34" loading="lazy"><span><span class="v-t">Toda la verdad sobre Anas Andaloussi | Ep 91</span><span class="v-c">Búscate la Vida<br><i data-vviews="AqzTzuvzetk">260K</i> visualizaciones</span></span></span></a>
+      <a class="v rv hide-m hide-d" href="https://www.youtube.com/watch?v=y-x3YF4y7yQ" target="_blank" rel="noopener"><span class="v-th"><img src="/img/yt-y-x3YF4y7yQ.webp" alt="Compró Un Equipo De Futbol De 1.000.000€ (así hace negocio)" width="560" height="315" loading="lazy"><small>31:54</small></span><span class="v-m"><img src="/img/logo-epr.webp" alt="" width="34" height="34" loading="lazy"><span><span class="v-t">Compró Un Equipo De Futbol De 1.000.000€ (así hace negocio)</span><span class="v-c">Eric Ponce<br><i data-vviews="y-x3YF4y7yQ">260K</i> visualizaciones</span></span></span></a>
+      <a class="v rv hide-m hide-d" href="https://www.youtube.com/watch?v=qTfa4vuGrBM" target="_blank" rel="noopener"><span class="v-th"><img src="/img/yt-qTfa4vuGrBM.webp" alt="MOBIL HOME de 85m² en forma de &quot;L&quot; (La más INCREIBLE y NUEVA)" width="560" height="315" loading="lazy"><small>12:04</small></span><span class="v-m"><img src="/img/logo-rostick.webp" alt="" width="34" height="34" loading="lazy"><span><span class="v-t">MOBIL HOME de 85m² en forma de &quot;L&quot; (La más INCREIBLE y NUEVA)</span><span class="v-c">Rostick<br><i data-vviews="qTfa4vuGrBM">123K</i> visualizaciones</span></span></span></a>
     </div>
-    <button class="btn-ghost more-btn" id="moreBtn" type="button" aria-controls="vids">Ver más resultados</button>
+    <button class="btn-out more-btn" id="moreBtn" type="button" aria-controls="vids">Ver más episodios</button>
   </div>
 </section>
 
-<!-- ============ ENCAJE ============ -->
-<section class="sec" id="encaje" style="padding-top:0">
+<!-- ============ PRECIO ============ -->
+<section class="sec alt" id="precio">
   <div class="wrap">
-    <span class="eyebrow rv">Encaje</span>
-    <h2 class="h2 rv">¿Es para ti?</h2>
-    <div class="fit">
-      <div class="fit-col rv">
-        <h3>Sí, si…</h3>
-        <ul>
-          <li>Tienes un negocio o una marca y quieres que el podcast te traiga clientes</li>
-          <li>Editar te quita horas que no tienes</li>
-          <li>Quieres una imagen premium y ser referente de tu sector</li>
-          <li>Puedes grabar con constancia (mínimo 2 episodios al mes)</li>
-        </ul>
-      </div>
-      <div class="fit-col no rv">
-        <h3>No, si…</h3>
-        <ul>
-          <li>Buscas la opción más barata, no la mejor</li>
-          <li>Esperas viralidad garantizada: nadie honesto puede prometerla</li>
-          <li>Quieres controlar cada corte: esto es delegación real</li>
-        </ul>
-      </div>
+    <div class="center">
+      <span class="kicker rv">Precio</span>
+      <h2 class="h2 rv">Pruébalo primero.<br>Con tu propio material.</h2>
     </div>
-
-    <h3 class="h2 rv" style="margin-top:64px;font-size:clamp(26px,5.4vw,36px)">Montarlo tú vs <em>delegarlo bien</em></h3>
-    <div class="cmp rv">
-      <table>
-        <thead><tr><th scope="col"><span class="sr-only">Criterio</span></th><th scope="col">Equipo propio</th><th scope="col">Freelancers</th><th scope="col" class="us">AIDO</th></tr></thead>
-        <tbody>
-          <tr><td>Coste</td><td>6.000 €+<small>al mes en nóminas</small></td><td>Variable<small>y sin estrategia</small></td><td class="us">Menos<small>que una nómina</small></td></tr>
-          <tr><td>Tú no coordinas a nadie</td><td class="n">✕</td><td class="n">✕</td><td class="us y">✓</td></tr>
-          <tr><td>Calidad constante</td><td class="n">✕</td><td class="n">✕</td><td class="us y">✓</td></tr>
-          <tr><td>Estrategia y datos</td><td class="n">✕</td><td class="n">✕</td><td class="us y">✓</td></tr>
-          <tr><td>Entrega cada semana</td><td class="n">✕</td><td class="n">✕</td><td class="us y">✓</td></tr>
-          <tr><td>Escala sin contratar</td><td class="n">✕</td><td class="y">✓</td><td class="us y">✓</td></tr>
-        </tbody>
-      </table>
-    </div>
-  </div>
-</section>
-
-<!-- ============ PLANES ============ -->
-<section class="sec" id="planes" style="padding-top:0">
-  <div class="wrap">
-    <span class="eyebrow rv">Cómo empezamos</span>
-    <h2 class="h2 rv">Pruébalo primero <em>con tu propio material</em></h2>
-
-    <div class="plans-entry rv">
+    <div class="offer rv">
       <div>
-        <span class="pe-tag">Empieza aquí · sin compromiso mensual</span>
-        <h3 class="pe-h">Auditoría + 3 reels con tu material</h3>
-        <p class="pe-p">Antes de comprometerte a nada, te demostramos la diferencia con tu propio contenido. Si después entras en un plan, te lo descontamos del primer mes.</p>
-        <ul class="pe-list">
+        <span class="offer-k">Para empezar</span>
+        <h3>Auditoría y 3 reels hechos con tu material.</h3>
+        <p>Antes de comprometerte a nada, te enseñamos la diferencia con tu propio contenido.</p>
+        <ul class="checks">
           <li>Auditoría grabada de tu canal, con tus números</li>
           <li>3 reels verticales terminados</li>
           <li>1 miniatura mejorada</li>
           <li>Llamada de 20 minutos</li>
         </ul>
       </div>
-      <div class="pe-r">
-        <div class="pe-price">490 €<small>pago único · se descuenta de tu primer mes</small></div>
+      <div>
+        <div class="price">490€</div>
+        <p class="price-note">Pago único. Si después entras en un plan, te lo descontamos del primer mes.</p>
         <a href="#reserva" data-book class="btn">Quiero mi auditoría</a>
       </div>
     </div>
-
     <div class="plans">
       <div class="plan rv">
-        <span class="plan-tag">Plan 1</span>
-        <h3 class="plan-h">Tu podcast, resuelto</h3>
-        <p class="plan-for">Para el fundador que quiere su podcast bien hecho cada semana, sin tocar nada.</p>
-        <ul class="plan-list">
-          <li>4 episodios al mes, editados en vídeo y audio</li>
-          <li>3 reels verticales por episodio</li>
-          <li>Miniatura A/B (cara real, nunca IA)</li>
-          <li>Títulos, descripción y copys listos</li>
+        <span class="plan-k">Plan 1</span>
+        <h3>Tu podcast, resuelto.</h3>
+        <p>Para quien quiere su podcast bien hecho cada semana, sin tocar nada.</p>
+        <ul>
+          <li>4 episodios al mes, en vídeo y audio</li>
+          <li>3 reels por episodio</li>
+          <li>Miniatura con dos versiones para probar</li>
+          <li>Títulos, descripción y copys</li>
         </ul>
-        <div class="plan-price">A medida de tu caso<small>En la llamada te preparamos una propuesta cerrada.</small></div>
-        <a href="#reserva" data-book class="btn-plan">Pide tu propuesta</a>
+        <div class="plan-p">A medida<small>Te damos un precio cerrado en la llamada.</small></div>
+        <a href="#reserva" data-book class="more">Pedir propuesta</a>
       </div>
       <div class="plan feat rv">
-        <span class="plan-badge">El que más eligen</span>
-        <span class="plan-tag">Plan 2</span>
-        <h3 class="plan-h">Autoridad</h3>
-        <p class="plan-for">Para el fundador que quiere ser la referencia de su sector, no solo tener un podcast.</p>
-        <ul class="plan-list">
-          <li>Todo lo de «Tu podcast, resuelto»</li>
-          <li>10-15 clips por episodio para todos los canales</li>
-          <li>Show notes con SEO y newsletter</li>
-          <li>Tu marca personal: LinkedIn, vídeo y clips del fundador</li>
-          <li>Versiones multilingües (con tu consentimiento)</li>
+        <span class="plan-k">Plan 2. El más elegido</span>
+        <h3>Autoridad.</h3>
+        <p>Para quien quiere ser la referencia de su sector, no solo tener un podcast.</p>
+        <ul>
+          <li>Todo lo del plan 1</li>
+          <li>De 10 a 15 reels por episodio</li>
+          <li>Notas del episodio con SEO y newsletter</li>
+          <li>Tu marca personal en LinkedIn y vídeo</li>
+          <li>Versiones en otros idiomas</li>
         </ul>
-        <div class="plan-price">A medida de tu caso<small>En la llamada te preparamos una propuesta cerrada.</small></div>
-        <a href="#reserva" data-book class="btn-plan">Quiero ser la referencia</a>
+        <div class="plan-p">A medida<small>Te damos un precio cerrado en la llamada.</small></div>
+        <a href="#reserva" data-book class="more">Pedir propuesta</a>
       </div>
       <div class="plan rv">
-        <span class="plan-tag">Plan 3</span>
-        <h3 class="plan-h">Motor de leads</h3>
-        <p class="plan-for">Para quien quiere que el contenido le traiga clientes, no solo notoriedad.</p>
-        <ul class="plan-list">
-          <li>Todo lo de «Autoridad»</li>
+        <span class="plan-k">Plan 3</span>
+        <h3>Motor de clientes.</h3>
+        <p>Para quien quiere que el contenido le traiga clientes, no solo visualizaciones.</p>
+        <ul>
+          <li>Todo lo del plan 2</li>
           <li>Estrategia de contenido y crecimiento</li>
-          <li>Analítica y atribución: qué pieza trae cada reunión</li>
-          <li>Campañas de pago sobre lo que ya funciona</li>
+          <li>Qué pieza trae cada reunión</li>
+          <li>Campañas sobre lo que ya funciona</li>
         </ul>
-        <div class="plan-price">A medida de tu caso<small>Cuéntanos tu caso y vemos si encaja.</small></div>
-        <a href="#reserva" data-book class="btn-plan">Habla con nosotros</a>
+        <div class="plan-p">A medida<small>Cuéntanos tu caso y vemos si encaja.</small></div>
+        <a href="#reserva" data-book class="more">Hablar con nosotros</a>
       </div>
     </div>
-
-    <div class="gar rv">
-      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5 10 17 19 7"/></svg><span><b>Sin permanencia.</b> Mes a mes: te quedas porque funciona.</span></div>
-      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5 10 17 19 7"/></svg><span><b>Entrega en plazo.</b> Tu episodio sale la semana que toca.</span></div>
-      <div><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5 10 17 19 7"/></svg><span><b>Nada sale sin tu OK.</b> Ajustamos hasta que esté a tu nivel.</span></div>
-    </div>
+    <div class="promise rv"><span>Sin permanencia</span><span>Entrega cada semana</span><span>Nada sale sin tu OK</span><span>El material es tuyo</span></div>
   </div>
 </section>
 
-<!-- ============ FAQ ============ -->
-<section class="sec" id="faq" style="padding-top:0">
-  <div class="wrap" style="max-width:820px">
-    <span class="eyebrow rv">Preguntas frecuentes</span>
-    <h2 class="h2 rv">Lo que querrás saber <em>antes de llamar</em></h2>
+<!-- ============ PREGUNTAS ============ -->
+<section class="sec" id="faq">
+  <div class="wrap" style="max-width:860px">
+    <h2 class="h2 rv center">Preguntas frecuentes.</h2>
     <div class="faqs rv">
-      <details class="faq"><summary>¿Qué es AIDO Media?<i aria-hidden="true">+</i></summary><p>Una productora de <b>vídeo-podcast y reels</b> de España. Producimos pódcast y canales de marca personal como Búscate la Vida, Sin Jaulas y DURALAVITA: edición del episodio, reels para Instagram y TikTok, miniaturas, títulos y publicación. Desde septiembre, los reels que hemos hecho suman más de 29 millones de visualizaciones.</p></details>
-      <details class="faq"><summary>¿Hacéis solo pódcast?<i aria-hidden="true">+</i></summary><p>No. También producimos <b>canales de YouTube de marca personal</b> (vlogs, entrevistas, formación) y sus reels, con el mismo sistema: tú grabas y nosotros hacemos el resto.</p></details>
-      <details class="faq"><summary>¿Cuántos reels sacáis de cada episodio?<i aria-hidden="true">+</i></summary><p>Entre 3 y 15 por episodio según el plan, cortados a la emoción, con subtítulos de tu marca y publicados en el mejor horario de cada red.</p></details>
-      <details class="faq"><summary>¿Cuánto cuesta?<i aria-hidden="true">+</i></summary><p>Puedes empezar por una <b>auditoría con 3 reels hechos con tu propio material por 490 €</b> (pago único, que descontamos de tu primer mes si entras en un plan). Los planes mensuales se ajustan a tu volumen —episodios, clips y canales— y salen por bastante menos que la nómina de un solo editor senior. En la llamada sales con un presupuesto cerrado, sin letra pequeña.</p></details>
-      <details class="faq"><summary>¿Qué necesito aportar yo cada semana?<i aria-hidden="true">+</i></summary><p>Solo la conversación: los brutos de cámara y los audios. Del sync, la edición, los clips, las miniaturas, los copys y la publicación nos ocupamos nosotros.</p></details>
-      <details class="faq"><summary>Ya tengo editor, ¿qué cambia?<i aria-hidden="true">+</i></summary><p>Un editor monta el episodio. Nosotros añadimos lo que hace que funcione: títulos y miniaturas pensados para el clic, clips para cada red, calendario de publicación y lectura de datos episodio a episodio.</p></details>
-      <details class="faq"><summary>¿Cuánto tardáis por episodio?<i aria-hidden="true">+</i></summary><p>Se entrega la misma semana de la grabación: grabas el lunes y el viernes está publicado en todas las plataformas, con sus clips.</p></details>
-      <details class="faq"><summary>¿Puedo revisar antes de publicar?<i aria-hidden="true">+</i></summary><p>Siempre. Cada episodio pasa por tu OK antes de publicarse. Ajustamos lo que haga falta hasta que esté a tu nivel.</p></details>
-      <details class="faq"><summary>¿De quién es el material?<i aria-hidden="true">+</i></summary><p>Tuyo, siempre. Brutos, másters y clips te pertenecen al 100 %, trabajes con nosotros un mes o tres años.</p></details>
-      <details class="faq"><summary>¿Dónde y cómo se graba?<i aria-hidden="true">+</i></summary><p>Donde ya grabas: nos adaptamos a tu set. Si todavía no tienes set o podcast, te ayudamos a definir el concepto, la identidad y el equipo para lanzarlo.</p></details>
-      <details class="faq"><summary>¿Qué pasa después de la llamada si encajamos?<i aria-hidden="true">+</i></summary><p>Definimos identidad y calendario la primera semana, grabas la segunda y tu primer episodio sale esa misma semana. De cero a publicado: unos 15 días.</p></details>
+<details class="faq"><summary>¿Qué es AIDO Media?<i aria-hidden="true"></i></summary><p>Una productora de <b>videopodcast y reels</b> de España. Producimos pódcast y canales de marca personal como Búscate la Vida, Sin Jaulas y DURALAVITA: edición del episodio, reels para Instagram y TikTok, miniaturas, títulos y publicación. Desde septiembre, los reels que hemos hecho suman más de 29 millones de visualizaciones.</p></details>
+      <details class="faq"><summary>¿Hacéis solo pódcast?<i aria-hidden="true"></i></summary><p>No. También producimos <b>canales de YouTube de marca personal</b> (vlogs, entrevistas, formación) y sus reels, con el mismo sistema: tú grabas y nosotros hacemos el resto.</p></details>
+      <details class="faq"><summary>¿Cuántos reels sacáis de cada episodio?<i aria-hidden="true"></i></summary><p>Entre 3 y 15 por episodio según el plan, cortados a la emoción, con subtítulos de tu marca y publicados en el mejor horario de cada red.</p></details>
+      <details class="faq"><summary>¿Cuánto cuesta?<i aria-hidden="true"></i></summary><p>Puedes empezar por una <b>auditoría con 3 reels hechos con tu propio material por 490€</b> (pago único que descontamos de tu primer mes si entras en un plan). Los planes mensuales se ajustan a tu volumen , episodios, clips y canales,  y salen por bastante menos que la nómina de un solo editor senior. En la llamada sales con un presupuesto cerrado, sin letra pequeña.</p></details>
+      <details class="faq"><summary>¿Qué necesito aportar yo cada semana?<i aria-hidden="true"></i></summary><p>Solo la conversación: los brutos de cámara y los audios. De la sincronización, la edición, los clips, las miniaturas, los copys y la publicación nos ocupamos nosotros.</p></details>
+      <details class="faq"><summary>Ya tengo editor, ¿qué cambia?<i aria-hidden="true"></i></summary><p>Un editor monta el episodio. Nosotros añadimos lo que hace que funcione: títulos y miniaturas pensados para el clic, clips para cada red, calendario de publicación y lectura de datos episodio a episodio.</p></details>
+      <details class="faq"><summary>¿Cuánto tardáis por episodio?<i aria-hidden="true"></i></summary><p>Se entrega la misma semana de la grabación: grabas el lunes y el viernes está publicado en todas las plataformas, con sus clips.</p></details>
+      <details class="faq"><summary>¿Puedo revisar antes de publicar?<i aria-hidden="true"></i></summary><p>Siempre. Cada episodio pasa por tu OK antes de publicarse. Ajustamos lo que haga falta hasta que esté a tu nivel.</p></details>
+      <details class="faq"><summary>¿De quién es el material?<i aria-hidden="true"></i></summary><p>Tuyo, siempre. Brutos, másters y clips te pertenecen al 100%, trabajes con nosotros un mes o tres años.</p></details>
+      <details class="faq"><summary>¿Dónde y cómo se graba?<i aria-hidden="true"></i></summary><p>Donde ya grabas: nos adaptamos a tu set. Si todavía no tienes set o podcast, te ayudamos a definir el concepto, la identidad y el equipo para lanzarlo.</p></details>
+      <details class="faq"><summary>¿Qué pasa después de la llamada si encajamos?<i aria-hidden="true"></i></summary><p>Definimos identidad y calendario la primera semana, grabas la segunda y tu primer episodio sale esa misma semana. De cero a publicado: unos 15 días.</p></details>
     </div>
   </div>
 </section>
 
 <!-- ============ RESERVA ============ -->
-<section class="book" id="reserva">
+<section class="book alt" id="reserva">
   <div class="wrap">
-    <span class="book-tag rv"><span class="live"></span>Solo 2 producciones nuevas al mes · respuesta en menos de 24 h</span>
-    <h2 class="h2 rv">Tu podcast ya debería estar <em>trabajando para ti.</em></h2>
-    <p class="lead rv">Elige un hueco y hablamos 30 minutos. Sales con un plan, trabajemos juntos o no.</p>
+    <div class="center">
+      <h2 class="h2 rv">Hablemos 30 minutos.</h2>
+      <p class="lead rv">Elige un hueco. Sales con un plan para tu podcast, trabajemos juntos o no.</p>
+    </div>
     <div class="book-grid">
       <div class="rv">
         <div class="steps">
           <div class="st"><span>1</span><div><b>Auditamos tu contenido</b><p>Qué está frenando tu crecimiento y por qué.</p></div></div>
-          <div class="st"><span>2</span><div><b>Diseñamos tu sistema</b><p>Episodios, clips y plataformas para tu caso concreto.</p></div></div>
-          <div class="st"><span>3</span><div><b>Te llevas el plan de acción</b><p>Por escrito. Tuyo, decidas lo que decidas.</p></div></div>
+          <div class="st"><span>2</span><div><b>Diseñamos tu sistema</b><p>Episodios, reels y redes para tu caso concreto.</p></div></div>
+          <div class="st"><span>3</span><div><b>Te llevas el plan</b><p>Por escrito. Tuyo, decidas lo que decidas.</p></div></div>
         </div>
         <p class="who">Te atiende el equipo que produce <b>Búscate la Vida</b>, <b>Sin Jaulas</b> y <b>DURALAVITA</b>, el podcast de Jorge Lorenzo.</p>
+        <p class="scarce"><span class="live"></span>Solo aceptamos 2 producciones nuevas al mes.</p>
         <div class="alt-row">
-          <a href="#" data-wa class="btn-ghost wa"><svg class="wa-ico" viewBox="0 0 24 24" fill="#25d366" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm4.5 12.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg>WhatsApp</a>
-          <a href="mailto:manel@aidomedia.com?subject=Quiero%20mi%20plan%20de%20podcast" class="btn-ghost">manel@aidomedia.com</a>
+          <a href="#" data-wa class="wa">Escribir por WhatsApp</a>
+          <a href="mailto:manel@aidomedia.com?subject=Quiero%20mi%20plan%20de%20podcast">manel@aidomedia.com</a>
         </div>
       </div>
       <div class="cal rv">
-        <div class="cal-inline" id="calInline" data-url="https://calendly.com/aidomedia/consulta-gratuita?hide_gdpr_banner=1&background_color=ffffff&text_color=0a132e&primary_color=2f6fe0&utm_source=landing&utm_medium=web&utm_campaign=podcast_premium">
-          <div class="cal-ph">Cargando el calendario…<a class="btn" data-book href="https://calendly.com/aidomedia/consulta-gratuita?utm_source=landing&utm_medium=web&utm_campaign=podcast_premium_fallback" target="_blank" rel="noopener">Ver huecos disponibles</a></div>
+        <div class="cal-inline" id="calInline" data-url="https://calendly.com/aidomedia/consulta-gratuita?hide_gdpr_banner=1&background_color=ffffff&text_color=1d1d1f&primary_color=0071e3&utm_source=landing&utm_medium=web&utm_campaign=podcast_premium">
+          <div class="cal-ph">Cargando el calendario<a class="btn" data-book href="https://calendly.com/aidomedia/consulta-gratuita?utm_source=landing&utm_medium=web&utm_campaign=podcast_premium_fallback" target="_blank" rel="noopener">Ver huecos disponibles</a></div>
         </div>
-        <p class="cal-alt">¿No carga? <a href="https://calendly.com/aidomedia/consulta-gratuita?utm_source=landing&utm_medium=web&utm_campaign=podcast_premium_fallback" target="_blank" rel="noopener">Ábrelo en una pestaña nueva →</a></p>
+        <p class="cal-alt">¿No carga? <a href="https://calendly.com/aidomedia/consulta-gratuita?utm_source=landing&utm_medium=web&utm_campaign=podcast_premium_fallback" target="_blank" rel="noopener">Ábrelo en una pestaña nueva</a></p>
       </div>
     </div>
   </div>
@@ -760,14 +979,15 @@ window.AIDO_CALENDLY='https://calendly.com/aidomedia/consulta-gratuita';
 </main>
 
 <footer>
-  <div class="logo"><span class="rec"></span><span>AIDO <b>MEDIA</b></span></div>
-  <p>Productora de vídeo-podcast y reels · España · <a href="mailto:manel@aidomedia.com">manel@aidomedia.com</a></p>
-  <nav><span>© 2026 Aido Media</span><a href="/aviso-legal.html">Aviso legal</a><a href="/privacidad.html">Privacidad</a></nav>
+  <div class="ftr">
+    <p>AIDO MEDIA es una productora de videopodcast y reels en España. Escríbenos a <a href="mailto:manel@aidomedia.com">manel@aidomedia.com</a>.</p>
+    <div><nav aria-label="Legal"><span>Copyright © 2026 Aido Media.</span><a href="/aviso-legal.html">Aviso legal</a><a href="/privacidad.html">Privacidad</a></nav></div>
+  </div>
 </footer>
 
 <div class="mbar" id="mbar">
-  <a href="#reserva" data-book class="btn">Reserva tu llamada gratis</a>
-  <a href="#" data-wa class="wa-sq wa" aria-label="WhatsApp"><svg class="wa-ico" style="width:26px;height:26px" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm4.5 12.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg></a>
+  <a href="#reserva" data-book class="btn">Reservar llamada gratis</a>
+  <a href="#" data-wa class="wa-sq wa" aria-label="WhatsApp"><svg class="wa-ico" style="width:24px;height:24px" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2Zm4.5 12.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.7 11.9 11.9 0 0 0 4.6 4c1.7.7 2.3.8 3.2.7.5-.1 1.5-.6 1.7-1.2.2-.6.2-1.1.2-1.2-.1-.1-.3-.2-.5-.3Z"/></svg></a>
 </div>
 
 <script>
@@ -839,7 +1059,7 @@ document.querySelectorAll('a[href^="https://calendly.com"]').forEach(a=>a.href=a
    botón solo la enseña. Sin widget.js: un iframe propio con embed_domain (así Calendly sigue avisando de la reserva). */
 (function(){
   const BASE=window.AIDO_CALENDLY;
-  const Q='hide_gdpr_banner=1&background_color=ffffff&text_color=0a132e&primary_color=2f6fe0';
+  const Q='hide_gdpr_banner=1&background_color=ffffff&text_color=1d1d1f&primary_color=0071e3';
   const EMB='embed_domain='+encodeURIComponent(location.host||'aidomedia.com');
   const url=(type,camp)=>aidoUtm(BASE+'?'+EMB+'&embed_type='+type+'&'+Q+'&utm_source=landing&utm_medium=web&utm_campaign='+camp);
   const alt=aidoUtm(BASE+'?utm_source=landing&utm_medium=web&utm_campaign=podcast_premium_fallback');
@@ -886,6 +1106,31 @@ window.addEventListener('message',function(e){
     }
   }catch(err){}
 });
+
+
+/* ============ MESA DEL PACK: la línea de tiempo sigue al vídeo ============ */
+(function(){
+  const v=document.getElementById('stVid');if(!v)return;
+  const cuts=[[0,1.6,2],[1.6,3.6,1],[3.6,5.0,3],[5.0,6.8,1],[6.8,8.0,2],[8.0,9.6,3],[9.6,12.0,1]];
+  const head=document.getElementById('stHead'),cam=document.getElementById('stCam'),tc=document.getElementById('stTc');
+  const clips=[...document.querySelectorAll('.st-tl .tl-track i[data-i]')];
+  const names={1:'Cámara 1',2:'Cámara 2',3:'Cámara 3'};
+  let last=-1;
+  function tick(){
+    const d=v.duration||12,t=v.currentTime%d,p=t/d;
+    head.style.setProperty('--p',p.toFixed(4));
+    const i=cuts.findIndex(c=>t>=c[0]&&t<c[1]);
+    if(i!==last&&i>=0){last=i;clips.forEach(c=>c.classList.toggle('on',+c.dataset.i===i));cam.textContent=names[cuts[i][2]];cam.classList.add('flash');setTimeout(()=>cam.classList.remove('flash'),150)}
+    const s=Math.floor(t),f=Math.floor((t-s)*30);tc.textContent='00:00:'+String(s).padStart(2,'0')+':'+String(f).padStart(2,'0');
+    requestAnimationFrame(tick);
+  }
+  requestAnimationFrame(tick);
+  /* los vídeos solo se reproducen cuando se ven (ahorra batería y datos en el móvil) */
+  if('IntersectionObserver' in window){
+    const io=new IntersectionObserver(es=>es.forEach(e=>{const x=e.target;if(e.isIntersecting){x.preload='auto';const pr=x.play();pr&&pr.catch(()=>{})}else x.pause()}),{threshold:.15});
+    document.querySelectorAll('video[autoplay]').forEach(x=>io.observe(x));
+  }
+})();
 
 /* ============ VER MÁS RESULTADOS ============ */
 (function(){
