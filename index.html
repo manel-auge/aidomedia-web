@@ -303,8 +303,8 @@ html.calpop-on .hdr,html.calpop-on .mbar{visibility:hidden}
 .calpop{position:fixed;inset:0;z-index:-1;display:grid;place-items:center;padding:24px;background:rgba(5,11,32,.78);opacity:0;pointer-events:none;transition:opacity .16s ease,z-index 0s linear .16s}
 .calpop.open{z-index:200;opacity:1;pointer-events:auto;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);transition:opacity .16s ease}
 .calpop-box{position:relative;width:min(1000px,100%);height:min(760px,calc(100dvh - 96px));border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 40px 100px rgba(0,0,0,.5)}
-.calpop-box iframe{position:absolute;inset:0;width:100%;height:100%;border:0;background:#fff}
-.calpop-load{position:absolute;inset:0;display:grid;place-items:center;align-content:center;gap:14px;color:#4a5578;font-size:15px;background:#fff;z-index:1;transition:opacity .2s}
+.calpop-box iframe{position:absolute;inset:0;width:100%;height:100%;border:0;background:transparent;z-index:1}
+.calpop-load{position:absolute;inset:0;display:grid;place-items:center;align-content:center;gap:14px;color:#4a5578;font-size:15px;background:#fff;z-index:0;transition:opacity .2s}
 .calpop.ready .calpop-load{opacity:0;pointer-events:none}
 .calpop-spin{width:30px;height:30px;border-radius:50%;border:3px solid #e1e7f5;border-top-color:#2f6fe0;animation:calspin .8s linear infinite}
 @keyframes calspin{to{transform:rotate(360deg)}}
@@ -796,12 +796,11 @@ document.querySelectorAll('a[href^="https://calendly.com"]').forEach(a=>a.href=a
   function open(){build();last=document.activeElement;ov.inert=false;ov.removeAttribute('aria-hidden');ov.classList.add('open');document.documentElement.classList.add('calpop-on');aidoTrack('calendly_open',{precargado:ov.classList.contains('ready')});const x=ov.querySelector('.calpop-x');x&&x.focus({preventScroll:true})}
   function close(){if(!ov||!ov.classList.contains('open'))return;ov.classList.remove('open');ov.inert=true;ov.setAttribute('aria-hidden','true');document.documentElement.classList.remove('calpop-on');last&&last.focus&&last.focus({preventScroll:true})}
   addEventListener('keydown',e=>{if(e.key==='Escape')close()});
-  /* precarga: en cuanto la web ha cargado (o al primer gesto del visitante, si es antes). Calendly tarda varios
-     segundos en estar listo; así casi siempre lo está cuando llega el clic, y si no, el clic enseña la carga al momento */
+  /* precarga: nada más pintarse la web (sin esperar a que bajen todas las imágenes) o al primer gesto, si es antes.
+     Calendly tarda varios segundos en estar listo; así casi siempre lo está cuando llega el clic */
   const warm=()=>{if(!ov)build()};
   ['pointerdown','pointermove','touchstart','scroll','keydown'].forEach(t=>addEventListener(t,warm,{once:true,passive:true}));
-  const idle=window.requestIdleCallback||(f=>setTimeout(f,1));
-  if(document.readyState==='complete')idle(warm,{timeout:800});else addEventListener('load',()=>idle(warm,{timeout:800}));
+  setTimeout(warm,300);
   /* el calendario integrado de abajo se carga al acercarse a la reserva */
   const inline=document.getElementById('calInline');
   if(inline){
