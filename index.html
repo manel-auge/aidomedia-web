@@ -21,6 +21,8 @@
 <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%23081232'/%3E%3Ccircle cx='16' cy='16' r='7' fill='%23ff453a'/%3E%3C/svg%3E">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://calendly.com">
+<link rel="preconnect" href="https://assets.calendly.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Schibsted+Grotesk:wght@400;500;600;700&family=Spline+Sans+Mono:wght@400;500&display=swap" rel="stylesheet">
 <link rel="preload" as="image" href="/img/yt-wrr4LCFPErA.webp" media="(min-width:900px)">
 <style>
@@ -126,6 +128,7 @@ body.has-wa .wa{display:inline-flex!important}
 .hv-stat{position:absolute;display:flex;align-items:center;gap:12px;padding:13px 16px;border-radius:14px;background:rgba(14,32,73,.92);backdrop-filter:blur(10px);border:1px solid var(--line);box-shadow:0 20px 50px rgba(0,0,0,.4)}
 .hv-stat strong{font-family:var(--serif);font-size:26px;font-weight:600;line-height:1}
 .hv-stat span{font-size:12.5px;line-height:1.3;color:var(--gray)}
+.hv-stat strong span{font-size:inherit;line-height:inherit;color:inherit}
 .hv-s1{left:-36px;top:46%}
 .hv-s2{right:-22px;top:-22px}
 
@@ -143,7 +146,7 @@ body.has-wa .wa{display:inline-flex!important}
 .cl-total b{color:var(--ink);font-weight:600}
 .brands{margin-top:34px;padding-top:26px;border-top:1px solid var(--line-2)}
 .brand-row{margin-top:14px;display:grid;grid-template-columns:repeat(3,1fr);gap:18px 22px;align-items:center;justify-items:center}
-.brand-row img{height:26px;width:auto;opacity:.6;filter:grayscale(1) brightness(1.7);transition:opacity .2s}
+.brand-row img{height:26px;width:auto;opacity:.6;filter:brightness(0) invert(1);transition:opacity .2s}
 .brand-row img:hover{opacity:.95}
 
 /* ============ DOLOR ============ */
@@ -294,7 +297,28 @@ footer a:hover{color:var(--ink)}
 /* ============ BARRA FIJA MÓVIL ============ */
 .mbar{position:fixed;left:0;right:0;bottom:0;z-index:60;display:flex;gap:10px;padding:12px var(--pad) calc(12px + env(safe-area-inset-bottom));background:linear-gradient(180deg,rgba(8,18,50,0),rgba(8,18,50,.94) 30%);transform:translateY(110%);transition:transform .35s var(--ease)}
 .mbar.show{transform:none}
-body:has(.calendly-overlay) .hdr,body:has(.calendly-overlay) .mbar{visibility:hidden}
+html.calpop-on{overflow:hidden}
+html.calpop-on .hdr,html.calpop-on .mbar{visibility:hidden}
+/* cerrado: transparente y detrás de todo, pero «visible» para el navegador, que así termina de pintar el calendario antes del clic */
+.calpop{position:fixed;inset:0;z-index:-1;display:grid;place-items:center;padding:24px;background:rgba(5,11,32,.78);opacity:0;pointer-events:none;transition:opacity .16s ease,z-index 0s linear .16s}
+.calpop.open{z-index:200;opacity:1;pointer-events:auto;-webkit-backdrop-filter:blur(6px);backdrop-filter:blur(6px);transition:opacity .16s ease}
+.calpop-box{position:relative;width:min(1000px,100%);height:min(760px,calc(100dvh - 96px));border-radius:16px;overflow:hidden;background:#fff;box-shadow:0 40px 100px rgba(0,0,0,.5)}
+.calpop-box iframe{position:absolute;inset:0;width:100%;height:100%;border:0;background:#fff}
+.calpop-load{position:absolute;inset:0;display:grid;place-items:center;align-content:center;gap:14px;color:#4a5578;font-size:15px;background:#fff;z-index:1;transition:opacity .2s}
+.calpop.ready .calpop-load{opacity:0;pointer-events:none}
+.calpop-spin{width:30px;height:30px;border-radius:50%;border:3px solid #e1e7f5;border-top-color:#2f6fe0;animation:calspin .8s linear infinite}
+@keyframes calspin{to{transform:rotate(360deg)}}
+.calpop-x{position:absolute;top:14px;right:14px;width:44px;height:44px;border-radius:50%;display:grid;place-items:center;background:rgba(255,255,255,.14);color:#fff;z-index:2}
+.calpop-x:hover{background:rgba(255,255,255,.26)}
+.calpop-alt{position:absolute;bottom:14px;left:0;right:0;text-align:center;font-size:13px;color:var(--gray)}
+.calpop-alt:hover{color:var(--ink)}
+.cal-inline iframe{width:100%;height:100%;border:0}
+@media(max-width:699px){
+  .calpop{padding:0;place-items:stretch}
+  .calpop-box{width:100%;height:100%;border-radius:0}
+  .calpop-x{top:calc(8px + env(safe-area-inset-top));right:8px;background:rgba(10,19,46,.75)}
+  .calpop-alt{display:none}
+}
 .mbar .btn{flex:1;min-height:54px;font-size:16px}
 .mbar .wa-sq{width:54px;min-height:54px;padding:0;border-radius:14px;background:#25d366;color:#fff;align-items:center;justify-content:center;flex-shrink:0}
 
@@ -434,7 +458,7 @@ window.AIDO_CALENDLY='https://calendly.com/aidomedia/consulta-gratuita';
         <img src="/img/collab-trade-republic.png" alt="Trade Republic" width="87" height="26" loading="lazy">
         <img src="/img/collab-odoo.png" alt="Odoo" width="83" height="26" loading="lazy">
         <img src="/img/collab-audax.png" alt="Audax Renovables" width="87" height="26" loading="lazy">
-        <img src="/img/collab-sirena.png" alt="La Sirena" width="62" height="32" loading="lazy" style="height:32px">
+        <img src="/img/collab-sirena.png" alt="La Sirena" width="94" height="40" loading="lazy" style="height:40px">
       </div>
     </div>
   </div>
@@ -731,34 +755,63 @@ function aidoTrack(ev,params){
   });
 })();
 
-/* ============ CALENDLY: carga diferida + popup desde cualquier CTA ============ */
+/* ============ UTM DEL ANUNCIO → CALENDLY (la reserva queda atribuida a su campaña) ============ */
+window.aidoUtm=function(url){
+  const K=['utm_source','utm_medium','utm_campaign','utm_content','utm_term'];
+  let ad={};
+  try{ad=JSON.parse(sessionStorage.getItem('aidoUtm')||'{}')}catch(e){}
+  const q=new URLSearchParams(location.search);
+  if(K.some(k=>q.get(k))){ad={};K.forEach(k=>{if(q.get(k))ad[k]=q.get(k)});try{sessionStorage.setItem('aidoUtm',JSON.stringify(ad))}catch(e){}}
+  if(!Object.keys(ad).length)return url;
+  const u=new URL(url);
+  K.forEach(k=>u.searchParams.delete(k));
+  Object.entries(ad).forEach(([k,v])=>u.searchParams.set(k,v));
+  return u.toString();
+};
+document.querySelectorAll('a[href^="https://calendly.com"]').forEach(a=>a.href=aidoUtm(a.href));
+(function(){const i=document.getElementById('calInline');if(i)i.dataset.url=aidoUtm(i.dataset.url)})();
+
+/* ============ CALENDLY: precargado, aparece al instante ============
+   Antes, al pulsar se descargaba widget.js y después la página de Calendly: 9-14 s viendo solo los puntitos de carga.
+   Ahora la página de reservas se carga escondida en cuanto el visitante hace algo (o a los 2 s de abrir la web) y el
+   botón solo la enseña. Sin widget.js: un iframe propio con embed_domain (así Calendly sigue avisando de la reserva). */
 (function(){
   const BASE=window.AIDO_CALENDLY;
-  const POPUP=BASE+'?hide_gdpr_banner=1&background_color=ffffff&text_color=0a132e&primary_color=2f6fe0&utm_source=landing&utm_medium=web&utm_campaign=podcast_premium_popup';
-  let p=null;
-  function load(){
-    if(p)return p;
-    p=new Promise((res,rej)=>{
-      const css=document.createElement('link');css.rel='stylesheet';css.href='https://assets.calendly.com/assets/external/widget.css';document.head.appendChild(css);
-      const s=document.createElement('script');s.src='https://assets.calendly.com/assets/external/widget.js';s.async=true;
-      s.onload=()=>res(window.Calendly);s.onerror=rej;document.head.appendChild(s);
-      setTimeout(()=>window.Calendly?res(window.Calendly):rej(),8000);
-    });
-    return p;
+  const Q='hide_gdpr_banner=1&background_color=ffffff&text_color=0a132e&primary_color=2f6fe0';
+  const EMB='embed_domain='+encodeURIComponent(location.host||'aidomedia.com');
+  const url=(type,camp)=>aidoUtm(BASE+'?'+EMB+'&embed_type='+type+'&'+Q+'&utm_source=landing&utm_medium=web&utm_campaign='+camp);
+  const alt=aidoUtm(BASE+'?utm_source=landing&utm_medium=web&utm_campaign=podcast_premium_fallback');
+  let ov=null,last=null;
+  function build(){
+    if(ov)return ov;
+    ov=document.createElement('div');ov.className='calpop';ov.inert=true;ov.setAttribute('aria-hidden','true');ov.setAttribute('role','dialog');ov.setAttribute('aria-modal','true');ov.setAttribute('aria-label','Reserva tu llamada');
+    ov.innerHTML='<div class="calpop-box"><div class="calpop-load" aria-hidden="true"><span class="calpop-spin"></span>Abriendo el calendario…</div></div><button class="calpop-x" type="button" aria-label="Cerrar el calendario"><svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" aria-hidden="true"><path d="M6 6l12 12M18 6 6 18"/></svg></button><a class="calpop-alt" href="'+alt+'" target="_blank" rel="noopener">¿No carga? Ábrelo en otra pestaña</a>';
+    const fr=document.createElement('iframe');fr.title='Reserva tu llamada con AIDO MEDIA';fr.src=url('PopupText','podcast_premium_popup');
+    fr.addEventListener('load',()=>ov.classList.add('ready'));
+    ov.querySelector('.calpop-box').appendChild(fr);
+    ov.addEventListener('click',e=>{if(e.target===ov||e.target.closest('.calpop-x'))close()});
+    document.body.appendChild(ov);
+    return ov;
   }
-  /* el calendario integrado se carga al acercarse a la reserva */
+  function open(){build();last=document.activeElement;ov.inert=false;ov.removeAttribute('aria-hidden');ov.classList.add('open');document.documentElement.classList.add('calpop-on');aidoTrack('calendly_open',{precargado:ov.classList.contains('ready')});const x=ov.querySelector('.calpop-x');x&&x.focus({preventScroll:true})}
+  function close(){if(!ov||!ov.classList.contains('open'))return;ov.classList.remove('open');ov.inert=true;ov.setAttribute('aria-hidden','true');document.documentElement.classList.remove('calpop-on');last&&last.focus&&last.focus({preventScroll:true})}
+  addEventListener('keydown',e=>{if(e.key==='Escape')close()});
+  /* precarga: en cuanto la web ha cargado (o al primer gesto del visitante, si es antes). Calendly tarda varios
+     segundos en estar listo; así casi siempre lo está cuando llega el clic, y si no, el clic enseña la carga al momento */
+  const warm=()=>{if(!ov)build()};
+  ['pointerdown','pointermove','touchstart','scroll','keydown'].forEach(t=>addEventListener(t,warm,{once:true,passive:true}));
+  const idle=window.requestIdleCallback||(f=>setTimeout(f,1));
+  if(document.readyState==='complete')idle(warm,{timeout:800});else addEventListener('load',()=>idle(warm,{timeout:800}));
+  /* el calendario integrado de abajo se carga al acercarse a la reserva */
   const inline=document.getElementById('calInline');
-  if(inline&&'IntersectionObserver' in window){
-    const io=new IntersectionObserver(es=>{if(es.some(e=>e.isIntersecting)){io.disconnect();load().then(C=>{
-      if(!inline.querySelector('iframe')){inline.innerHTML='';C.initInlineWidget({url:inline.dataset.url,parentElement:inline})}
-    }).catch(()=>{})}},{rootMargin:'900px 0px'});
-    io.observe(inline);
+  if(inline){
+    const put=()=>{if(inline.querySelector('iframe'))return;const f=document.createElement('iframe');f.title='Calendario de AIDO MEDIA';f.src=aidoUtm(inline.dataset.url+'&'+EMB+'&embed_type=Inline');inline.innerHTML='';inline.appendChild(f)};
+    if('IntersectionObserver' in window){const io=new IntersectionObserver(es=>{if(es.some(e=>e.isIntersecting)){io.disconnect();put()}},{rootMargin:'900px 0px'});io.observe(inline)}else put();
   }
   document.querySelectorAll('[data-book]').forEach(a=>a.addEventListener('click',e=>{
     aidoTrack('cta_click',{cta:a.textContent.trim().slice(0,40)});
     if(a.closest('.cal'))return; /* enlace de respaldo dentro del calendario: abre pestaña */
-    e.preventDefault();
-    load().then(C=>C.initPopupWidget({url:POPUP})).catch(()=>{location.href=BASE+'?utm_source=landing&utm_medium=web&utm_campaign=podcast_premium_fallback'});
+    e.preventDefault();open();
   }));
 })();
 /* Reserva confirmada en Calendly → evento de conversión */
