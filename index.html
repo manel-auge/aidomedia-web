@@ -528,6 +528,16 @@ window.AIDO_META_PIXEL='939380198950383';  /* ← pega aquí tu Pixel ID de Meta
 <!-- Verificación de dominio Meta: descomenta y pega el código que te dé Meta -->
 <meta name="facebook-domain-verification" content="9yzoqyfix45ad68d8r3xzon3kmm5nm">
 <!-- ============ FIN META PIXEL ============ -->
+<!-- ============ PÍXEL DE CHATGPT ADS (OpenAI) ============ -->
+<script>
+window.AIDO_OPENAI_PIXEL='XXQLuWcGPq2hdiELH5b3LY';
+(function(w,d,s,u){
+  if(!w.AIDO_OPENAI_PIXEL||w.oaiq)return;
+  var q=function(){q.q.push(arguments)};q.q=[];w.oaiq=q;
+  var js=d.createElement(s);js.async=true;js.src=u;var f=d.getElementsByTagName(s)[0];f.parentNode.insertBefore(js,f);
+  oaiq('init',{pixelId:w.AIDO_OPENAI_PIXEL});
+})(window,document,'script','https://bzrcdn.openai.com/sdk/oaiq.min.js');
+</script>
 <script>
 /* ============ CONTACTO: WhatsApp con prefijo, sin + ni espacios (p.ej. '34600111222') y aparecen los botones ============ */
 window.AIDO_WHATSAPP='34622061899';
@@ -1033,7 +1043,7 @@ function aidoTrack(ev,params){
   document.body.classList.add('has-wa');
   document.querySelectorAll('[data-wa]').forEach(a=>{
     a.href=url;a.target='_blank';a.rel='noopener';
-    a.addEventListener('click',()=>{aidoTrack('whatsapp_click');window.fbq&&fbq('track','Contact')});
+    a.addEventListener('click',()=>{aidoTrack('whatsapp_click');window.fbq&&fbq('track','Contact');window.oaiq&&oaiq('measure','lead_created',{type:'customer_action'})});
   });
 })();
 
@@ -1103,6 +1113,7 @@ window.addEventListener('message',function(e){
       window.gtag&&gtag('event','generate_lead',{method:'calendly'});
       window.fbq&&fbq('track','Schedule');
       window.fbq&&fbq('track','Lead');
+      window.oaiq&&oaiq('measure','appointment_scheduled',{type:'customer_action'});
     }
   }catch(err){}
 });
