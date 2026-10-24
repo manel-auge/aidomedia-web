@@ -1,59 +1,59 @@
 {
- "updated": "2026-10-23T11:10:40Z",
- "total_subs": 1599449,
- "total_views": 406704433,
+ "updated": "2026-10-24T10:28:38Z",
+ "total_subs": 1599460,
+ "total_views": 407346046,
  "channels": {
   "zzen": {
    "name": "ZZEN",
    "subs": 521000,
-   "views": 87348649,
-   "videos": 1270
+   "views": 87444438,
+   "videos": 1271
   },
   "jose": {
    "name": "José Elías",
    "subs": 470000,
-   "views": 188154785,
-   "videos": 1327
+   "views": 188252498,
+   "videos": 1328
   },
   "mediapower": {
    "name": "Media Power",
    "subs": 183000,
-   "views": 10888971,
+   "views": 10891744,
    "videos": 1211
   },
   "blv": {
    "name": "Búscate la Vida",
    "subs": 176000,
-   "views": 63123225,
-   "videos": 1355
+   "views": 63425263,
+   "videos": 1358
   },
   "duralavita": {
    "name": "DURALAVITA",
    "subs": 153000,
-   "views": 42009142,
-   "videos": 1168
+   "views": 42128272,
+   "videos": 1172
   },
   "epr": {
    "name": "Eric Ponce",
    "subs": 79300,
-   "views": 12514715,
-   "videos": 456
+   "views": 12529797,
+   "videos": 457
   },
   "marc": {
    "name": "Marc Farriol",
    "subs": 8960,
-   "views": 316396,
+   "views": 317809,
    "videos": 47
   },
   "rostick": {
    "name": "Rostick",
-   "subs": 8189,
-   "views": 2348550,
+   "subs": 8200,
+   "views": 2356225,
    "videos": 161
   }
  },
  "videos": {
-  "2OVNSIU1jQo": 362000,
+  "2OVNSIU1jQo": 363000,
   "AqzTzuvzetk": 261000,
   "EQp5wCfD70s": 263000,
   "GenC4Y7qegA": 352000,
@@ -74,7 +74,7 @@
   "rFZcj8Z6h34": 73000,
   "t0HZyY8rkRg": 83000,
   "t6egclZxzk4": 56000,
-  "wrr4LCFPErA": 526000,
+  "wrr4LCFPErA": 527000,
   "y-x3YF4y7yQ": 261000
  }
 }
