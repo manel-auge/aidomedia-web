@@ -137,8 +137,10 @@ def main():
     except FileNotFoundError:
         pass
 
-    total = sum(c["subs"] or 0 for c in out.values())
-    total_views = sum(c["views"] or 0 for c in out.values())
+    # "fuera_del_total": el canal sale en la lista, pero no suma a los totales
+    cuentan = [c for k, c in out.items() if not channels[k].get("fuera_del_total")]
+    total = sum(c["subs"] or 0 for c in cuentan)
+    total_views = sum(c["views"] or 0 for c in cuentan)
     stats = {"updated": time.strftime('%Y-%m-%dT%H:%M:%SZ', time.gmtime()),
              "total_subs": total, "total_views": total_views, "channels": out, "videos": videos}
     json.dump(stats, open(os.path.join(HERE, 'stats.json'), 'w'),

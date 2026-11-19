@@ -30,5 +30,10 @@
  "rostick": {
   "name": "Rostick",
   "handle": "rostick_mobilhome"
+ },
+ "selva": {
+  "name": "La Selva de Cemento",
+  "handle": "la.selvadecemento",
+  "fuera_del_total": true
  }
 }
