@@ -543,6 +543,10 @@ footer{background:var(--bg-2);padding:28px var(--pad) calc(100px + env(safe-area
 .thumbs,.titles,.seo,.chart,.cams{padding-bottom:30px}
 .reels3 figure{position:relative;width:31%;aspect-ratio:9/16;border-radius:18px 18px 0 0;overflow:hidden}
 .reels3 figure img{width:100%;height:100%;object-fit:cover;border-radius:0}
+/* 20/11: los reels suben, pegados al texto y enteros; el subtítulo de clientes, centrado */
+.tile-viz.viz-up{margin-top:0;padding:24px 0 30px;align-items:flex-start}
+.viz-up .reels3 figure{border-radius:16px}
+.clients .lead{margin-left:auto;margin-right:auto;text-align:center}
 .reels3 figure b{position:absolute;left:0;right:0;bottom:0;padding:30px 10px 10px;background:linear-gradient(transparent,rgba(0,0,0,.75));color:#fff;font-size:18px;font-weight:600;letter-spacing:-.02em}
 .nets span{padding:0 18px 0 14px}
 .nets svg{width:22px;height:22px}
@@ -797,7 +801,6 @@ window.AIDO_CALENDLY='https://calendly.com/aidomedia/consulta-gratuita';
         </div>
       </div>
     </article>
-    <p class="nums-src" style="color:var(--ink-3)">Visualizaciones de Instagram y TikTok (Metricool) y de YouTube, a 15 de octubre de 2026.</p>
   </div>
 </section>
 
@@ -851,7 +854,7 @@ window.AIDO_CALENDLY='https://calendly.com/aidomedia/consulta-gratuita';
       <article class="tile rv">
         <h3>Reels.</h3>
         <p>Cortados a la emoción, con tus subtítulos y publicados a su hora.</p>
-        <div class="tile-viz"><div class="reels3"><figure><img src="/img/reel-jmc1.webp" alt="Reel de Sin Jaulas" width="360" height="640" loading="lazy"><b>2,1M</b></figure><figure><img src="/img/reel-blv1.webp" alt="Reel de Búscate la Vida" width="360" height="640" loading="lazy"><b>439K</b></figure><figure><img src="/img/reel-n06.webp" alt="Reel de Eric Ponce" width="360" height="640" loading="lazy"><b>896K</b></figure></div></div>
+        <div class="tile-viz viz-up"><div class="reels3"><figure><img src="/img/reel-jmc1.webp" alt="Reel de Sin Jaulas" width="360" height="640" loading="lazy"><b>2,1M</b></figure><figure><img src="/img/reel-blv1.webp" alt="Reel de Búscate la Vida" width="360" height="640" loading="lazy"><b>439K</b></figure><figure><img src="/img/reel-n06.webp" alt="Reel de Eric Ponce" width="360" height="640" loading="lazy"><b>896K</b></figure></div></div>
       </article>
       <article class="tile rv">
         <h3>Gráficos y datos.</h3>
@@ -878,7 +881,7 @@ window.AIDO_CALENDLY='https://calendly.com/aidomedia/consulta-gratuita';
 
 <!-- ============ RESULTADOS ============ -->
 <div class="dark" id="resultados">
-<section class="nums" aria-label="Resultados en cifras"><div class="wrap"><div class="nums-grid"><div class="num rv"><b><span data-count="29" data-suf="M">29M</span></b><span>visualizaciones de nuestros reels en 6 semanas</span></div><div class="num rv"><b><span data-count="4">4</span></b><span>reels por encima del millón</span></div><div class="num rv"><b>+<span data-count="50">50</span></b><span>publicaciones de más de 100.000</span></div><div class="num rv"><b>+<span data-stat="total_views">398M</span></b><span>visualizaciones en los canales de YouTube que producimos</span></div></div><p class="nums-src">Solo reels hechos y publicados por nosotros en Instagram y TikTok, del 2 de septiembre al 15 de octubre de 2026. Datos de Metricool.</p></div></section>
+<section class="nums" aria-label="Resultados en cifras"><div class="wrap"><div class="nums-grid"><div class="num rv"><b><span data-count="29" data-suf="M">29M</span></b><span>visualizaciones de nuestros reels en 6 semanas</span></div><div class="num rv"><b><span data-count="4">4</span></b><span>reels por encima del millón</span></div><div class="num rv"><b>+<span data-count="50">50</span></b><span>publicaciones de más de 100.000</span></div><div class="num rv"><b>+<span data-stat="total_views">398M</span></b><span>visualizaciones en los canales de YouTube que producimos</span></div></div></div></section>
 <section class="reels-sec" aria-labelledby="reels-h">
   <div class="wrap center">
     <h2 class="h2 rv" id="reels-h">Nuestros reels más vistos.</h2>
@@ -894,7 +897,7 @@ window.AIDO_CALENDLY='https://calendly.com/aidomedia/consulta-gratuita';
       <span class="kicker rv">Casos</span>
       <h2 class="h2 rv">Lo que pasa cuando<br>hay un sistema detrás.</h2>
     </div>
-    <div class="cases"><article class="case rv"><p class="case-who">Joan Zorrilla, pódcast Sin Jaulas</p><p class="case-big">×26</p><p class="case-txt">De <b>434K</b> al mes en agosto, antes de nosotros, a <b>11,3M</b> en septiembre, el primer mes con nuestros reels: <b>10M</b> salieron de los que hicimos nosotros.</p><div class="case-bars" role="img" aria-label="Visualizaciones de los reels de la cuenta por mes"><i style="--h:2%" title="abr: 50K"><span>abr</span></i><i style="--h:2%" title="may: 43K"><span>may</span></i><i style="--h:7%" title="jun: 762K"><span>jun</span></i><i style="--h:2%" title="jul: 66K"><span>jul</span></i><i style="--h:4%" title="ago: 434K"><span>ago</span></i><i style="--h:100%" title="sep: 11,3M"><span>sep</span></i><i style="--h:28%" title="oct: 3,2M"><span>oct*</span></i></div></article><article class="case rv"><p class="case-who">Búscate la Vida</p><p class="case-big">8,8M</p><p class="case-txt">en 6 semanas con nuestros reels: <b>128 publicaciones</b> en Instagram y TikTok desde septiembre, a más de 4M cada mes.</p><div class="case-bars two" role="img" aria-label="Visualizaciones de nuestros reels por mes"><i style="--h:94%" title="sep: 4,2M"><span>sep</span></i><i style="--h:100%" title="oct: 4,5M"><span>oct*</span></i></div></article><article class="case rv"><p class="case-who">Eric Ponce</p><p class="case-big">896K</p><p class="case-txt">con <b>un solo reel</b> del vlog «24 horas en una clínica estética»: el gancho y el corte, nuestros.</p><a class="case-reel" href="https://www.instagram.com/reel/Debw4UigsXB/" target="_blank" rel="noopener">Verlo en Instagram</a></article></div><p class="nums-src" style="text-align:left">* Octubre, hasta el día 15. Datos de Metricool.</p>
+    <div class="cases"><article class="case rv"><p class="case-who">Joan Zorrilla, pódcast Sin Jaulas</p><p class="case-big">×26</p><p class="case-txt">De <b>434K</b> al mes en agosto, antes de nosotros, a <b>11,3M</b> en septiembre, el primer mes con nuestros reels: <b>10M</b> salieron de los que hicimos nosotros.</p><div class="case-bars" role="img" aria-label="Visualizaciones de los reels de la cuenta por mes"><i style="--h:2%" title="abr: 50K"><span>abr</span></i><i style="--h:2%" title="may: 43K"><span>may</span></i><i style="--h:7%" title="jun: 762K"><span>jun</span></i><i style="--h:2%" title="jul: 66K"><span>jul</span></i><i style="--h:4%" title="ago: 434K"><span>ago</span></i><i style="--h:100%" title="sep: 11,3M"><span>sep</span></i><i style="--h:28%" title="oct: 3,2M"><span>oct</span></i></div></article><article class="case rv"><p class="case-who">Búscate la Vida</p><p class="case-big">8,8M</p><p class="case-txt">en 6 semanas con nuestros reels: <b>128 publicaciones</b> en Instagram y TikTok desde septiembre, a más de 4M cada mes.</p><div class="case-bars two" role="img" aria-label="Visualizaciones de nuestros reels por mes"><i style="--h:94%" title="sep: 4,2M"><span>sep</span></i><i style="--h:100%" title="oct: 4,5M"><span>oct</span></i></div></article><article class="case rv"><p class="case-who">Eric Ponce</p><p class="case-big">896K</p><p class="case-txt">con <b>un solo reel</b> del vlog «24 horas en una clínica estética»: el gancho y el corte, nuestros.</p><a class="case-reel" href="https://www.instagram.com/reel/Debw4UigsXB/" target="_blank" rel="noopener">Verlo en Instagram</a></article></div>
   </div>
 </section>
 
