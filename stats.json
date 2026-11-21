@@ -1,65 +1,65 @@
 {
- "updated": "2026-11-20T15:00:22Z",
- "total_subs": 1622910,
- "total_views": 427484819,
+ "updated": "2026-11-21T14:21:49Z",
+ "total_subs": 1623920,
+ "total_views": 428213936,
  "channels": {
   "zzen": {
    "name": "ZZEN",
-   "subs": 532000,
-   "views": 90429888,
-   "videos": 1305
+   "subs": 533000,
+   "views": 90583272,
+   "videos": 1307
   },
   "jose": {
    "name": "José Elías",
    "subs": 475000,
-   "views": 194105122,
-   "videos": 1362
+   "views": 194366630,
+   "videos": 1363
   },
   "mediapower": {
    "name": "Media Power",
    "subs": 184000,
-   "views": 10980407,
+   "views": 10983888,
    "videos": 1215
   },
   "blv": {
    "name": "Búscate la Vida",
    "subs": 180000,
-   "views": 71433117,
-   "videos": 1508
+   "views": 71610030,
+   "videos": 1515
   },
   "duralavita": {
    "name": "DURALAVITA",
    "subs": 154000,
-   "views": 44301273,
+   "views": 44321205,
    "videos": 1218
   },
   "epr": {
    "name": "Eric Ponce",
    "subs": 80400,
-   "views": 13356198,
-   "videos": 501
+   "views": 13466260,
+   "videos": 509
   },
   "marc": {
    "name": "Marc Farriol",
-   "subs": 9040,
-   "views": 367839,
+   "subs": 9050,
+   "views": 369242,
    "videos": 60
   },
   "rostick": {
    "name": "Rostick",
    "subs": 8470,
-   "views": 2510975,
-   "videos": 180
+   "views": 2513409,
+   "videos": 181
   },
   "selva": {
    "name": "La Selva de Cemento",
    "subs": 19100,
-   "views": 2473644,
-   "videos": 218
+   "views": 2482255,
+   "videos": 219
   }
  },
  "videos": {
-  "2OVNSIU1jQo": 374000,
+  "2OVNSIU1jQo": 375000,
   "AqzTzuvzetk": 262000,
   "EQp5wCfD70s": 268000,
   "GenC4Y7qegA": 356000,
